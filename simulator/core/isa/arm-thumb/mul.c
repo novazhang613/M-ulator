@@ -25,7 +25,7 @@
 // arm-thumb
 static void mul_t1(uint16_t inst) {
 	uint8_t rdm = inst & 0x7;
-	uint8_t rn = inst & 0x7;
+	uint8_t rn = (inst >> 3) & 0x7;
 
 	bool setflags = !in_ITblock();
 
