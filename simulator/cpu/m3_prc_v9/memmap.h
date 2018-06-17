@@ -35,6 +35,8 @@
 #define INT_MSG_REG2_RD	0xA0001018
 #define INT_MSG_REG3_RD	0xA000101c
 
+#define DECODER_ADDR    0xA0000140
+
 // CHIP ID (used for selective GOC programming)
 #define CHIP_ID_REG_NBITS	16
 #define CHIP_ID_REG_RESET	0x0000

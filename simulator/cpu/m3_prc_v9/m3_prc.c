@@ -270,6 +270,21 @@ bool debugger __attribute__ ((unused)) ) {
 }
 */
 
+static void recryptor_decoder_wr(uint32_t addr, uint32_t val,
+		bool debugger __attribute__ ((unused)) ) {
+    printf("HERE I AM! addr = %#x, val = %#x\n", addr, val);
+/*
+    uint32_t start = 0xa0000140;
+    uint32_t function = 0xa0000144;
+    uint32_t bitwidth = 0xa0000148;
+    if (addr == start) {
+        start_recryotr();
+    } else if (addr == function) {
+   set_function();
+    }
+*/
+}
+
 __attribute__ ((constructor))
 void register_periph_m3_prc(void) {
 	union memmap_fn mem_fn;
@@ -290,6 +305,9 @@ void register_periph_m3_prc(void) {
 
 	mem_fn.W_fn32 = pmu_reset_wr;
 	register_memmap("M3 CTL PMU RESET", true, 1, mem_fn, PMU_RST_REG_WR, PMU_RST_REG_WR+1);
+
+	mem_fn.W_fn32 = recryptor_decoder_wr;
+	register_memmap("RECRYPTOR DECODER", true, 4, mem_fn, DECODER_ADDR, DECODER_ADDR+4);
 
 	/*
 	mem_fn.R_fn32 = gpio_read;
