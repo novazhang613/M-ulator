@@ -28,6 +28,8 @@
 
 #include "core/state_sync.h"
 
+#include "cpu/recryptor/recryptor.h"
+
 
 #define MASK(n) ((1ULL<<(n))-1)
 
@@ -270,20 +272,6 @@ bool debugger __attribute__ ((unused)) ) {
 }
 */
 
-static void recryptor_decoder_wr(uint32_t addr, uint32_t val,
-		bool debugger __attribute__ ((unused)) ) {
-    printf("HERE I AM! addr = %#x, val = %#x\n", addr, val);
-/*
-    uint32_t start = 0xa0000140;
-    uint32_t function = 0xa0000144;
-    uint32_t bitwidth = 0xa0000148;
-    if (addr == start) {
-        start_recryotr();
-    } else if (addr == function) {
-   set_function();
-    }
-*/
-}
 
 __attribute__ ((constructor))
 void register_periph_m3_prc(void) {
