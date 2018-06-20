@@ -38,7 +38,8 @@ void ldm(uint8_t rn, uint16_t registers, bool wback) {
 		CORE_ERR_not_implemented("ldm PC");
 	}
 
-	if (wback && ((registers & (1 << rn)) == 0)) {
+	//if (wback && ((registers & (1 << rn)) == 0)) {
+	if (wback) {
 		CORE_reg_write(rn, CORE_reg_read(rn) + 4U*hamming(registers));
 	}
 }
