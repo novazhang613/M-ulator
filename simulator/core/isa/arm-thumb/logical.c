@@ -33,7 +33,7 @@ static void and_reg_t1(uint16_t inst) {
 	enum SRType shift_t = SRType_LSL;
 	uint8_t shift_n = 0;
 
-	OP_DECOMPILE("AND<IT> <Rdn>,Rm>", rdn, rm);
+	OP_DECOMPILE("AND<IT> <Rdn>,<Rm>", rdn, rm);
 	return and_reg(rd, rn, rm, setflags, shift_t, shift_n);
 }
 

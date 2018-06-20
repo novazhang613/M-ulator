@@ -26,11 +26,14 @@
 static void ldm_t1(uint16_t inst) {
 	uint8_t registers = inst & 0xff;
 	uint8_t rn = (inst >> 8) & 0x7;
-
-	bool wback = registers & (1 << rn);
+	
+	// If rn is not in Reglist, writeback suffix
+	bool wback = ~(registers & (1 << rn));
 
 	if (hamming(registers) < 1)
 		CORE_ERR_unpredictable("ldm_t1 load no regs?\n");
+
+	OP_DECOMPILE("LDM<c> <Rn>!,<registers>",rn, registers);
 
 	return ldm(rn, registers, wback);
 }

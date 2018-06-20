@@ -29,7 +29,7 @@ static void mul_t1(uint16_t inst) {
 
 	bool setflags = !in_ITblock();
 
-	OP_DECOMPILE("MUL<IT> <Rdm>,<Rn>,<Rdm>", rdm, rn, rdm);
+	OP_DECOMPILE("MUL<IT> <Rm>,<Rn>,<Rm>", rdm, rn, rdm);
 	return mul(setflags, rdm, rn, rdm);
 }
 

@@ -8,6 +8,8 @@ void recryptor_decoder_wr(uint32_t addr, uint32_t val,
 		bool debugger __attribute__ ((unused)) ) {
 
     printf("HERE I AM! addr = %#x, val = %#x\n", addr, val);
+}
+#if 0
     //*(DECODER) = Idra + (Idrb<<8) + (Idrc<<16) + (1<<23) + (3<<24) + (3<<28); // 1<<23+3<<24
 
 	// Decode base address
@@ -29,17 +31,40 @@ void recryptor_decoder_wr(uint32_t addr, uint32_t val,
 	  default:  block = 0;
 	}
 	printf("Recryptor: block = %d\n",block);
+	// BANK needs FINER characterization!
 
 	// Operations on subBanks
         int i;
+	bool sh1 = 0;
+	uint8_t sh4 = 0;
 	for (i=0;i<block;i++) {	
 	 	uint32_t dataA = read_word(addrA + i * 4 );
 	 	uint32_t dataB = read_word(addrB + i * 4 );
 	 	//uint32_t dataC = dataA ^ dataB; 
 		uint32_t dataC;
 		switch (op) {
+			case AN:
+				dataC = dataA & dataB;
+				break;
+			case OR:
+				dataC = dataA | dataB;
+				break;
 			case XR:
 				dataC = dataA ^ dataB;
+				break;
+			case CP:
+				dataC = dataA;
+				break;
+			case NOT:
+				dataC = ~dataA;
+				break;
+			case SF1:
+				dataC = (dataA<<1 | sh1);
+				sh1 = (dataA>>31) & 0x1; 
+				break;
+			case SF4:
+				dataC = (dataA<<4 | sh4};
+				sh4 = (dataA>>28) & 0xF;
 				break;
 			default: 
 				dataC = dataA;
@@ -48,7 +73,6 @@ void recryptor_decoder_wr(uint32_t addr, uint32_t val,
     	 	printf("Recryptor: dataA = %#x, dataB = %#x, dataC = %#x\n", dataA, dataB, dataC);
 	 	write_word(addrC + i * 4, dataC);
 	}
-
 	
 /*
     uint32_t start = 0xa0000140;
@@ -60,5 +84,6 @@ void recryptor_decoder_wr(uint32_t addr, uint32_t val,
    set_function();
     }
 */
-}
 
+
+#endif
