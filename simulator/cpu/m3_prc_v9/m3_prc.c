@@ -295,7 +295,8 @@ void register_periph_m3_prc(void) {
 	register_memmap("M3 CTL PMU RESET", true, 1, mem_fn, PMU_RST_REG_WR, PMU_RST_REG_WR+1);
 
 	mem_fn.W_fn32 = recryptor_decoder_wr;
-	register_memmap("RECRYPTOR DECODER", true, 4, mem_fn, DECODER_ADDR, DECODER_ADDR+4);
+	register_memmap("RECRYPTOR DECODER", true, 4, mem_fn, RECRYPTOR_DECODER_ADDR, RECRYPTOR_DECODER_ADDR+1);
+	//register_memmap("RECRYPTOR DECODER", true, 4, mem_fn, DECODER_ADDR, DECODER_ADDR+4);
 
 	/*
 	mem_fn.R_fn32 = gpio_read;

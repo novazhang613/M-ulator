@@ -20,3 +20,7 @@ typedef enum _recryptor_op {
 } recryptor_op;
 
 void recryptor_decoder_wr(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ); 
+
+extern const uint8_t NUM_SUBBANK[];
+extern const uint8_t NUM_PREVTOT_SUBBANK[];
+extern const char    *OpNames[]; 
