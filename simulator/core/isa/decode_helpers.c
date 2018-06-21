@@ -114,7 +114,7 @@ void ASR_C(uint32_t x, int Nbits, uint8_t shift,
 	uint32_t extended_x;
 	if (x & (1 << (Nbits - 1))) {
 		// negative, need to extend
-		uint32_t mask = 0xffffffff - ((1 << (shift - 1)) - 1);
+		uint32_t mask = 0xffffffff - ((1 << (Nbits - 1)) - 1);
 		extended_x = x | mask;
 	} else {
 		extended_x = x;
@@ -123,7 +123,7 @@ void ASR_C(uint32_t x, int Nbits, uint8_t shift,
 	// (1 << 32) will overflow
 	//*result = (extended_x >> shift) & ((1 << Nbits) - 1);
 	*result = (extended_x >> shift) & ((1LL << Nbits) - 1);
-	printf("ext_x:%x result:%x shift:%x\n",extended_x,*result,shift);
+	printf("x:%x ext_x:%x result:%x shift:%x\n",x, extended_x,*result,shift);
 
 	*carry_out = !!(extended_x & (1 << (shift - 1)));
 }
