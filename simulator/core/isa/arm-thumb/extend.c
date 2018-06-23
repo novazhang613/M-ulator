@@ -29,6 +29,7 @@ static void sxtb_t1(uint16_t inst) {
 
 	uint8_t rotation = 0;
 
+	OP_DECOMPILE("SXTB<c> <Rd>,<Rm>", rd, rm);
 	return sxtb(rd, rm, rotation);
 }
 
@@ -38,6 +39,7 @@ static void sxth_t1(uint16_t inst) {
 	uint8_t rm = (inst >> 3) & 0x7;
 
 	uint8_t rotation = 0;
+	OP_DECOMPILE("SXTH<c> <Rd>,<Rm>", rd, rm);
 	return sxth(rd, rm, rotation);
 }
 
@@ -58,6 +60,7 @@ static void uxth_t1(uint16_t inst) {
 	uint8_t rm = (inst >> 3) & 0x7;
 
 	uint8_t rotation = 0;
+	OP_DECOMPILE("UXTH<c> <Rd>,<Rm>", rd, rm);
 	return uxth(rd, rm, rotation);
 }
 
