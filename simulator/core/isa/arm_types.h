@@ -29,7 +29,7 @@
 #define SRType_LSR	0x1
 #define SRType_ASR	0x2
 #define SRType_RRX	0x3
-#define SRType_ROR	0x3
+#define SRType_ROR	0x4
 
 enum SRType {
 	LSL,	// match
