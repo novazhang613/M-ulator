@@ -167,7 +167,7 @@ static void ldrsh_reg_t1(uint16_t inst) {
 
 	bool index = true;
 	bool add = true;
-	bool wback = true;
+	bool wback = false;
 	enum SRType shift_t = SRType_LSL;
 	uint8_t shift_n = 0;
 
@@ -205,5 +205,6 @@ static void register_opcodes_arm_thumb_ldr(void) {
 	register_opcode_mask_16(0x5600, 0xa800, ldrsb_reg_t1);
 
 	// ldrsh_reg_t1: 0101 111x <x's>
-	register_opcode_mask_16(0xa000, 0x5e00, ldrsh_reg_t1);
+	//register_opcode_mask_16(0xa000, 0x5e00, ldrsh_reg_t1);
+	register_opcode_mask_16(0x5e00, 0xa000, ldrsh_reg_t1);
 }
