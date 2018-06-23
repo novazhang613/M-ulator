@@ -41,11 +41,14 @@ static void mov_imm_t1(uint16_t inst) {
 // arm-v6-m, arm-v7-m, arm-thumb*
 static void mov_reg_t1(uint16_t inst) {
 	uint8_t rd =  (inst & 0x7);
-	uint8_t rm =  (inst & 0x78) >> 3;
+	uint8_t rm = (inst >> 3) & 0x7;
 	uint8_t D = !!(inst & 0x80);
 
 	// d = UInt(D:rd)
 	rd |= (D << 3);
+	
+	D = !!(inst & 0x40);
+	rm |= (D << 3);
 
 	// m = UInt(rm); unecessary
 
