@@ -96,6 +96,8 @@ void LSL_C(uint32_t x, int Nbits, uint8_t shift,
 	extended_x <<= shift;
 	*result = (uint32_t) (extended_x & ((1ULL << Nbits) - 1));
 	*carry_out = !!(extended_x & (1ULL << Nbits));
+
+	//printf("x:%x extended_x: %lx result:%x shift:%x carry_out: %x\n",x, extended_x,*result,shift, *carry_out);
 }
 
 void LSR_C(uint32_t x, int Nbits __attribute__ ((unused)), uint8_t shift,
@@ -127,7 +129,7 @@ void ASR_C(uint32_t x, int Nbits, uint8_t shift,
 	//*result = (extended_x >> shift) & ((1 << Nbits) - 1);
 	//*result = (extended_x >> shift) & ((1LL << Nbits) - 1);
 	*result = (x >> shift) | mask; 
-	printf("x:%x mask: %x result:%x shift:%x\n",x, mask,*result,shift);
+	//printf("x:%x mask: %x result:%x shift:%x\n",x, mask,*result,shift);
 
 	//*carry_out = !!(extended_x & (1 << (shift - 1)));
 	*carry_out = (x >> (shift - 1)) & 0x1;

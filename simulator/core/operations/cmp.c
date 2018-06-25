@@ -89,6 +89,8 @@ void cmp_reg(uint8_t rn, uint8_t rm, enum SRType shift_t, uint8_t shift_n) {
 	bool overflow;
 	AddWithCarry(rn_val, ~shifted, 1, &result, &carry, &overflow);
 
+	//printf("shifted:%x ~shifted: %x, result:%x, rm_val: %x, rn_val: %x, carry: %d, overflow: %d\n",shifted, ~shifted, result,rm_val,rn_val, carry, overflow);
+
 	apsr.bits.N = HIGH_BIT(result);
 	apsr.bits.Z = result == 0;
 	apsr.bits.C = carry;

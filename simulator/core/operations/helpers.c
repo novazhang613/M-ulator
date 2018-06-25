@@ -77,12 +77,18 @@ void AddWithCarry(uint32_t x, uint32_t y, bool carry_in,
 	if (*result == usum) *carry_out = 0;
 	else                 *carry_out = 1;
 
-	if (*result == ssum) *overflow_out = 0;
-	else                 *overflow_out = 1;
+	//if (((int32_t)(*result)) == ssum) *overflow_out = 0;
+	//else                 *overflow_out = 1;
+	if(sx64>0 && sy64>0 && ssum<0) 		*overflow_out = 1;
+	else if(sx64<0 && sy64<0 && ssum>0) 	*overflow_out = 1;
+	else 					*overflow_out = 0;
 
 	DBG2("x %08x, y %08x, carry %d\n", x, y, carry_in);
 	DBG2("usum %09"PRIx64", ssum %09"PRIx64", result %08x, carry %d, ovflw %d\n",
 			usum, ssum, *result, *carry_out, *overflow_out);
+
+	//printf("*result: %x, ssum: %lx, usum: %lx\n",*result, ssum, usum);
+	//*result: fffffffe, ssum: fffffffffffffffe, usum: fffffffe
 }
 
 void LoadWritePC(uint32_t addr) {
