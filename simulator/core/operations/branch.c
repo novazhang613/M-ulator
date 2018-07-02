@@ -22,6 +22,7 @@
 #include "cpu/registers.h"
 #include "cpu/misc.h"
 #include "cpu/core.h"
+#include "core/simulator.h"
 
 static void SelectInstrSet(uint8_t iset) {
 	switch (iset) {
@@ -56,6 +57,9 @@ void b(uint8_t cond, uint32_t imm32) {
 		BranchWritePC(pc + imm32);
 		DBG2("b taken old pc %08x new pc %08x (imm32: %08x)\n",
 				pc, CORE_reg_read(PC_REG), imm32);
+
+		//# cycles of Conditional/Unconditional taken Branches: 3
+		cycle = cycle + 2;
 	} else {
 		DBG2("b <not taken>\n");
 	}

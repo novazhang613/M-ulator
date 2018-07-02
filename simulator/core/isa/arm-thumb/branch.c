@@ -22,6 +22,7 @@
 #include "core/isa/arm_types.h"
 
 #include "core/operations/branch.h"
+#include "core/simulator.h"
 
 // arm-thumb
 static void b_t1(uint16_t inst) {
@@ -58,6 +59,9 @@ static void b_t2(uint16_t inst) {
 
 // arm-thumb
 static void bl_t1(uint32_t inst) {
+	//# cycle of Branch with link (BL): 4
+	cycle = cycle + 3;
+
 	// top 5 bits fixed
 	uint8_t  S = !!(inst & 0x04000000);
 	int imm10 =    (inst & 0x03ff0000) >> 16;
@@ -94,6 +98,9 @@ static void bl_t1(uint32_t inst) {
 // XXX ISA?
 // arm-v5-t*, arm-v6-m, arm-v7-m
 static void blx_reg_t1(uint16_t inst) {
+	//# cycle of Branch with link and exchange (BLX): 3
+	cycle = cycle + 2;
+
 	uint8_t rm = (inst >> 3) & 0xf;
 
 	if ((rm == 15) || (in_ITblock() && !last_in_ITblock()))
@@ -105,6 +112,9 @@ static void blx_reg_t1(uint16_t inst) {
 
 // arm-thumb
 static void bx_t1(uint16_t inst) {
+	//# cycle of Branch with exchange (BX): 3
+	cycle = cycle + 2;
+
 	uint8_t rm = (inst >> 3) & 0xf;
 
 	if (in_ITblock() && !last_in_ITblock())
