@@ -22,6 +22,7 @@
 #include "cpu/registers.h"
 #include "cpu/core.h"
 #include "cpu/misc.h"
+#include "core/simulator.h"
 
 void ldm(uint8_t rn, uint16_t registers, bool wback) {
 	uint32_t address = CORE_reg_read(rn);
@@ -31,6 +32,8 @@ void ldm(uint8_t rn, uint16_t registers, bool wback) {
 		if (registers & (1 << i)) {
 			CORE_reg_write(i, read_word(address));
 			address += 4;
+			//# cycles of Load Multiple: 1+N
+			cycle++;
 		}
 	}
 	if (registers & 0x8000) {
@@ -52,6 +55,8 @@ void ldmdb(uint8_t rn, uint16_t registers, bool wback) {
 		if (registers & (1 << i)) {
 			CORE_reg_write(i, read_word(address));
 			address += 4;
+			//# cycles of Load Multiple: 1+N
+			cycle++;
 		}
 	}
 	if (registers & (1 << 15)) {

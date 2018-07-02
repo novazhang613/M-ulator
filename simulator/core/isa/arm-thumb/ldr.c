@@ -21,9 +21,13 @@
 #include "core/isa/decode_helpers.h"
 
 #include "core/operations/ldr.h"
+#include "core/simulator.h"
 
 // arm-thumb
 static void ldr_imm_t1(uint16_t inst) {
+	//# cycles of Load: 2
+	cycle++;
+
 	uint8_t rt = inst & 0x7;
 	uint8_t rn = (inst >> 3) & 0x7;
 	uint8_t imm5 = (inst >> 6) & 0x1f;
@@ -39,6 +43,9 @@ static void ldr_imm_t1(uint16_t inst) {
 
 // arm-thumb
 static void ldr_imm_t2(uint16_t inst) {
+	//# cycles of Load: 2
+	cycle++;
+
 	uint8_t imm8 = inst & 0xff;
 	uint8_t rt   = (inst >> 8) & 0x7;
 
@@ -54,6 +61,9 @@ static void ldr_imm_t2(uint16_t inst) {
 
 // arm-thumb
 static void ldr_reg_t1(uint16_t inst) {
+	//# cycles of Load: 2
+	cycle++;
+
 	uint8_t rt = inst & 0x7;
 	uint8_t rn = (inst >> 3) & 0x7;
 	uint8_t rm = (inst >> 6) & 0x7;
@@ -70,6 +80,9 @@ static void ldr_reg_t1(uint16_t inst) {
 
 // arm-thumb
 static void ldr_lit_t1(uint16_t inst) {
+	//# cycles of Load: 2
+	cycle++;
+
 	uint32_t imm8 = inst & 0xff;
 	uint8_t rt = (inst & 0x700) >> 8;
 
@@ -81,6 +94,9 @@ static void ldr_lit_t1(uint16_t inst) {
 
 // arm-thumb
 static void ldrb_imm_t1(uint16_t inst) {
+	//# cycles of Load: 2
+	cycle++;
+
 	uint8_t rt = inst & 0x7;
 	uint8_t rn = (inst >> 3) & 0x7;
 	uint8_t imm5 = (inst >> 6) & 0x1f;
@@ -96,6 +112,9 @@ static void ldrb_imm_t1(uint16_t inst) {
 
 // arm-thumb
 static void ldrb_reg_t1(uint16_t inst) {
+	//# cycles of Load: 2
+	cycle++;
+
 	uint8_t rt = inst & 0x7;
 	uint8_t rn = (inst >> 3) & 0x7;
 	uint8_t rm = (inst >> 6) & 0x7;
@@ -113,6 +132,9 @@ static void ldrb_reg_t1(uint16_t inst) {
 
 // arm-thumb
 static void ldrh_imm_t1(uint16_t inst) {
+	//# cycles of Load: 2
+	cycle++;
+
 	uint8_t rt = inst & 0x7;
 	uint8_t rn = (inst >> 3) & 0x7;
 	uint8_t imm5 = (inst >> 6) & 0x1f;
@@ -128,6 +150,9 @@ static void ldrh_imm_t1(uint16_t inst) {
 
 // arm-thumb
 static void ldrh_reg_t1(uint16_t inst) {
+	//# cycles of Load: 2
+	cycle++;
+
 	uint8_t rt = inst & 0x7;
 	uint8_t rn = (inst >> 3) & 0x7;
 	uint8_t rm = (inst >> 6) & 0x7;
@@ -144,6 +169,9 @@ static void ldrh_reg_t1(uint16_t inst) {
 
 // arm-thumb
 static void ldrsb_reg_t1(uint16_t inst) {
+	//# cycles of Load: 2
+	cycle++;
+
 	uint8_t rt = inst & 0x7;
 	uint8_t rn = (inst >> 3) & 0x7;
 	uint8_t rm = (inst >> 6) & 0x7;
@@ -161,6 +189,9 @@ static void ldrsb_reg_t1(uint16_t inst) {
 
 // arm-thumb
 static void ldrsh_reg_t1(uint16_t inst) {
+	//# cycles of Load: 2
+	cycle++;
+
 	uint8_t rt = inst & 0x7;
 	uint8_t rn = (inst >> 3) & 0x7;
 	uint8_t rm = (inst >> 6) & 0x7;
