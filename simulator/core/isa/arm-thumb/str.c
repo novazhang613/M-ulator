@@ -21,9 +21,13 @@
 #include "core/isa/decode_helpers.h"
 
 #include "core/operations/str.h"
+#include "core/simulator.h"
 
 // arm-thumb
 static void str_imm_t1(uint16_t inst) {
+	//# cycles of Store: 2
+	cycle++;
+
 	uint8_t imm5 = (inst & 0x7c0) >> 6;
 	uint8_t rn = (inst & 0x38) >> 3;
 	uint8_t rt = (inst & 0x7) >> 0;
@@ -40,6 +44,9 @@ static void str_imm_t1(uint16_t inst) {
 
 // arm-thumb
 static void str_imm_t2(uint16_t inst) {
+	//# cycles of Store: 2
+	cycle++;
+
 	uint8_t rt = (inst & 0x700) >> 8;
 	uint8_t imm8 = inst & 0xff;
 
@@ -56,6 +63,9 @@ static void str_imm_t2(uint16_t inst) {
 
 // arm-thumb
 static void str_reg_t1(uint16_t inst) {
+	//# cycles of Store: 2
+	cycle++;
+
 	uint8_t rt = inst & 0x7;
 	uint8_t rn = (inst >> 3) & 0x7;
 	uint8_t rm = (inst >> 6) & 0x7;
@@ -69,6 +79,9 @@ static void str_reg_t1(uint16_t inst) {
 
 // arm-thumb
 static void strb_imm_t1(uint16_t inst) {
+	//# cycles of Store: 2
+	cycle++;
+
 	uint8_t rt = inst & 0x7;
 	uint8_t rn = (inst >> 3) & 0x7;
 	uint8_t imm5 = (inst >> 6) & 0x1f;
@@ -84,6 +97,9 @@ static void strb_imm_t1(uint16_t inst) {
 
 // arm-thumb
 static void strb_reg_t1(uint16_t inst) {
+	//# cycles of Store: 2
+	cycle++;
+
 	uint8_t rt = inst & 0x7;
 	uint8_t rn = (inst >> 3) & 0x7;
 	uint8_t rm = (inst >> 6) & 0x7;
@@ -97,6 +113,9 @@ static void strb_reg_t1(uint16_t inst) {
 
 // arm-thumb
 static void strh_imm_t1(uint16_t inst) {
+	//# cycles of Store: 2
+	cycle++;
+
 	uint8_t rt = inst & 0x7;
 	uint8_t rn = (inst >> 3) & 0x7;
 	uint8_t imm5 = (inst >> 6) & 0x1f;
@@ -113,6 +132,9 @@ static void strh_imm_t1(uint16_t inst) {
 
 // arm-thumb
 static void strh_reg_t1(uint16_t inst) {
+	//# cycles of Store: 2
+	cycle++;
+
 	uint8_t rt = inst & 0x7;
 	uint8_t rn = (inst >> 3) & 0x7;
 	uint8_t rm = (inst >> 6) & 0x7;

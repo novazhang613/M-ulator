@@ -21,6 +21,7 @@
 
 #include "cpu/registers.h"
 #include "cpu/core.h"
+#include "core/simulator.h"
 
 void stmdb(uint8_t rn, uint16_t registers, bool wback) {
 	uint32_t rn_val = CORE_reg_read(rn);
@@ -32,6 +33,8 @@ void stmdb(uint8_t rn, uint16_t registers, bool wback) {
 		if (registers & (1 << i)) {
 			write_word(address, CORE_reg_read(i));
 			address += 4;
+			//# cycles of Load Multiple: 1+N
+			cycle++;
 		}
 	}
 
@@ -54,6 +57,8 @@ void stm(uint8_t rn, uint16_t registers, bool wback) {
 				write_word(address, CORE_reg_read(i));
 			}
 			address += 4;
+			//# cycles of Load Multiple: 1+N
+			cycle++;
 		}
 	}
 
