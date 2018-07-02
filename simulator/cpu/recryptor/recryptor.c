@@ -9,6 +9,8 @@ const uint8_t NUM_SUBBANK[] = {8,2,4,2};
 const uint8_t NUM_PREVTOT_SUBBANK[] = {0,8,10,14};
 const char    *OpNames[] = {"AND","OR","XOR","COPY","NOT","SF1","SF4","LS64","RS64","ROTL64","XROTX","KEY","SS","MC","InvalidOp"};
 
+int recryptor_cnt = 0;
+
 void recryptor_decoder_wr(uint32_t addr, uint32_t val,
 		bool debugger __attribute__ ((unused)) ) {
 
@@ -23,7 +25,8 @@ void recryptor_decoder_wr(uint32_t addr, uint32_t val,
 
 	recryptor_op op = (recryptor_op)((val>>24) & 0xF);
 	int bank = ((val>>28) & 0xF);
-    	printf("Recryptor: addrA = %#x, addrB = %#x, addrC = %#x, Bank = %x, Op = %s\n", addrA, addrB, addrC, bank,OpNames[op-1]);
+	// Debug
+	if(0) printf("Recryptor: addrA = %#x, addrB = %#x, addrC = %#x, Bank = %x, Op = %s\n", addrA, addrB, addrC, bank,OpNames[op-1]);
 
 	uint8_t b;
 	bool sh1 = 0;
@@ -72,11 +75,16 @@ void recryptor_decoder_wr(uint32_t addr, uint32_t val,
 						dataC = dataA;
 				}
 
-    	 			printf("	dataA = %08x, dataB = %08x, dataC = %08x\n", dataA, dataB, dataC);
 	 			write_word(addrC + byte_offset, dataC);
+				// Debug
+    	 			if(0) printf("	dataA = %08x, dataB = %08x, dataC = %08x\n", dataA, dataB, dataC);
 			} 
 		}
 	}
+
+	recryptor_cnt++;
+	// Debug
+	if(0) printf("Recryptor Count: %d\n",recryptor_cnt);
 	
 }
 /*

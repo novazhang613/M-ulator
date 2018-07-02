@@ -28,6 +28,8 @@
 #include "state_sync.h"
 #include "simulator.h"
 
+#include "cpu/recryptor/recryptor.h"
+
 #include "loader.h"
 #include "opcodes.h"
 #include "pipeline.h"
@@ -694,6 +696,9 @@ EXPORT void sim_terminate(bool should_exit) {
 		double freq = cycle / sim_elapsed;
 		INFO("Approximate average frequency: %f hz\n", freq);
 	}
+	// Recryptor
+	INFO("Recryptor Count: %d\n",recryptor_cnt);
+
 	INFO("Simulator executed %d cycle%s\n", cycle, (cycle == 1) ? "":"s");
 	if (core_stats_unaligned_cycle_penalty != 0) {
 		WARN("Wasted %u cycle(s) to unaligned memory accesses\n",

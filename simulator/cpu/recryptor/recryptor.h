@@ -24,3 +24,4 @@ void recryptor_decoder_wr(uint32_t addr, uint32_t val, bool debugger __attribute
 extern const uint8_t NUM_SUBBANK[];
 extern const uint8_t NUM_PREVTOT_SUBBANK[];
 extern const char    *OpNames[]; 
+extern int recryptor_cnt;
