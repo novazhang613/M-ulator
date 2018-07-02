@@ -21,6 +21,7 @@
 
 #include "cpu/registers.h"
 #include "cpu/core.h"
+#include "core/simulator.h"
 
 void push(const uint16_t registers) {
 	uint32_t sp = CORE_reg_read(SP_REG);
@@ -32,6 +33,8 @@ void push(const uint16_t registers) {
 		if (registers & (1 << i)) {
 			write_word(address, CORE_reg_read(i));
 			address += 4;
+			//# cycles of Push: 1+N
+			cycle++;
 		}
 	}
 

@@ -22,6 +22,7 @@
 #include "cpu/registers.h"
 #include "cpu/core.h"
 #include "cpu/misc.h"
+#include "core/simulator.h"
 
 void pop(uint16_t registers) {
 	uint32_t address = CORE_reg_read(SP_REG);
@@ -31,11 +32,15 @@ void pop(uint16_t registers) {
 		if (registers & (1 << i)) {
 			CORE_reg_write(i, read_word(address));
 			address += 4;
+			//# cycles of Pop: 1+N
+			cycle++;
 		}
 	}
 
 	if (registers & (1 << 15)) {
 		LoadWritePC(read_word(address));
+		//# cycles of Pop: 4+N
+		cycle = cycle + 4;
 	}
 
 	CORE_reg_write(SP_REG, CORE_reg_read(SP_REG) + 4 * hamming(registers));
