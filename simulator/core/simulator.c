@@ -82,7 +82,8 @@ EXPORT int usetestflash = 0;
 
 /* State */
 
-EXPORT int cycle = -1;
+//EXPORT int cycle = -1;
+EXPORT int64_t cycle = -1;
 static void sim_delay_reset(void);
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -131,7 +132,8 @@ static void print_reg_state_internal(void) {
 	union apsr_t apsr = CORE_apsr_read();
 	union epsr_t epsr = CORE_epsr_read();
 
-	printf("[Cycle %d]\t\t", cycle);
+	//printf("[Cycle %d]\t\t", cycle);
+	printf("[Cycle %" PRId64 "]\t\t", cycle);
 	printf("\t  T: %d", epsr.bits.T);
 	printf("\t  N: %d  Z: %d  C: %d  V: %d  ",
 			apsr.bits.N, apsr.bits.Z, apsr.bits.C, apsr.bits.V);
@@ -310,7 +312,8 @@ static void _shell(void) {
 		}
 
 		case '\n':
-			sprintf(buf, "cycle %d\n", cycle+1);
+			//sprintf(buf, "cycle %d\n", cycle+1);
+			sprintf(buf, "cycle %" PRId64 "\n", cycle+1);
 		case 'c':
 			if (buf[1] == 'y') {
 				int requested_cycle;
@@ -521,7 +524,8 @@ static void sim_delay_warn(long ns) {
 	static int warn_count = 0;
 	if (warn_count < 5) {
 		WARN("Timing requirement missed\n");
-		WARN("Cycle %d exceeded requested time by %ld ns\n", cycle, ns);
+		//WARN("Cycle %d exceeded requested time by %ld ns\n", cycle, ns);
+		WARN("Cycle %" PRId64 " exceeded requested time by %ld ns\n", cycle, ns);
 		warn_count++;
 	} else if (warn_count++ == 5) {
 		WARN("Timing requirement missed\n");
@@ -699,7 +703,8 @@ EXPORT void sim_terminate(bool should_exit) {
 	// Recryptor
 	INFO("Recryptor Count: %d\n",recryptor_cnt);
 
-	INFO("Simulator executed %d cycle%s\n", cycle, (cycle == 1) ? "":"s");
+	//INFO("Simulator executed %d cycle%s\n", cycle, (cycle == 1) ? "":"s");
+	INFO("Simulator executed %" PRId64 " cycle%s\n", cycle, (cycle == 1) ? "":"s");
 	if (core_stats_unaligned_cycle_penalty != 0) {
 		WARN("Wasted %u cycle(s) to unaligned memory accesses\n",
 				core_stats_unaligned_cycle_penalty);

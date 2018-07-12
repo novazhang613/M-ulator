@@ -30,6 +30,8 @@
 #include "cpu/registers.h"
 #include "cpu/misc.h"
 
+#include <inttypes.h>
+
 static void execute(struct op *o, uint32_t inst) {
 #ifdef HAVE_DECOMPILE
 	extern bool decompile_ran;
@@ -66,14 +68,16 @@ static void tick_ex(void) {
 	if (in_ITblock()) {
 		if (eval_cond(CORE_apsr_read(), (read_itstate() & 0xf0) >> 4)) {
 			if (printcycles) {
-				printf("    P: %08d - 0x%08x : %04x (%s)\t%s\n",
+				//printf("    P: %08d - 0x%08x : %04x (%s)\t%s\n",
+				printf("    P: %" PRId64 "- 0x%08x : %04x (%s)\t%s\n",
 						cycle, id_ex_PC - 4, inst, o->name,
 						"ITSTATE {executed}");
 			}
 			execute(o, inst);
 		} else {
 			if (printcycles) {
-				printf("    P: %08d - 0x%08x : %04x (%s)\t%s\n",
+				//printf("    P: %08d - 0x%08x : %04x (%s)\t%s\n",
+				printf("    P: %" PRId64 " - 0x%08x : %04x (%s)\t%s\n",
 						cycle, id_ex_PC - 4, inst, o->name,
 						"ITSTATE {skipped}");
 			}
@@ -89,10 +93,12 @@ static void tick_ex(void) {
 	} else {
 		if (printcycles) {
 			if ((id_ex_PC == STALL_PC) && (inst == INST_NOP)) {
-				printf("    P: %08d - 0x%08x : <stall>\n",
+				//printf("    P: %08d - 0x%08x : <stall>\n",
+				printf("    P: %" PRId64 " - 0x%08x : <stall>\n",
 						cycle, id_ex_PC - 4);
 			} else {
-				printf("    P: %08d - 0x%08x : %04x (%s)\n",
+				//printf("    P: %08d - 0x%08x : %04x (%s)\n",
+				printf("    P: %" PRId64 " - 0x%08x : %04x (%s)\n",
 						cycle, id_ex_PC - 4,
 						inst, o->name);
 			}
