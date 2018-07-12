@@ -9,6 +9,8 @@ const uint8_t NUM_SUBBANK[] = {8,2,4,2};
 const uint8_t NUM_PREVTOT_SUBBANK[] = {0,8,10,14};
 const char    *OpNames[] = {"AND","OR","XOR","COPY","NOT","SF1","SF4","LS64","RS64","ROTL64","XROTX","KEY","SS","MC","InvalidOp"};
 
+const int LIM_ADDR_OFFSET = 0x2000; 
+
 int recryptor_cnt = 0;
 
 void recryptor_decoder_wr(uint32_t addr, uint32_t val,
@@ -19,9 +21,9 @@ void recryptor_decoder_wr(uint32_t addr, uint32_t val,
     	//printf("HERE I AM! addr = %#x, val = %#x\n", addr, val);
 
 	// Decode base address
-	int addrA = ((val)     & 0x7F) << 8;
-	int addrB = ((val>> 8) & 0x7F) << 8;
-	int addrC = ((val>>16) & 0x7F) << 8;
+	int addrA = (((val)     & 0x7F) << 8) + LIM_ADDR_OFFSET;
+	int addrB = (((val>> 8) & 0x7F) << 8) + LIM_ADDR_OFFSET;
+	int addrC = (((val>>16) & 0x7F) << 8) + LIM_ADDR_OFFSET;
 
 	recryptor_op op = (recryptor_op)((val>>24) & 0xF);
 	int bank = ((val>>28) & 0xF);

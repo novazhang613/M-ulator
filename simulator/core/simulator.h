@@ -68,7 +68,8 @@ extern int returnr0;
 extern int usetestflash;
 
 // Simulator state
-extern int cycle;
+//extern int cycle;
+extern int64_t cycle;
 #ifdef HAVE_REPLAY
 bool simulator_state_seek(int target);
 #endif
