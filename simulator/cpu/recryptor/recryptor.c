@@ -21,7 +21,7 @@ struct recryptor_action {
 
     //void * fn(void);
 
-struct recrytor_action_list {
+struct recryptor_action_list {
     struct recryptor_action* head;
     struct recryptor_action* tail;
 };
@@ -39,15 +39,18 @@ void pushRecryptorAction(struct recryptor_action* action) {
     }
 }
 
-void popRecryptorAction() {
-  if (recryptor_state->head == NULL) {
+void popRecryptorAction(void) {
+  if (recryptor_state == NULL) {
 	printf("No more recryptor to do!\n");
   } else {
+    	struct recryptor_action* prev_head = recryptor_state->head;
 	recryptor_state->head = recryptor_state->head->next;
+	free(prev_head);
   }
 }
 
-void addRecryptorAction((void*) fn(void), uint32_t value) {
+//void addRecryptorAction((void*) fn(uint32_t,uint32_t,bool), uint32_t value) {
+void addRecryptorAction( void (*fn)(uint32_t,uint32_t,bool), uint32_t value) {
 	// Create a new struct
 	struct recryptor_action* action = (struct recryptor_action*) malloc(sizeof(struct recryptor_action));
 	action->fn= fn;
@@ -73,7 +76,7 @@ void recryptor_decoder_wr(uint32_t addr, uint32_t val,
 	recryptor_op op = (recryptor_op)((val>>24) & 0xF);
 	int bank = ((val>>28) & 0xF);
 	// Debug
-	if(0) printf("Recryptor: addrA = %#x, addrB = %#x, addrC = %#x, Bank = %x, Op = %s\n", addrA, addrB, addrC, bank,OpNames[op-1]);
+	if(1) printf("Recryptor: addrA = %#x, addrB = %#x, addrC = %#x, Bank = %x, Op = %s\n", addrA, addrB, addrC, bank,OpNames[op-1]);
 
 	uint8_t b;
 	bool sh1 = 0;
@@ -124,23 +127,28 @@ void recryptor_decoder_wr(uint32_t addr, uint32_t val,
 
 	 			write_word(addrC + byte_offset, dataC);
 				// Debug
-    	 			if(0) printf("	dataA = %08x, dataB = %08x, dataC = %08x\n", dataA, dataB, dataC);
+    	 			if(1) printf("	dataA = %08x, dataB = %08x, dataC = %08x\n", dataA, dataB, dataC);
 			} 
 		}
 	}
 
 	recryptor_cnt++;
 	// Debug
-	if(0) printf("Recryptor Count: %d\n",recryptor_cnt);
+	if(1) printf("Recryptor Count: %d\n",recryptor_cnt);
 	
 }
 
 void recryptor_tick() {
-     if (recryptor_state->head != NULL) {
+
+     if (recryptor_state != NULL) { 
+	if (recryptor_state->head != NULL) {
           struct recryptor_action *nextAction = recryptor_state->head;
           //nextAction->fn(nextAction->args);
           nextAction->fn(RECRYPTOR_DECODER_ADDR, nextAction->value, false);
           popRecryptorAction();
+/* DEBUG SEG-FAULT
+*/
+	}
      }
 }
 
