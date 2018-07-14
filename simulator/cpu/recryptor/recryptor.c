@@ -13,6 +13,51 @@ const int LIM_ADDR_OFFSET = 0x2000;
 
 int recryptor_cnt = 0;
 
+struct recryptor_action {
+    void (*fn)(uint32_t,uint32_t,bool);
+    uint32_t value;
+    struct recryptor_action* next;
+};
+
+    //void * fn(void);
+
+struct recrytor_action_list {
+    struct recryptor_action* head;
+    struct recryptor_action* tail;
+};
+
+struct recryptor_action_list* recryptor_state = NULL;
+
+void pushRecryptorAction(struct recryptor_action* action) {
+   if (recryptor_state== NULL) {
+	recryptor_state = (struct recryptor_action_list*) malloc(sizeof(struct recryptor_action_list));
+        recryptor_state->head = action;
+        recryptor_state->tail = action;
+    } else {
+        recryptor_state->tail->next = action;
+        recryptor_state->tail = action;
+    }
+}
+
+void popRecryptorAction() {
+  if (recryptor_state->head == NULL) {
+	printf("No more recryptor to do!\n");
+  } else {
+	recryptor_state->head = recryptor_state->head->next;
+  }
+}
+
+void addRecryptorAction((void*) fn(void), uint32_t value) {
+	// Create a new struct
+	struct recryptor_action* action = (struct recryptor_action*) malloc(sizeof(struct recryptor_action));
+	action->fn= fn;
+	action->value = value;
+	action->next= NULL;
+
+	pushRecryptorAction(action);
+}
+
+/* In-memory Single-cycle execution */
 void recryptor_decoder_wr(uint32_t addr, uint32_t val,
 		bool debugger __attribute__ ((unused)) ) {
 
@@ -88,6 +133,47 @@ void recryptor_decoder_wr(uint32_t addr, uint32_t val,
 	// Debug
 	if(0) printf("Recryptor Count: %d\n",recryptor_cnt);
 	
+}
+
+void recryptor_tick() {
+     if (recryptor_state->head != NULL) {
+          struct recryptor_action *nextAction = recryptor_state->head;
+          //nextAction->fn(nextAction->args);
+          nextAction->fn(RECRYPTOR_DECODER_ADDR, nextAction->value, false);
+          popRecryptorAction();
+     }
+}
+
+void recryptor_decoder_ecc_irTable(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ) {
+	assert((addr == (RECRYPTOR_DECODER_ADDR+1)));
+
+    	//printf("HERE I AM! addr = %#x, val = %#x\n", addr, val);
+
+	// Decode base address
+	//int addr_ir  = ((val)     & 0x7F) << 8;
+	//int addr_irt = ((val>> 8) & 0x7F) << 8;
+	//int FB_POLYN = ((val>>16) & 0x7FF);
+	//int NUM_PLN_Minus1 = ((val>>27) & 0x1);
+	int bank     = ((val>>28) & 0xF);
+
+	int Idrir  = ((val)     & 0x7F);
+	int Idrirt = ((val>> 8) & 0x7F);
+
+	int value;
+	// precompute table t[1] = b
+	value = (Idrir + ((Idrirt+1)<<16) + (1<<23) + (4<<24) + (bank<<28));
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[2] = t[1] << 1
+	value = (Idrir + ((Idrirt+2)<<16) + (1<<23) + (6<<24) + (bank<<28));
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[3] = t[1] ^ t[2]
+	value = ((Idrirt+2) + ((Idrirt+1)<<8) + ((Idrirt+3)<<16) + (1<<23) + (3<<24) + (bank<<28)); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// NOTE: more functions in WIP/recryptor.c
+
 }
 /*
     uint32_t start = 0xa0000140;
