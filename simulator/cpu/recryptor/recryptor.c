@@ -15,6 +15,10 @@ const int LIM_ADDR_OFFSET = 0x2000;
 
 int recryptor_cnt = 0;
 
+bool recryptor_FSM = 0; // 1 if running recryptor continuous functions
+int  recryptor_FSM_fin_addr = 0x10000;
+int  recryptor_FSM_fin_data = 0xabcd;
+
 struct recryptor_action {
     void (*fn)(uint32_t,uint32_t,bool);
     uint32_t value;
@@ -150,12 +154,20 @@ void recryptor_tick() {
           popRecryptorAction();
 /* DEBUG SEG-FAULT
 */
+	} else {
+		if(recryptor_FSM) {
+			recryptor_FSM = 0;
+			printf("Cycle: %" PRId64 " release recryptor_FSM\n",cycle);
+	 		write_word(recryptor_FSM_fin_addr,recryptor_FSM_fin_data);
+		}
 	}
      }
 }
 
 void recryptor_decoder_eccirt(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ) {
 	assert((addr == (RECRYPTOR_DECODER_ECCIRT)));
+
+	recryptor_FSM = 1;
 
     	//printf("HERE I AM! addr = %#x, val = %#x\n", addr, val);
 
@@ -182,7 +194,65 @@ void recryptor_decoder_eccirt(uint32_t addr, uint32_t val, bool debugger __attri
 	value = ((Idrirt+2) + ((Idrirt+1)<<8) + ((Idrirt+3)<<16) + (1<<23) + (3<<24) + (bank<<28)); 
         addRecryptorAction(&recryptor_decoder_wr, value);
 
-	// NOTE: more functions in WIP/recryptor.c
+	// precompute table t[4] = t[2] << 1
+	value = ((Idrirt+2) + ((Idrirt+4)<<16) + (1<<23) + (6<<24) + (bank<<28)); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[5] = t[1] ^ t[4]
+	value = ((Idrirt+4) + ((Idrirt+1)<<8) + ((Idrirt+5)<<16) + (1<<23) + (3<<24) + (bank<<28)); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// use this xor instead of shift, to avoid increased 1 bit !!!
+	// precompute table t[6] = t[2] ^ t[4] 
+	value = ((Idrirt+4) + ((Idrirt+2)<<8) + ((Idrirt+6)<<16) + (1<<23) + (3<<24) + (bank<<28)); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[7] = t[1] ^ t[6]
+	value = ((Idrirt+6) + ((Idrirt+1)<<8) + ((Idrirt+7)<<16) + (1<<23) + (3<<24) + (bank<<28)); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[8] = t[4] << 1
+	value = ((Idrirt+4) + ((Idrirt+8)<<16) + (1<<23) + (6<<24) + (bank<<28)); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	/*
+	// t[8] = t[8] ^ ir_t[u]
+	u = (addr_ir[FB_DIGS-1] >> (FB_MOD-3)) & 0x1; // grab the 3rd bit  
+	if (u==1) {
+			((Idrirt+8) + ((Idrir)<<8) + ((Idrirt+8)<<16) + (1<<23) + (3<<24) + (bank<<28)),
+	}
+			// else if u ==0, no need for xor 
+	*/
+
+	// precompute table t[9] = t[1] ^ t[8]
+	value = ((Idrirt+8) + ((Idrirt+1)<<8) + ((Idrirt+9)<<16) + (1<<23) + (3<<24) + (bank<<28));
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[10] = t[2] ^ t[8]
+	value = ((Idrirt+8) + ((Idrirt+2)<<8) + ((Idrirt+10)<<16) + (1<<23) + (3<<24) + (bank<<28));
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[11] = t[1] ^ t[10]
+	value = ((Idrirt+10) + ((Idrirt+1)<<8) + ((Idrirt+11)<<16) + (1<<23) + (3<<24) + (bank<<28));  
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[12] = t[4] ^ t[8]
+	value = ((Idrirt+8) + ((Idrirt+4)<<8) + ((Idrirt+12)<<16) + (1<<23) + (3<<24) + (bank<<28)); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[13] = t[1] ^ t[12]
+	value = ((Idrirt+12) + ((Idrirt+1)<<8) + ((Idrirt+13)<<16) + (1<<23) + (3<<24) + (bank<<28)); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// use this xor instead of shift, to avoid increased 1 bit !!!
+	// why this is wrong !!! precompute table t[14] = t[1] ^ t[13] 
+	// precompute table t[14] = t[2] ^ t[12] 
+	value = ((Idrirt+12) + ((Idrirt+2)<<8) + ((Idrirt+14)<<16) + (1<<23) + (3<<24) + (bank<<28));
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[15] = t[1] ^ t[14]
+	value = ((Idrirt+14) + ((Idrirt+1)<<8) + ((Idrirt+15)<<16) + (1<<23) + (3<<24) + (bank<<28)); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
 
 }
 /*

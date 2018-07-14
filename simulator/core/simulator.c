@@ -625,6 +625,7 @@ static int sim_execute(void) {
 	// Start a clock tick
 	pipeline_stages_tick();
 	recryptor_tick();
+	state_tock(); // Write-back (guess) 
 	state_handle_exceptions();
 	pipeline_stages_tock();
 
