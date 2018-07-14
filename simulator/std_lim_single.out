@@ -1,0 +1,2179 @@
+CLI I: Simulator will use m3_tests/testing_unit_ecc/1_singleEcc_LIM/1_singleEcc_LIM.bin as flash
+COR I: Flashed 2328 bytes to RAM
+LDR I: Succesfully loaded image: m3_tests/testing_unit_ecc/1_singleEcc_LIM/1_singleEcc_LIM.bin
+--- I: Registered 79 opcode masks
+--- I: Powering on processor...
+--- I: Asserting reset pin
+--- I: De-asserting reset pin
+--- I: Entering main loop...
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2800, Bank = 1, Op = COPY
+	dataA = 00000000, dataB = 00008000, dataC = 00000000
+	dataA = 00000000, dataB = 00000083, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x3900, Bank = 1, Op = COPY
+	dataA = 00000000, dataB = 00008000, dataC = 00000000
+	dataA = 00000000, dataB = 00000083, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+Recryptor: addrA = 0x2600, addrB = 0, addrC = 0x2900, Bank = 1, Op = COPY
+	dataA = c145855b, dataB = 00008000, dataC = c145855b
+	dataA = adc44c51, dataB = 00000083, dataC = adc44c51
+	dataA = ea2e378b, dataB = 00000000, dataC = ea2e378b
+	dataA = 7293f518, dataB = 00000000, dataC = 7293f518
+	dataA = 2d36901e, dataB = 00000080, dataC = 2d36901e
+	dataA = 2e79f7ef, dataB = 00000080, dataC = 2e79f7ef
+	dataA = 7de139ad, dataB = 00000080, dataC = 7de139ad
+	dataA = 000001ea, dataB = 00000080, dataC = 000001ea
+Recryptor: addrA = 0x2600, addrB = 0, addrC = 0x2a00, Bank = 1, Op = SF1
+	dataA = c145855b, dataB = 00008000, dataC = 828b0ab6
+	dataA = adc44c51, dataB = 00000083, dataC = 5b8898a3
+	dataA = ea2e378b, dataB = 00000000, dataC = d45c6f17
+	dataA = 7293f518, dataB = 00000000, dataC = e527ea31
+	dataA = 2d36901e, dataB = 00000080, dataC = 5a6d203c
+	dataA = 2e79f7ef, dataB = 00000080, dataC = 5cf3efde
+	dataA = 7de139ad, dataB = 00000080, dataC = fbc2735a
+	dataA = 000001ea, dataB = 00000080, dataC = 000003d4
+Recryptor: addrA = 0x2a00, addrB = 0x3800, addrC = 0x2a00, Bank = 1, Op = XOR
+	dataA = 828b0ab6, dataB = 00000001, dataC = 828b0ab7
+	dataA = 5b8898a3, dataB = 00000000, dataC = 5b8898a3
+	dataA = d45c6f17, dataB = 00000400, dataC = d45c6b17
+	dataA = e527ea31, dataB = 00000000, dataC = e527ea31
+	dataA = 5a6d203c, dataB = 00000000, dataC = 5a6d203c
+	dataA = 5cf3efde, dataB = 00000000, dataC = 5cf3efde
+	dataA = fbc2735a, dataB = 00000000, dataC = fbc2735a
+	dataA = 000003d4, dataB = 00000200, dataC = 000001d4
+Recryptor: addrA = 0x2a00, addrB = 0x2900, addrC = 0x2b00, Bank = 1, Op = XOR
+	dataA = 828b0ab7, dataB = c145855b, dataC = 43ce8fec
+	dataA = 5b8898a3, dataB = adc44c51, dataC = f64cd4f2
+	dataA = d45c6b17, dataB = ea2e378b, dataC = 3e725c9c
+	dataA = e527ea31, dataB = 7293f518, dataC = 97b41f29
+	dataA = 5a6d203c, dataB = 2d36901e, dataC = 775bb022
+	dataA = 5cf3efde, dataB = 2e79f7ef, dataC = 728a1831
+	dataA = fbc2735a, dataB = 7de139ad, dataC = 86234af7
+	dataA = 000001d4, dataB = 000001ea, dataC = 0000003e
+Recryptor: addrA = 0x2a00, addrB = 0, addrC = 0x2c00, Bank = 1, Op = SF1
+	dataA = 828b0ab7, dataB = 00008000, dataC = 0516156e
+	dataA = 5b8898a3, dataB = 00000083, dataC = b7113147
+	dataA = d45c6b17, dataB = 00000000, dataC = a8b8d62e
+	dataA = e527ea31, dataB = 00000000, dataC = ca4fd463
+	dataA = 5a6d203c, dataB = 00000080, dataC = b4da4079
+	dataA = 5cf3efde, dataB = 00000080, dataC = b9e7dfbc
+	dataA = fbc2735a, dataB = 00000080, dataC = f784e6b4
+	dataA = 000001d4, dataB = 00000080, dataC = 000003a9
+Recryptor: addrA = 0x2c00, addrB = 0x3800, addrC = 0x2c00, Bank = 1, Op = XOR
+	dataA = 0516156e, dataB = 00000001, dataC = 0516156f
+	dataA = b7113147, dataB = 00000000, dataC = b7113147
+	dataA = a8b8d62e, dataB = 00000400, dataC = a8b8d22e
+	dataA = ca4fd463, dataB = 00000000, dataC = ca4fd463
+	dataA = b4da4079, dataB = 00000000, dataC = b4da4079
+	dataA = b9e7dfbc, dataB = 00000000, dataC = b9e7dfbc
+	dataA = f784e6b4, dataB = 00000000, dataC = f784e6b4
+	dataA = 000003a9, dataB = 00000200, dataC = 000001a9
+Recryptor: addrA = 0x2c00, addrB = 0x2900, addrC = 0x2d00, Bank = 1, Op = XOR
+	dataA = 0516156f, dataB = c145855b, dataC = c4539034
+	dataA = b7113147, dataB = adc44c51, dataC = 1ad57d16
+	dataA = a8b8d22e, dataB = ea2e378b, dataC = 4296e5a5
+	dataA = ca4fd463, dataB = 7293f518, dataC = b8dc217b
+	dataA = b4da4079, dataB = 2d36901e, dataC = 99ecd067
+	dataA = b9e7dfbc, dataB = 2e79f7ef, dataC = 979e2853
+	dataA = f784e6b4, dataB = 7de139ad, dataC = 8a65df19
+	dataA = 000001a9, dataB = 000001ea, dataC = 00000043
+Recryptor: addrA = 0x2c00, addrB = 0x2a00, addrC = 0x2e00, Bank = 1, Op = XOR
+	dataA = 0516156f, dataB = 828b0ab7, dataC = 879d1fd8
+	dataA = b7113147, dataB = 5b8898a3, dataC = ec99a9e4
+	dataA = a8b8d22e, dataB = d45c6b17, dataC = 7ce4b939
+	dataA = ca4fd463, dataB = e527ea31, dataC = 2f683e52
+	dataA = b4da4079, dataB = 5a6d203c, dataC = eeb76045
+	dataA = b9e7dfbc, dataB = 5cf3efde, dataC = e5143062
+	dataA = f784e6b4, dataB = fbc2735a, dataC = 0c4695ee
+	dataA = 000001a9, dataB = 000001d4, dataC = 0000007d
+Recryptor: addrA = 0x2e00, addrB = 0x2900, addrC = 0x2f00, Bank = 1, Op = XOR
+	dataA = 879d1fd8, dataB = c145855b, dataC = 46d89a83
+	dataA = ec99a9e4, dataB = adc44c51, dataC = 415de5b5
+	dataA = 7ce4b939, dataB = ea2e378b, dataC = 96ca8eb2
+	dataA = 2f683e52, dataB = 7293f518, dataC = 5dfbcb4a
+	dataA = eeb76045, dataB = 2d36901e, dataC = c381f05b
+	dataA = e5143062, dataB = 2e79f7ef, dataC = cb6dc78d
+	dataA = 0c4695ee, dataB = 7de139ad, dataC = 71a7ac43
+	dataA = 0000007d, dataB = 000001ea, dataC = 00000197
+Recryptor: addrA = 0x2c00, addrB = 0, addrC = 0x3000, Bank = 1, Op = SF1
+	dataA = 0516156f, dataB = 00008000, dataC = 0a2c2ade
+	dataA = b7113147, dataB = 00000083, dataC = 6e22628e
+	dataA = a8b8d22e, dataB = 00000000, dataC = 5171a45d
+	dataA = ca4fd463, dataB = 00000000, dataC = 949fa8c7
+	dataA = b4da4079, dataB = 00000080, dataC = 69b480f3
+	dataA = b9e7dfbc, dataB = 00000080, dataC = 73cfbf79
+	dataA = f784e6b4, dataB = 00000080, dataC = ef09cd69
+	dataA = 000001a9, dataB = 00000080, dataC = 00000353
+Recryptor: addrA = 0x3000, addrB = 0x3800, addrC = 0x3000, Bank = 1, Op = XOR
+	dataA = 0a2c2ade, dataB = 00000001, dataC = 0a2c2adf
+	dataA = 6e22628e, dataB = 00000000, dataC = 6e22628e
+	dataA = 5171a45d, dataB = 00000400, dataC = 5171a05d
+	dataA = 949fa8c7, dataB = 00000000, dataC = 949fa8c7
+	dataA = 69b480f3, dataB = 00000000, dataC = 69b480f3
+	dataA = 73cfbf79, dataB = 00000000, dataC = 73cfbf79
+	dataA = ef09cd69, dataB = 00000000, dataC = ef09cd69
+	dataA = 00000353, dataB = 00000200, dataC = 00000153
+Recryptor: addrA = 0x3000, addrB = 0x2900, addrC = 0x3100, Bank = 1, Op = XOR
+	dataA = 0a2c2adf, dataB = c145855b, dataC = cb69af84
+	dataA = 6e22628e, dataB = adc44c51, dataC = c3e62edf
+	dataA = 5171a05d, dataB = ea2e378b, dataC = bb5f97d6
+	dataA = 949fa8c7, dataB = 7293f518, dataC = e60c5ddf
+	dataA = 69b480f3, dataB = 2d36901e, dataC = 448210ed
+	dataA = 73cfbf79, dataB = 2e79f7ef, dataC = 5db64896
+	dataA = ef09cd69, dataB = 7de139ad, dataC = 92e8f4c4
+	dataA = 00000153, dataB = 000001ea, dataC = 000000b9
+Recryptor: addrA = 0x3000, addrB = 0x2a00, addrC = 0x3200, Bank = 1, Op = XOR
+	dataA = 0a2c2adf, dataB = 828b0ab7, dataC = 88a72068
+	dataA = 6e22628e, dataB = 5b8898a3, dataC = 35aafa2d
+	dataA = 5171a05d, dataB = d45c6b17, dataC = 852dcb4a
+	dataA = 949fa8c7, dataB = e527ea31, dataC = 71b842f6
+	dataA = 69b480f3, dataB = 5a6d203c, dataC = 33d9a0cf
+	dataA = 73cfbf79, dataB = 5cf3efde, dataC = 2f3c50a7
+	dataA = ef09cd69, dataB = fbc2735a, dataC = 14cbbe33
+	dataA = 00000153, dataB = 000001d4, dataC = 00000087
+Recryptor: addrA = 0x3200, addrB = 0x2900, addrC = 0x3300, Bank = 1, Op = XOR
+	dataA = 88a72068, dataB = c145855b, dataC = 49e2a533
+	dataA = 35aafa2d, dataB = adc44c51, dataC = 986eb67c
+	dataA = 852dcb4a, dataB = ea2e378b, dataC = 6f03fcc1
+	dataA = 71b842f6, dataB = 7293f518, dataC = 032bb7ee
+	dataA = 33d9a0cf, dataB = 2d36901e, dataC = 1eef30d1
+	dataA = 2f3c50a7, dataB = 2e79f7ef, dataC = 0145a748
+	dataA = 14cbbe33, dataB = 7de139ad, dataC = 692a879e
+	dataA = 00000087, dataB = 000001ea, dataC = 0000016d
+Recryptor: addrA = 0x3000, addrB = 0x2c00, addrC = 0x3400, Bank = 1, Op = XOR
+	dataA = 0a2c2adf, dataB = 0516156f, dataC = 0f3a3fb0
+	dataA = 6e22628e, dataB = b7113147, dataC = d93353c9
+	dataA = 5171a05d, dataB = a8b8d22e, dataC = f9c97273
+	dataA = 949fa8c7, dataB = ca4fd463, dataC = 5ed07ca4
+	dataA = 69b480f3, dataB = b4da4079, dataC = dd6ec08a
+	dataA = 73cfbf79, dataB = b9e7dfbc, dataC = ca2860c5
+	dataA = ef09cd69, dataB = f784e6b4, dataC = 188d2bdd
+	dataA = 00000153, dataB = 000001a9, dataC = 000000fa
+Recryptor: addrA = 0x3400, addrB = 0x2900, addrC = 0x3500, Bank = 1, Op = XOR
+	dataA = 0f3a3fb0, dataB = c145855b, dataC = ce7fbaeb
+	dataA = d93353c9, dataB = adc44c51, dataC = 74f71f98
+	dataA = f9c97273, dataB = ea2e378b, dataC = 13e745f8
+	dataA = 5ed07ca4, dataB = 7293f518, dataC = 2c4389bc
+	dataA = dd6ec08a, dataB = 2d36901e, dataC = f0585094
+	dataA = ca2860c5, dataB = 2e79f7ef, dataC = e451972a
+	dataA = 188d2bdd, dataB = 7de139ad, dataC = 656c1270
+	dataA = 000000fa, dataB = 000001ea, dataC = 00000110
+Recryptor: addrA = 0x3400, addrB = 0x2a00, addrC = 0x3600, Bank = 1, Op = XOR
+	dataA = 0f3a3fb0, dataB = 828b0ab7, dataC = 8db13507
+	dataA = d93353c9, dataB = 5b8898a3, dataC = 82bbcb6a
+	dataA = f9c97273, dataB = d45c6b17, dataC = 2d951964
+	dataA = 5ed07ca4, dataB = e527ea31, dataC = bbf79695
+	dataA = dd6ec08a, dataB = 5a6d203c, dataC = 8703e0b6
+	dataA = ca2860c5, dataB = 5cf3efde, dataC = 96db8f1b
+	dataA = 188d2bdd, dataB = fbc2735a, dataC = e34f5887
+	dataA = 000000fa, dataB = 000001d4, dataC = 0000012e
+Recryptor: addrA = 0x3600, addrB = 0x2900, addrC = 0x3700, Bank = 1, Op = XOR
+	dataA = 8db13507, dataB = c145855b, dataC = 4cf4b05c
+	dataA = 82bbcb6a, dataB = adc44c51, dataC = 2f7f873b
+	dataA = 2d951964, dataB = ea2e378b, dataC = c7bb2eef
+	dataA = bbf79695, dataB = 7293f518, dataC = c964638d
+	dataA = 8703e0b6, dataB = 2d36901e, dataC = aa3570a8
+	dataA = 96db8f1b, dataB = 2e79f7ef, dataC = b8a278f4
+	dataA = e34f5887, dataB = 7de139ad, dataC = 9eae612a
+	dataA = 0000012e, dataB = 000001ea, dataC = 000000c4
+Recryptor: addrA = 0x3800, addrB = 0, addrC = 0x3a00, Bank = 1, Op = COPY
+	dataA = 00000001, dataB = 00008000, dataC = 00000001
+	dataA = 00000000, dataB = 00000083, dataC = 00000000
+	dataA = 00000400, dataB = 00000000, dataC = 00000400
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000200, dataB = 00000080, dataC = 00000200
+Recryptor: addrA = 0x3800, addrB = 0, addrC = 0x3b00, Bank = 1, Op = SF1
+	dataA = 00000001, dataB = 00008000, dataC = 00000002
+	dataA = 00000000, dataB = 00000083, dataC = 00000000
+	dataA = 00000400, dataB = 00000000, dataC = 00000800
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000200, dataB = 00000080, dataC = 00000400
+Recryptor: addrA = 0x3b00, addrB = 0x3a00, addrC = 0x3c00, Bank = 1, Op = XOR
+	dataA = 00000002, dataB = 00000001, dataC = 00000003
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000800, dataB = 00000400, dataC = 00000c00
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000400, dataB = 00000200, dataC = 00000600
+Recryptor: addrA = 0x3b00, addrB = 0, addrC = 0x3d00, Bank = 1, Op = SF1
+	dataA = 00000002, dataB = 00008000, dataC = 00000004
+	dataA = 00000000, dataB = 00000083, dataC = 00000000
+	dataA = 00000800, dataB = 00000000, dataC = 00001000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000400, dataB = 00000080, dataC = 00000800
+Recryptor: addrA = 0x3d00, addrB = 0x3a00, addrC = 0x3e00, Bank = 1, Op = XOR
+	dataA = 00000004, dataB = 00000001, dataC = 00000005
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001000, dataB = 00000400, dataC = 00001400
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000800, dataB = 00000200, dataC = 00000a00
+Recryptor: addrA = 0x3d00, addrB = 0x3b00, addrC = 0x3f00, Bank = 1, Op = XOR
+	dataA = 00000004, dataB = 00000002, dataC = 00000006
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001000, dataB = 00000800, dataC = 00001800
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000800, dataB = 00000400, dataC = 00000c00
+Recryptor: addrA = 0x3f00, addrB = 0x3a00, addrC = 0x4000, Bank = 1, Op = XOR
+	dataA = 00000006, dataB = 00000001, dataC = 00000007
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001800, dataB = 00000400, dataC = 00001c00
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000c00, dataB = 00000200, dataC = 00000e00
+Recryptor: addrA = 0x3d00, addrB = 0, addrC = 0x4100, Bank = 1, Op = SF1
+	dataA = 00000004, dataB = 00008000, dataC = 00000008
+	dataA = 00000000, dataB = 00000083, dataC = 00000000
+	dataA = 00001000, dataB = 00000000, dataC = 00002000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000800, dataB = 00000080, dataC = 00001000
+Recryptor: addrA = 0x4100, addrB = 0x3a00, addrC = 0x4200, Bank = 1, Op = XOR
+	dataA = 00000008, dataB = 00000001, dataC = 00000009
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00002000, dataB = 00000400, dataC = 00002400
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001000, dataB = 00000200, dataC = 00001200
+Recryptor: addrA = 0x4100, addrB = 0x3b00, addrC = 0x4300, Bank = 1, Op = XOR
+	dataA = 00000008, dataB = 00000002, dataC = 0000000a
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00002000, dataB = 00000800, dataC = 00002800
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001000, dataB = 00000400, dataC = 00001400
+Recryptor: addrA = 0x4300, addrB = 0x3a00, addrC = 0x4400, Bank = 1, Op = XOR
+	dataA = 0000000a, dataB = 00000001, dataC = 0000000b
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00002800, dataB = 00000400, dataC = 00002c00
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001400, dataB = 00000200, dataC = 00001600
+Recryptor: addrA = 0x4100, addrB = 0x3d00, addrC = 0x4500, Bank = 1, Op = XOR
+	dataA = 00000008, dataB = 00000004, dataC = 0000000c
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00002000, dataB = 00001000, dataC = 00003000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001000, dataB = 00000800, dataC = 00001800
+Recryptor: addrA = 0x4500, addrB = 0x3a00, addrC = 0x4600, Bank = 1, Op = XOR
+	dataA = 0000000c, dataB = 00000001, dataC = 0000000d
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00003000, dataB = 00000400, dataC = 00003400
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001800, dataB = 00000200, dataC = 00001a00
+Recryptor: addrA = 0x4500, addrB = 0x3b00, addrC = 0x4700, Bank = 1, Op = XOR
+	dataA = 0000000c, dataB = 00000002, dataC = 0000000e
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00003000, dataB = 00000800, dataC = 00003800
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001800, dataB = 00000400, dataC = 00001c00
+Recryptor: addrA = 0x4700, addrB = 0x3a00, addrC = 0x4800, Bank = 1, Op = XOR
+	dataA = 0000000e, dataB = 00000001, dataC = 0000000f
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00003800, dataB = 00000400, dataC = 00003c00
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001c00, dataB = 00000200, dataC = 00001e00
+ext_x:1a7 result:0 shift:1c
+Recryptor: addrA = 0x2800, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00008000, dataC = 00000000
+	dataA = 00000000, dataB = 00000083, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+ext_x:0 result:0 shift:9
+Recryptor: addrA = 0x3900, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+ext_x:1a7 result:0 shift:18
+Recryptor: addrA = 0x2800, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00008000, dataC = 00000000
+	dataA = 00000000, dataB = 00000083, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+ext_x:0 result:0 shift:9
+Recryptor: addrA = 0x3900, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+ext_x:1a7 result:0 shift:14
+Recryptor: addrA = 0x2800, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00008000, dataC = 00000000
+	dataA = 00000000, dataB = 00000083, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+ext_x:0 result:0 shift:9
+Recryptor: addrA = 0x3900, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+ext_x:1a7 result:0 shift:10
+Recryptor: addrA = 0x2800, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00008000, dataC = 00000000
+	dataA = 00000000, dataB = 00000083, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+ext_x:0 result:0 shift:9
+Recryptor: addrA = 0x3900, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+ext_x:1a7 result:0 shift:c
+Recryptor: addrA = 0x2800, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00008000, dataC = 00000000
+	dataA = 00000000, dataB = 00000083, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+	dataA = 00000000, dataB = 00000080, dataC = 00000000
+ext_x:0 result:0 shift:9
+Recryptor: addrA = 0x3900, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+ext_x:1a7 result:1 shift:8
+Recryptor: addrA = 0x2900, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = c145855b, dataB = 00000000, dataC = c145855b
+	dataA = adc44c51, dataB = 00000000, dataC = adc44c51
+	dataA = ea2e378b, dataB = 00000000, dataC = ea2e378b
+	dataA = 7293f518, dataB = 00000000, dataC = 7293f518
+	dataA = 2d36901e, dataB = 00000000, dataC = 2d36901e
+	dataA = 2e79f7ef, dataB = 00000000, dataC = 2e79f7ef
+	dataA = 7de139ad, dataB = 00000000, dataC = 7de139ad
+	dataA = 000001ea, dataB = 00000000, dataC = 000001ea
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = c145855b, dataB = 00008000, dataC = 145855b0
+	dataA = adc44c51, dataB = 00000083, dataC = dc44c51c
+	dataA = ea2e378b, dataB = 00000000, dataC = a2e378ba
+	dataA = 7293f518, dataB = 00000000, dataC = 293f518e
+	dataA = 2d36901e, dataB = 00000080, dataC = d36901e7
+	dataA = 2e79f7ef, dataB = 00000080, dataC = e79f7ef2
+	dataA = 7de139ad, dataB = 00000080, dataC = de139ad2
+	dataA = 000001ea, dataB = 00000080, dataC = 00001ea7
+ext_x:1ea7 result:f shift:9
+Recryptor: addrA = 0x4800, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000f, dataB = 145855b0, dataC = 145855bf
+	dataA = 00000000, dataB = dc44c51c, dataC = dc44c51c
+	dataA = 00003c00, dataB = a2e378ba, dataC = a2e344ba
+	dataA = 00000000, dataB = 293f518e, dataC = 293f518e
+	dataA = 00000000, dataB = d36901e7, dataC = d36901e7
+	dataA = 00000000, dataB = e79f7ef2, dataC = e79f7ef2
+	dataA = 00000000, dataB = de139ad2, dataC = de139ad2
+	dataA = 00001e00, dataB = 00001ea7, dataC = 000000a7
+
+
+ext_x:1a7 result:1a shift:4
+Recryptor: addrA = 0x3200, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 88a72068, dataB = 145855bf, dataC = 9cff75d7
+	dataA = 35aafa2d, dataB = dc44c51c, dataC = e9ee3f31
+	dataA = 852dcb4a, dataB = a2e344ba, dataC = 27ce8ff0
+	dataA = 71b842f6, dataB = 293f518e, dataC = 58871378
+	dataA = 33d9a0cf, dataB = d36901e7, dataC = e0b0a128
+	dataA = 2f3c50a7, dataB = e79f7ef2, dataC = c8a32e55
+	dataA = 14cbbe33, dataB = de139ad2, dataC = cad824e1
+	dataA = 00000087, dataB = 000000a7, dataC = 00000020
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 9cff75d7, dataB = 00008000, dataC = cff75d70
+	dataA = e9ee3f31, dataB = 00000083, dataC = 9ee3f319
+	dataA = 27ce8ff0, dataB = 00000000, dataC = 7ce8ff0e
+	dataA = 58871378, dataB = 00000000, dataC = 88713782
+	dataA = e0b0a128, dataB = 00000080, dataC = 0b0a1285
+	dataA = c8a32e55, dataB = 00000080, dataC = 8a32e55e
+	dataA = cad824e1, dataB = 00000080, dataC = ad824e1c
+	dataA = 00000020, dataB = 00000080, dataC = 0000020c
+ext_x:20c result:1 shift:9
+Recryptor: addrA = 0x3a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000001, dataB = cff75d70, dataC = cff75d71
+	dataA = 00000000, dataB = 9ee3f319, dataC = 9ee3f319
+	dataA = 00000400, dataB = 7ce8ff0e, dataC = 7ce8fb0e
+	dataA = 00000000, dataB = 88713782, dataC = 88713782
+	dataA = 00000000, dataB = 0b0a1285, dataC = 0b0a1285
+	dataA = 00000000, dataB = 8a32e55e, dataC = 8a32e55e
+	dataA = 00000000, dataB = ad824e1c, dataC = ad824e1c
+	dataA = 00000200, dataB = 0000020c, dataC = 0000000c
+
+Recryptor: addrA = 0x2f00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 46d89a83, dataB = cff75d71, dataC = 892fc7f2
+	dataA = 415de5b5, dataB = 9ee3f319, dataC = dfbe16ac
+	dataA = 96ca8eb2, dataB = 7ce8fb0e, dataC = ea2275bc
+	dataA = 5dfbcb4a, dataB = 88713782, dataC = d58afcc8
+	dataA = c381f05b, dataB = 0b0a1285, dataC = c88be2de
+	dataA = cb6dc78d, dataB = 8a32e55e, dataC = 415f22d3
+	dataA = 71a7ac43, dataB = ad824e1c, dataC = dc25e25f
+	dataA = 00000197, dataB = 0000000c, dataC = 0000019b
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 892fc7f2, dataB = 00008000, dataC = 92fc7f20
+	dataA = dfbe16ac, dataB = 00000083, dataC = fbe16ac8
+	dataA = ea2275bc, dataB = 00000000, dataC = a2275bcd
+	dataA = d58afcc8, dataB = 00000000, dataC = 58afcc8e
+	dataA = c88be2de, dataB = 00000080, dataC = 88be2ded
+	dataA = 415f22d3, dataB = 00000080, dataC = 15f22d3c
+	dataA = dc25e25f, dataB = 00000080, dataC = c25e25f4
+	dataA = 0000019b, dataB = 00000080, dataC = 000019bd
+ext_x:19bd result:c shift:9
+Recryptor: addrA = 0x4500, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000c, dataB = 92fc7f20, dataC = 92fc7f2c
+	dataA = 00000000, dataB = fbe16ac8, dataC = fbe16ac8
+	dataA = 00003000, dataB = a2275bcd, dataC = a2276bcd
+	dataA = 00000000, dataB = 58afcc8e, dataC = 58afcc8e
+	dataA = 00000000, dataB = 88be2ded, dataC = 88be2ded
+	dataA = 00000000, dataB = 15f22d3c, dataC = 15f22d3c
+	dataA = 00000000, dataB = c25e25f4, dataC = c25e25f4
+	dataA = 00001800, dataB = 000019bd, dataC = 000001bd
+
+ext_x:7bb93d20 result:7 shift:1c
+Recryptor: addrA = 0x2f00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 46d89a83, dataB = 92fc7f2c, dataC = d424e5af
+	dataA = 415de5b5, dataB = fbe16ac8, dataC = babc8f7d
+	dataA = 96ca8eb2, dataB = a2276bcd, dataC = 34ede57f
+	dataA = 5dfbcb4a, dataB = 58afcc8e, dataC = 055407c4
+	dataA = c381f05b, dataB = 88be2ded, dataC = 4b3fddb6
+	dataA = cb6dc78d, dataB = 15f22d3c, dataC = de9feab1
+	dataA = 71a7ac43, dataB = c25e25f4, dataC = b3f989b7
+	dataA = 00000197, dataB = 000001bd, dataC = 0000002a
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = d424e5af, dataB = 00008000, dataC = 424e5af0
+	dataA = babc8f7d, dataB = 00000083, dataC = abc8f7dd
+	dataA = 34ede57f, dataB = 00000000, dataC = 4ede57fb
+	dataA = 055407c4, dataB = 00000000, dataC = 55407c43
+	dataA = 4b3fddb6, dataB = 00000080, dataC = b3fddb60
+	dataA = de9feab1, dataB = 00000080, dataC = e9feab14
+	dataA = b3f989b7, dataB = 00000080, dataC = 3f989b7d
+	dataA = 0000002a, dataB = 00000080, dataC = 000002ab
+ext_x:2ab result:1 shift:9
+Recryptor: addrA = 0x3a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000001, dataB = 424e5af0, dataC = 424e5af1
+	dataA = 00000000, dataB = abc8f7dd, dataC = abc8f7dd
+	dataA = 00000400, dataB = 4ede57fb, dataC = 4ede53fb
+	dataA = 00000000, dataB = 55407c43, dataC = 55407c43
+	dataA = 00000000, dataB = b3fddb60, dataC = b3fddb60
+	dataA = 00000000, dataB = e9feab14, dataC = e9feab14
+	dataA = 00000000, dataB = 3f989b7d, dataC = 3f989b7d
+	dataA = 00000200, dataB = 000002ab, dataC = 000000ab
+
+ext_x:7bb93d20 result:7b shift:18
+Recryptor: addrA = 0x3300, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 49e2a533, dataB = 424e5af1, dataC = 0bacffc2
+	dataA = 986eb67c, dataB = abc8f7dd, dataC = 33a641a1
+	dataA = 6f03fcc1, dataB = 4ede53fb, dataC = 21ddaf3a
+	dataA = 032bb7ee, dataB = 55407c43, dataC = 566bcbad
+	dataA = 1eef30d1, dataB = b3fddb60, dataC = ad12ebb1
+	dataA = 0145a748, dataB = e9feab14, dataC = e8bb0c5c
+	dataA = 692a879e, dataB = 3f989b7d, dataC = 56b21ce3
+	dataA = 0000016d, dataB = 000000ab, dataC = 000001c6
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 0bacffc2, dataB = 00008000, dataC = bacffc20
+	dataA = 33a641a1, dataB = 00000083, dataC = 3a641a10
+	dataA = 21ddaf3a, dataB = 00000000, dataC = 1ddaf3a3
+	dataA = 566bcbad, dataB = 00000000, dataC = 66bcbad2
+	dataA = ad12ebb1, dataB = 00000080, dataC = d12ebb15
+	dataA = e8bb0c5c, dataB = 00000080, dataC = 8bb0c5ca
+	dataA = 56b21ce3, dataB = 00000080, dataC = 6b21ce3e
+	dataA = 000001c6, dataB = 00000080, dataC = 00001c65
+ext_x:1c65 result:e shift:9
+Recryptor: addrA = 0x4700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000e, dataB = bacffc20, dataC = bacffc2e
+	dataA = 00000000, dataB = 3a641a10, dataC = 3a641a10
+	dataA = 00003800, dataB = 1ddaf3a3, dataC = 1ddacba3
+	dataA = 00000000, dataB = 66bcbad2, dataC = 66bcbad2
+	dataA = 00000000, dataB = d12ebb15, dataC = d12ebb15
+	dataA = 00000000, dataB = 8bb0c5ca, dataC = 8bb0c5ca
+	dataA = 00000000, dataB = 6b21ce3e, dataC = 6b21ce3e
+	dataA = 00001c00, dataB = 00001c65, dataC = 00000065
+
+ext_x:7bb93d20 result:7bb shift:14
+Recryptor: addrA = 0x3300, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 49e2a533, dataB = bacffc2e, dataC = f32d591d
+	dataA = 986eb67c, dataB = 3a641a10, dataC = a20aac6c
+	dataA = 6f03fcc1, dataB = 1ddacba3, dataC = 72d93762
+	dataA = 032bb7ee, dataB = 66bcbad2, dataC = 65970d3c
+	dataA = 1eef30d1, dataB = d12ebb15, dataC = cfc18bc4
+	dataA = 0145a748, dataB = 8bb0c5ca, dataC = 8af56282
+	dataA = 692a879e, dataB = 6b21ce3e, dataC = 020b49a0
+	dataA = 0000016d, dataB = 00000065, dataC = 00000108
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = f32d591d, dataB = 00008000, dataC = 32d591d0
+	dataA = a20aac6c, dataB = 00000083, dataC = 20aac6cf
+	dataA = 72d93762, dataB = 00000000, dataC = 2d93762a
+	dataA = 65970d3c, dataB = 00000000, dataC = 5970d3c7
+	dataA = cfc18bc4, dataB = 00000080, dataC = fc18bc46
+	dataA = 8af56282, dataB = 00000080, dataC = af56282c
+	dataA = 020b49a0, dataB = 00000080, dataC = 20b49a08
+	dataA = 00000108, dataB = 00000080, dataC = 00001080
+ext_x:1080 result:8 shift:9
+Recryptor: addrA = 0x4100, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000008, dataB = 32d591d0, dataC = 32d591d8
+	dataA = 00000000, dataB = 20aac6cf, dataC = 20aac6cf
+	dataA = 00002000, dataB = 2d93762a, dataC = 2d93562a
+	dataA = 00000000, dataB = 5970d3c7, dataC = 5970d3c7
+	dataA = 00000000, dataB = fc18bc46, dataC = fc18bc46
+	dataA = 00000000, dataB = af56282c, dataC = af56282c
+	dataA = 00000000, dataB = 20b49a08, dataC = 20b49a08
+	dataA = 00001000, dataB = 00001080, dataC = 00000080
+
+ext_x:7bb93d20 result:7bb9 shift:10
+Recryptor: addrA = 0x3100, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = cb69af84, dataB = 32d591d8, dataC = f9bc3e5c
+	dataA = c3e62edf, dataB = 20aac6cf, dataC = e34ce810
+	dataA = bb5f97d6, dataB = 2d93562a, dataC = 96ccc1fc
+	dataA = e60c5ddf, dataB = 5970d3c7, dataC = bf7c8e18
+	dataA = 448210ed, dataB = fc18bc46, dataC = b89aacab
+	dataA = 5db64896, dataB = af56282c, dataC = f2e060ba
+	dataA = 92e8f4c4, dataB = 20b49a08, dataC = b25c6ecc
+	dataA = 000000b9, dataB = 00000080, dataC = 00000039
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = f9bc3e5c, dataB = 00008000, dataC = 9bc3e5c0
+	dataA = e34ce810, dataB = 00000083, dataC = 34ce810f
+	dataA = 96ccc1fc, dataB = 00000000, dataC = 6ccc1fce
+	dataA = bf7c8e18, dataB = 00000000, dataC = f7c8e189
+	dataA = b89aacab, dataB = 00000080, dataC = 89aacabb
+	dataA = f2e060ba, dataB = 00000080, dataC = 2e060bab
+	dataA = b25c6ecc, dataB = 00000080, dataC = 25c6eccf
+	dataA = 00000039, dataB = 00000080, dataC = 0000039b
+ext_x:39b result:1 shift:9
+Recryptor: addrA = 0x3a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000001, dataB = 9bc3e5c0, dataC = 9bc3e5c1
+	dataA = 00000000, dataB = 34ce810f, dataC = 34ce810f
+	dataA = 00000400, dataB = 6ccc1fce, dataC = 6ccc1bce
+	dataA = 00000000, dataB = f7c8e189, dataC = f7c8e189
+	dataA = 00000000, dataB = 89aacabb, dataC = 89aacabb
+	dataA = 00000000, dataB = 2e060bab, dataC = 2e060bab
+	dataA = 00000000, dataB = 25c6eccf, dataC = 25c6eccf
+	dataA = 00000200, dataB = 0000039b, dataC = 0000019b
+
+ext_x:7bb93d20 result:7bb93 shift:c
+Recryptor: addrA = 0x2b00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 43ce8fec, dataB = 9bc3e5c1, dataC = d80d6a2d
+	dataA = f64cd4f2, dataB = 34ce810f, dataC = c28255fd
+	dataA = 3e725c9c, dataB = 6ccc1bce, dataC = 52be4752
+	dataA = 97b41f29, dataB = f7c8e189, dataC = 607cfea0
+	dataA = 775bb022, dataB = 89aacabb, dataC = fef17a99
+	dataA = 728a1831, dataB = 2e060bab, dataC = 5c8c139a
+	dataA = 86234af7, dataB = 25c6eccf, dataC = a3e5a638
+	dataA = 0000003e, dataB = 0000019b, dataC = 000001a5
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = d80d6a2d, dataB = 00008000, dataC = 80d6a2d0
+	dataA = c28255fd, dataB = 00000083, dataC = 28255fdd
+	dataA = 52be4752, dataB = 00000000, dataC = 2be4752c
+	dataA = 607cfea0, dataB = 00000000, dataC = 07cfea05
+	dataA = fef17a99, dataB = 00000080, dataC = ef17a996
+	dataA = 5c8c139a, dataB = 00000080, dataC = c8c139af
+	dataA = a3e5a638, dataB = 00000080, dataC = 3e5a6385
+	dataA = 000001a5, dataB = 00000080, dataC = 00001a5a
+ext_x:1a5a result:d shift:9
+Recryptor: addrA = 0x4600, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000d, dataB = 80d6a2d0, dataC = 80d6a2dd
+	dataA = 00000000, dataB = 28255fdd, dataC = 28255fdd
+	dataA = 00003400, dataB = 2be4752c, dataC = 2be4412c
+	dataA = 00000000, dataB = 07cfea05, dataC = 07cfea05
+	dataA = 00000000, dataB = ef17a996, dataC = ef17a996
+	dataA = 00000000, dataB = c8c139af, dataC = c8c139af
+	dataA = 00000000, dataB = 3e5a6385, dataC = 3e5a6385
+	dataA = 00001a00, dataB = 00001a5a, dataC = 0000005a
+
+ext_x:7bb93d20 result:7bb93d shift:8
+Recryptor: addrA = 0x3500, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = ce7fbaeb, dataB = 80d6a2dd, dataC = 4ea91836
+	dataA = 74f71f98, dataB = 28255fdd, dataC = 5cd24045
+	dataA = 13e745f8, dataB = 2be4412c, dataC = 380304d4
+	dataA = 2c4389bc, dataB = 07cfea05, dataC = 2b8c63b9
+	dataA = f0585094, dataB = ef17a996, dataC = 1f4ff902
+	dataA = e451972a, dataB = c8c139af, dataC = 2c90ae85
+	dataA = 656c1270, dataB = 3e5a6385, dataC = 5b3671f5
+	dataA = 00000110, dataB = 0000005a, dataC = 0000014a
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 4ea91836, dataB = 00008000, dataC = ea918360
+	dataA = 5cd24045, dataB = 00000083, dataC = cd240454
+	dataA = 380304d4, dataB = 00000000, dataC = 80304d45
+	dataA = 2b8c63b9, dataB = 00000000, dataC = b8c63b93
+	dataA = 1f4ff902, dataB = 00000080, dataC = f4ff9022
+	dataA = 2c90ae85, dataB = 00000080, dataC = c90ae851
+	dataA = 5b3671f5, dataB = 00000080, dataC = b3671f52
+	dataA = 0000014a, dataB = 00000080, dataC = 000014a5
+ext_x:14a5 result:a shift:9
+Recryptor: addrA = 0x4300, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000a, dataB = ea918360, dataC = ea91836a
+	dataA = 00000000, dataB = cd240454, dataC = cd240454
+	dataA = 00002800, dataB = 80304d45, dataC = 80306545
+	dataA = 00000000, dataB = b8c63b93, dataC = b8c63b93
+	dataA = 00000000, dataB = f4ff9022, dataC = f4ff9022
+	dataA = 00000000, dataB = c90ae851, dataC = c90ae851
+	dataA = 00000000, dataB = b3671f52, dataC = b3671f52
+	dataA = 00001400, dataB = 000014a5, dataC = 000000a5
+
+ext_x:7bb93d20 result:7bb93d2 shift:4
+Recryptor: addrA = 0x2a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 828b0ab7, dataB = ea91836a, dataC = 681a89dd
+	dataA = 5b8898a3, dataB = cd240454, dataC = 96ac9cf7
+	dataA = d45c6b17, dataB = 80306545, dataC = 546c0e52
+	dataA = e527ea31, dataB = b8c63b93, dataC = 5de1d1a2
+	dataA = 5a6d203c, dataB = f4ff9022, dataC = ae92b01e
+	dataA = 5cf3efde, dataB = c90ae851, dataC = 95f9078f
+	dataA = fbc2735a, dataB = b3671f52, dataC = 48a56c08
+	dataA = 000001d4, dataB = 000000a5, dataC = 00000171
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 681a89dd, dataB = 00008000, dataC = 81a89dd0
+	dataA = 96ac9cf7, dataB = 00000083, dataC = 6ac9cf76
+	dataA = 546c0e52, dataB = 00000000, dataC = 46c0e529
+	dataA = 5de1d1a2, dataB = 00000000, dataC = de1d1a25
+	dataA = ae92b01e, dataB = 00000080, dataC = e92b01e5
+	dataA = 95f9078f, dataB = 00000080, dataC = 5f9078fa
+	dataA = 48a56c08, dataB = 00000080, dataC = 8a56c089
+	dataA = 00000171, dataB = 00000080, dataC = 00001714
+ext_x:1714 result:b shift:9
+Recryptor: addrA = 0x4400, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000b, dataB = 81a89dd0, dataC = 81a89ddb
+	dataA = 00000000, dataB = 6ac9cf76, dataC = 6ac9cf76
+	dataA = 00002c00, dataB = 46c0e529, dataC = 46c0c929
+	dataA = 00000000, dataB = de1d1a25, dataC = de1d1a25
+	dataA = 00000000, dataB = e92b01e5, dataC = e92b01e5
+	dataA = 00000000, dataB = 5f9078fa, dataC = 5f9078fa
+	dataA = 00000000, dataB = 8a56c089, dataC = 8a56c089
+	dataA = 00001600, dataB = 00001714, dataC = 00000114
+
+Recryptor: addrA = 0x2800, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 81a89ddb, dataC = 81a89ddb
+	dataA = 00000000, dataB = 6ac9cf76, dataC = 6ac9cf76
+	dataA = 00000000, dataB = 46c0c929, dataC = 46c0c929
+	dataA = 00000000, dataB = de1d1a25, dataC = de1d1a25
+	dataA = 00000000, dataB = e92b01e5, dataC = e92b01e5
+	dataA = 00000000, dataB = 5f9078fa, dataC = 5f9078fa
+	dataA = 00000000, dataB = 8a56c089, dataC = 8a56c089
+	dataA = 00000000, dataB = 00000114, dataC = 00000114
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 81a89ddb, dataB = 00008000, dataC = 1a89ddb0
+	dataA = 6ac9cf76, dataB = 00000083, dataC = ac9cf768
+	dataA = 46c0c929, dataB = 00000000, dataC = 6c0c9296
+	dataA = de1d1a25, dataB = 00000000, dataC = e1d1a254
+	dataA = e92b01e5, dataB = 00000080, dataC = 92b01e5d
+	dataA = 5f9078fa, dataB = 00000080, dataC = f9078fae
+	dataA = 8a56c089, dataB = 00000080, dataC = a56c0895
+	dataA = 00000114, dataB = 00000080, dataC = 00001148
+ext_x:1148 result:8 shift:9
+Recryptor: addrA = 0x4100, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000008, dataB = 1a89ddb0, dataC = 1a89ddb8
+	dataA = 00000000, dataB = ac9cf768, dataC = ac9cf768
+	dataA = 00002000, dataB = 6c0c9296, dataC = 6c0cb296
+	dataA = 00000000, dataB = e1d1a254, dataC = e1d1a254
+	dataA = 00000000, dataB = 92b01e5d, dataC = 92b01e5d
+	dataA = 00000000, dataB = f9078fae, dataC = f9078fae
+	dataA = 00000000, dataB = a56c0895, dataC = a56c0895
+	dataA = 00001000, dataB = 00001148, dataC = 00000148
+
+ext_x:1f5f4dbd result:1 shift:1c
+Recryptor: addrA = 0x2900, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = c145855b, dataB = 1a89ddb8, dataC = dbcc58e3
+	dataA = adc44c51, dataB = ac9cf768, dataC = 0158bb39
+	dataA = ea2e378b, dataB = 6c0cb296, dataC = 8622851d
+	dataA = 7293f518, dataB = e1d1a254, dataC = 9342574c
+	dataA = 2d36901e, dataB = 92b01e5d, dataC = bf868e43
+	dataA = 2e79f7ef, dataB = f9078fae, dataC = d77e7841
+	dataA = 7de139ad, dataB = a56c0895, dataC = d88d3138
+	dataA = 000001ea, dataB = 00000148, dataC = 000000a2
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = dbcc58e3, dataB = 00008000, dataC = bcc58e30
+	dataA = 0158bb39, dataB = 00000083, dataC = 158bb39d
+	dataA = 8622851d, dataB = 00000000, dataC = 622851d0
+	dataA = 9342574c, dataB = 00000000, dataC = 342574c8
+	dataA = bf868e43, dataB = 00000080, dataC = f868e439
+	dataA = d77e7841, dataB = 00000080, dataC = 77e7841b
+	dataA = d88d3138, dataB = 00000080, dataC = 88d3138d
+	dataA = 000000a2, dataB = 00000080, dataC = 00000a2d
+ext_x:a2d result:5 shift:9
+Recryptor: addrA = 0x3e00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000005, dataB = bcc58e30, dataC = bcc58e35
+	dataA = 00000000, dataB = 158bb39d, dataC = 158bb39d
+	dataA = 00001400, dataB = 622851d0, dataC = 622845d0
+	dataA = 00000000, dataB = 342574c8, dataC = 342574c8
+	dataA = 00000000, dataB = f868e439, dataC = f868e439
+	dataA = 00000000, dataB = 77e7841b, dataC = 77e7841b
+	dataA = 00000000, dataB = 88d3138d, dataC = 88d3138d
+	dataA = 00000a00, dataB = 00000a2d, dataC = 0000002d
+
+ext_x:1f5f4dbd result:1f shift:18
+Recryptor: addrA = 0x3700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 4cf4b05c, dataB = bcc58e35, dataC = f0313e69
+	dataA = 2f7f873b, dataB = 158bb39d, dataC = 3af434a6
+	dataA = c7bb2eef, dataB = 622845d0, dataC = a5936b3f
+	dataA = c964638d, dataB = 342574c8, dataC = fd411745
+	dataA = aa3570a8, dataB = f868e439, dataC = 525d9491
+	dataA = b8a278f4, dataB = 77e7841b, dataC = cf45fcef
+	dataA = 9eae612a, dataB = 88d3138d, dataC = 167d72a7
+	dataA = 000000c4, dataB = 0000002d, dataC = 000000e9
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = f0313e69, dataB = 00008000, dataC = 0313e690
+	dataA = 3af434a6, dataB = 00000083, dataC = af434a6f
+	dataA = a5936b3f, dataB = 00000000, dataC = 5936b3f3
+	dataA = fd411745, dataB = 00000000, dataC = d411745a
+	dataA = 525d9491, dataB = 00000080, dataC = 25d9491f
+	dataA = cf45fcef, dataB = 00000080, dataC = f45fcef5
+	dataA = 167d72a7, dataB = 00000080, dataC = 67d72a7c
+	dataA = 000000e9, dataB = 00000080, dataC = 00000e91
+ext_x:e91 result:7 shift:9
+Recryptor: addrA = 0x4000, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000007, dataB = 0313e690, dataC = 0313e697
+	dataA = 00000000, dataB = af434a6f, dataC = af434a6f
+	dataA = 00001c00, dataB = 5936b3f3, dataC = 5936aff3
+	dataA = 00000000, dataB = d411745a, dataC = d411745a
+	dataA = 00000000, dataB = 25d9491f, dataC = 25d9491f
+	dataA = 00000000, dataB = f45fcef5, dataC = f45fcef5
+	dataA = 00000000, dataB = 67d72a7c, dataC = 67d72a7c
+	dataA = 00000e00, dataB = 00000e91, dataC = 00000091
+
+ext_x:1f5f4dbd result:1f5 shift:14
+Recryptor: addrA = 0x2d00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = c4539034, dataB = 0313e697, dataC = c74076a3
+	dataA = 1ad57d16, dataB = af434a6f, dataC = b5963779
+	dataA = 4296e5a5, dataB = 5936aff3, dataC = 1ba04a56
+	dataA = b8dc217b, dataB = d411745a, dataC = 6ccd5521
+	dataA = 99ecd067, dataB = 25d9491f, dataC = bc359978
+	dataA = 979e2853, dataB = f45fcef5, dataC = 63c1e6a6
+	dataA = 8a65df19, dataB = 67d72a7c, dataC = edb2f565
+	dataA = 00000043, dataB = 00000091, dataC = 000000d2
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = c74076a3, dataB = 00008000, dataC = 74076a30
+	dataA = b5963779, dataB = 00000083, dataC = 5963779c
+	dataA = 1ba04a56, dataB = 00000000, dataC = ba04a56b
+	dataA = 6ccd5521, dataB = 00000000, dataC = ccd55211
+	dataA = bc359978, dataB = 00000080, dataC = c3599786
+	dataA = 63c1e6a6, dataB = 00000080, dataC = 3c1e6a6b
+	dataA = edb2f565, dataB = 00000080, dataC = db2f5656
+	dataA = 000000d2, dataB = 00000080, dataC = 00000d2e
+ext_x:d2e result:6 shift:9
+Recryptor: addrA = 0x3f00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000006, dataB = 74076a30, dataC = 74076a36
+	dataA = 00000000, dataB = 5963779c, dataC = 5963779c
+	dataA = 00001800, dataB = ba04a56b, dataC = ba04bd6b
+	dataA = 00000000, dataB = ccd55211, dataC = ccd55211
+	dataA = 00000000, dataB = c3599786, dataC = c3599786
+	dataA = 00000000, dataB = 3c1e6a6b, dataC = 3c1e6a6b
+	dataA = 00000000, dataB = db2f5656, dataC = db2f5656
+	dataA = 00000c00, dataB = 00000d2e, dataC = 0000012e
+
+ext_x:1f5f4dbd result:1f5f shift:10
+Recryptor: addrA = 0x3700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 4cf4b05c, dataB = 74076a36, dataC = 38f3da6a
+	dataA = 2f7f873b, dataB = 5963779c, dataC = 761cf0a7
+	dataA = c7bb2eef, dataB = ba04bd6b, dataC = 7dbf9384
+	dataA = c964638d, dataB = ccd55211, dataC = 05b1319c
+	dataA = aa3570a8, dataB = c3599786, dataC = 696ce72e
+	dataA = b8a278f4, dataB = 3c1e6a6b, dataC = 84bc129f
+	dataA = 9eae612a, dataB = db2f5656, dataC = 4581377c
+	dataA = 000000c4, dataB = 0000012e, dataC = 000001ea
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 38f3da6a, dataB = 00008000, dataC = 8f3da6a0
+	dataA = 761cf0a7, dataB = 00000083, dataC = 61cf0a73
+	dataA = 7dbf9384, dataB = 00000000, dataC = dbf93847
+	dataA = 05b1319c, dataB = 00000000, dataC = 5b1319c7
+	dataA = 696ce72e, dataB = 00000080, dataC = 96ce72e0
+	dataA = 84bc129f, dataB = 00000080, dataC = 4bc129f6
+	dataA = 4581377c, dataB = 00000080, dataC = 581377c8
+	dataA = 000001ea, dataB = 00000080, dataC = 00001ea4
+ext_x:1ea4 result:f shift:9
+Recryptor: addrA = 0x4800, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000f, dataB = 8f3da6a0, dataC = 8f3da6af
+	dataA = 00000000, dataB = 61cf0a73, dataC = 61cf0a73
+	dataA = 00003c00, dataB = dbf93847, dataC = dbf90447
+	dataA = 00000000, dataB = 5b1319c7, dataC = 5b1319c7
+	dataA = 00000000, dataB = 96ce72e0, dataC = 96ce72e0
+	dataA = 00000000, dataB = 4bc129f6, dataC = 4bc129f6
+	dataA = 00000000, dataB = 581377c8, dataC = 581377c8
+	dataA = 00001e00, dataB = 00001ea4, dataC = 000000a4
+
+ext_x:1f5f4dbd result:1f5f4 shift:c
+Recryptor: addrA = 0x2c00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0516156f, dataB = 8f3da6af, dataC = 8a2bb3c0
+	dataA = b7113147, dataB = 61cf0a73, dataC = d6de3b34
+	dataA = a8b8d22e, dataB = dbf90447, dataC = 7341d669
+	dataA = ca4fd463, dataB = 5b1319c7, dataC = 915ccda4
+	dataA = b4da4079, dataB = 96ce72e0, dataC = 22143299
+	dataA = b9e7dfbc, dataB = 4bc129f6, dataC = f226f64a
+	dataA = f784e6b4, dataB = 581377c8, dataC = af97917c
+	dataA = 000001a9, dataB = 000000a4, dataC = 0000010d
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 8a2bb3c0, dataB = 00008000, dataC = a2bb3c00
+	dataA = d6de3b34, dataB = 00000083, dataC = 6de3b348
+	dataA = 7341d669, dataB = 00000000, dataC = 341d669d
+	dataA = 915ccda4, dataB = 00000000, dataC = 15ccda47
+	dataA = 22143299, dataB = 00000080, dataC = 21432999
+	dataA = f226f64a, dataB = 00000080, dataC = 226f64a2
+	dataA = af97917c, dataB = 00000080, dataC = f97917cf
+	dataA = 0000010d, dataB = 00000080, dataC = 000010da
+ext_x:10da result:8 shift:9
+Recryptor: addrA = 0x4100, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000008, dataB = a2bb3c00, dataC = a2bb3c08
+	dataA = 00000000, dataB = 6de3b348, dataC = 6de3b348
+	dataA = 00002000, dataB = 341d669d, dataC = 341d469d
+	dataA = 00000000, dataB = 15ccda47, dataC = 15ccda47
+	dataA = 00000000, dataB = 21432999, dataC = 21432999
+	dataA = 00000000, dataB = 226f64a2, dataC = 226f64a2
+	dataA = 00000000, dataB = f97917cf, dataC = f97917cf
+	dataA = 00001000, dataB = 000010da, dataC = 000000da
+
+ext_x:1f5f4dbd result:1f5f4d shift:8
+Recryptor: addrA = 0x3500, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = ce7fbaeb, dataB = a2bb3c08, dataC = 6cc486e3
+	dataA = 74f71f98, dataB = 6de3b348, dataC = 1914acd0
+	dataA = 13e745f8, dataB = 341d469d, dataC = 27fa0365
+	dataA = 2c4389bc, dataB = 15ccda47, dataC = 398f53fb
+	dataA = f0585094, dataB = 21432999, dataC = d11b790d
+	dataA = e451972a, dataB = 226f64a2, dataC = c63ef388
+	dataA = 656c1270, dataB = f97917cf, dataC = 9c1505bf
+	dataA = 00000110, dataB = 000000da, dataC = 000001ca
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 6cc486e3, dataB = 00008000, dataC = cc486e30
+	dataA = 1914acd0, dataB = 00000083, dataC = 914acd06
+	dataA = 27fa0365, dataB = 00000000, dataC = 7fa03651
+	dataA = 398f53fb, dataB = 00000000, dataC = 98f53fb2
+	dataA = d11b790d, dataB = 00000080, dataC = 11b790d3
+	dataA = c63ef388, dataB = 00000080, dataC = 63ef388d
+	dataA = 9c1505bf, dataB = 00000080, dataC = c1505bfc
+	dataA = 000001ca, dataB = 00000080, dataC = 00001ca9
+ext_x:1ca9 result:e shift:9
+Recryptor: addrA = 0x4700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000e, dataB = cc486e30, dataC = cc486e3e
+	dataA = 00000000, dataB = 914acd06, dataC = 914acd06
+	dataA = 00003800, dataB = 7fa03651, dataC = 7fa00e51
+	dataA = 00000000, dataB = 98f53fb2, dataC = 98f53fb2
+	dataA = 00000000, dataB = 11b790d3, dataC = 11b790d3
+	dataA = 00000000, dataB = 63ef388d, dataC = 63ef388d
+	dataA = 00000000, dataB = c1505bfc, dataC = c1505bfc
+	dataA = 00001c00, dataB = 00001ca9, dataC = 000000a9
+
+ext_x:1f5f4dbd result:1f5f4db shift:4
+Recryptor: addrA = 0x3300, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 49e2a533, dataB = cc486e3e, dataC = 85aacb0d
+	dataA = 986eb67c, dataB = 914acd06, dataC = 09247b7a
+	dataA = 6f03fcc1, dataB = 7fa00e51, dataC = 10a3f290
+	dataA = 032bb7ee, dataB = 98f53fb2, dataC = 9bde885c
+	dataA = 1eef30d1, dataB = 11b790d3, dataC = 0f58a002
+	dataA = 0145a748, dataB = 63ef388d, dataC = 62aa9fc5
+	dataA = 692a879e, dataB = c1505bfc, dataC = a87adc62
+	dataA = 0000016d, dataB = 000000a9, dataC = 000001c4
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 85aacb0d, dataB = 00008000, dataC = 5aacb0d0
+	dataA = 09247b7a, dataB = 00000083, dataC = 9247b7a8
+	dataA = 10a3f290, dataB = 00000000, dataC = 0a3f2900
+	dataA = 9bde885c, dataB = 00000000, dataC = bde885c1
+	dataA = 0f58a002, dataB = 00000080, dataC = f58a0029
+	dataA = 62aa9fc5, dataB = 00000080, dataC = 2aa9fc50
+	dataA = a87adc62, dataB = 00000080, dataC = 87adc626
+	dataA = 000001c4, dataB = 00000080, dataC = 00001c4a
+ext_x:1c4a result:e shift:9
+Recryptor: addrA = 0x4700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000e, dataB = 5aacb0d0, dataC = 5aacb0de
+	dataA = 00000000, dataB = 9247b7a8, dataC = 9247b7a8
+	dataA = 00003800, dataB = 0a3f2900, dataC = 0a3f1100
+	dataA = 00000000, dataB = bde885c1, dataC = bde885c1
+	dataA = 00000000, dataB = f58a0029, dataC = f58a0029
+	dataA = 00000000, dataB = 2aa9fc50, dataC = 2aa9fc50
+	dataA = 00000000, dataB = 87adc626, dataC = 87adc626
+	dataA = 00001c00, dataB = 00001c4a, dataC = 0000004a
+
+Recryptor: addrA = 0x3500, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = ce7fbaeb, dataB = 5aacb0de, dataC = 94d30a35
+	dataA = 74f71f98, dataB = 9247b7a8, dataC = e6b0a830
+	dataA = 13e745f8, dataB = 0a3f1100, dataC = 19d854f8
+	dataA = 2c4389bc, dataB = bde885c1, dataC = 91ab0c7d
+	dataA = f0585094, dataB = f58a0029, dataC = 05d250bd
+	dataA = e451972a, dataB = 2aa9fc50, dataC = cef86b7a
+	dataA = 656c1270, dataB = 87adc626, dataC = e2c1d456
+	dataA = 00000110, dataB = 0000004a, dataC = 0000015a
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 94d30a35, dataB = 00008000, dataC = 4d30a350
+	dataA = e6b0a830, dataB = 00000083, dataC = 6b0a8309
+	dataA = 19d854f8, dataB = 00000000, dataC = 9d854f8e
+	dataA = 91ab0c7d, dataB = 00000000, dataC = 1ab0c7d1
+	dataA = 05d250bd, dataB = 00000080, dataC = 5d250bd9
+	dataA = cef86b7a, dataB = 00000080, dataC = ef86b7a0
+	dataA = e2c1d456, dataB = 00000080, dataC = 2c1d456c
+	dataA = 0000015a, dataB = 00000080, dataC = 000015ae
+ext_x:15ae result:a shift:9
+Recryptor: addrA = 0x4300, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000a, dataB = 4d30a350, dataC = 4d30a35a
+	dataA = 00000000, dataB = 6b0a8309, dataC = 6b0a8309
+	dataA = 00002800, dataB = 9d854f8e, dataC = 9d85678e
+	dataA = 00000000, dataB = 1ab0c7d1, dataC = 1ab0c7d1
+	dataA = 00000000, dataB = 5d250bd9, dataC = 5d250bd9
+	dataA = 00000000, dataB = ef86b7a0, dataC = ef86b7a0
+	dataA = 00000000, dataB = 2c1d456c, dataC = 2c1d456c
+	dataA = 00001400, dataB = 000015ae, dataC = 000001ae
+
+ext_x:fc77315b result:f shift:1c
+Recryptor: addrA = 0x3700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 4cf4b05c, dataB = 4d30a35a, dataC = 01c41306
+	dataA = 2f7f873b, dataB = 6b0a8309, dataC = 44750432
+	dataA = c7bb2eef, dataB = 9d85678e, dataC = 5a3e4961
+	dataA = c964638d, dataB = 1ab0c7d1, dataC = d3d4a45c
+	dataA = aa3570a8, dataB = 5d250bd9, dataC = f7107b71
+	dataA = b8a278f4, dataB = ef86b7a0, dataC = 5724cf54
+	dataA = 9eae612a, dataB = 2c1d456c, dataC = b2b32446
+	dataA = 000000c4, dataB = 000001ae, dataC = 0000016a
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 01c41306, dataB = 00008000, dataC = 1c413060
+	dataA = 44750432, dataB = 00000083, dataC = 47504320
+	dataA = 5a3e4961, dataB = 00000000, dataC = a3e49614
+	dataA = d3d4a45c, dataB = 00000000, dataC = 3d4a45c5
+	dataA = f7107b71, dataB = 00000080, dataC = 7107b71d
+	dataA = 5724cf54, dataB = 00000080, dataC = 724cf54f
+	dataA = b2b32446, dataB = 00000080, dataC = 2b324465
+	dataA = 0000016a, dataB = 00000080, dataC = 000016ab
+ext_x:16ab result:b shift:9
+Recryptor: addrA = 0x4400, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000b, dataB = 1c413060, dataC = 1c41306b
+	dataA = 00000000, dataB = 47504320, dataC = 47504320
+	dataA = 00002c00, dataB = a3e49614, dataC = a3e4ba14
+	dataA = 00000000, dataB = 3d4a45c5, dataC = 3d4a45c5
+	dataA = 00000000, dataB = 7107b71d, dataC = 7107b71d
+	dataA = 00000000, dataB = 724cf54f, dataC = 724cf54f
+	dataA = 00000000, dataB = 2b324465, dataC = 2b324465
+	dataA = 00001600, dataB = 000016ab, dataC = 000000ab
+
+ext_x:fff7315b result:ff shift:18
+15, should be 4
+Recryptor: addrA = 0x3700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 4cf4b05c, dataB = 1c41306b, dataC = 50b58037
+	dataA = 2f7f873b, dataB = 47504320, dataC = 682fc41b
+	dataA = c7bb2eef, dataB = a3e4ba14, dataC = 645f94fb
+	dataA = c964638d, dataB = 3d4a45c5, dataC = f42e2648
+	dataA = aa3570a8, dataB = 7107b71d, dataC = db32c7b5
+	dataA = b8a278f4, dataB = 724cf54f, dataC = caee8dbb
+	dataA = 9eae612a, dataB = 2b324465, dataC = b59c254f
+	dataA = 000000c4, dataB = 000000ab, dataC = 0000006f
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 50b58037, dataB = 00008000, dataC = 0b580370
+	dataA = 682fc41b, dataB = 00000083, dataC = 82fc41b5
+	dataA = 645f94fb, dataB = 00000000, dataC = 45f94fb6
+	dataA = f42e2648, dataB = 00000000, dataC = 42e26486
+	dataA = db32c7b5, dataB = 00000080, dataC = b32c7b5f
+	dataA = caee8dbb, dataB = 00000080, dataC = aee8dbbd
+	dataA = b59c254f, dataB = 00000080, dataC = 59c254fc
+	dataA = 0000006f, dataB = 00000080, dataC = 000006fb
+ext_x:6fb result:3 shift:9
+Recryptor: addrA = 0x3c00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000003, dataB = 0b580370, dataC = 0b580373
+	dataA = 00000000, dataB = 82fc41b5, dataC = 82fc41b5
+	dataA = 00000c00, dataB = 45f94fb6, dataC = 45f943b6
+	dataA = 00000000, dataB = 42e26486, dataC = 42e26486
+	dataA = 00000000, dataB = b32c7b5f, dataC = b32c7b5f
+	dataA = 00000000, dataB = aee8dbbd, dataC = aee8dbbd
+	dataA = 00000000, dataB = 59c254fc, dataC = 59c254fc
+	dataA = 00000600, dataB = 000006fb, dataC = 000000fb
+
+ext_x:ffff315b result:fff shift:14
+Recryptor: addrA = 0x3700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 4cf4b05c, dataB = 0b580373, dataC = 47acb32f
+	dataA = 2f7f873b, dataB = 82fc41b5, dataC = ad83c68e
+	dataA = c7bb2eef, dataB = 45f943b6, dataC = 82426d59
+	dataA = c964638d, dataB = 42e26486, dataC = 8b86070b
+	dataA = aa3570a8, dataB = b32c7b5f, dataC = 19190bf7
+	dataA = b8a278f4, dataB = aee8dbbd, dataC = 164aa349
+	dataA = 9eae612a, dataB = 59c254fc, dataC = c76c35d6
+	dataA = 000000c4, dataB = 000000fb, dataC = 0000003f
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 47acb32f, dataB = 00008000, dataC = 7acb32f0
+	dataA = ad83c68e, dataB = 00000083, dataC = d83c68e4
+	dataA = 82426d59, dataB = 00000000, dataC = 2426d59a
+	dataA = 8b86070b, dataB = 00000000, dataC = b86070b8
+	dataA = 19190bf7, dataB = 00000080, dataC = 9190bf78
+	dataA = 164aa349, dataB = 00000080, dataC = 64aa3491
+	dataA = c76c35d6, dataB = 00000080, dataC = 76c35d61
+	dataA = 0000003f, dataB = 00000080, dataC = 000003fc
+ext_x:3fc result:1 shift:9
+Recryptor: addrA = 0x3a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000001, dataB = 7acb32f0, dataC = 7acb32f1
+	dataA = 00000000, dataB = d83c68e4, dataC = d83c68e4
+	dataA = 00000400, dataB = 2426d59a, dataC = 2426d19a
+	dataA = 00000000, dataB = b86070b8, dataC = b86070b8
+	dataA = 00000000, dataB = 9190bf78, dataC = 9190bf78
+	dataA = 00000000, dataB = 64aa3491, dataC = 64aa3491
+	dataA = 00000000, dataB = 76c35d61, dataC = 76c35d61
+	dataA = 00000200, dataB = 000003fc, dataC = 000001fc
+ext_x:ffffb15b result:ffff shift:10
+Recryptor: addrA = 0x3700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 4cf4b05c, dataB = 7acb32f1, dataC = 363f82ad
+	dataA = 2f7f873b, dataB = d83c68e4, dataC = f743efdf
+	dataA = c7bb2eef, dataB = 2426d19a, dataC = e39dff75
+	dataA = c964638d, dataB = b86070b8, dataC = 71041335
+	dataA = aa3570a8, dataB = 9190bf78, dataC = 3ba5cfd0
+	dataA = b8a278f4, dataB = 64aa3491, dataC = dc084c65
+	dataA = 9eae612a, dataB = 76c35d61, dataC = e86d3c4b
+	dataA = 000000c4, dataB = 000001fc, dataC = 00000138
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 363f82ad, dataB = 00008000, dataC = 63f82ad0
+	dataA = f743efdf, dataB = 00000083, dataC = 743efdf3
+	dataA = e39dff75, dataB = 00000000, dataC = 39dff75f
+	dataA = 71041335, dataB = 00000000, dataC = 1041335e
+	dataA = 3ba5cfd0, dataB = 00000080, dataC = ba5cfd07
+	dataA = dc084c65, dataB = 00000080, dataC = c084c653
+	dataA = e86d3c4b, dataB = 00000080, dataC = 86d3c4bd
+	dataA = 00000138, dataB = 00000080, dataC = 0000138e
+ext_x:138e result:9 shift:9
+Recryptor: addrA = 0x4200, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000009, dataB = 63f82ad0, dataC = 63f82ad9
+	dataA = 00000000, dataB = 743efdf3, dataC = 743efdf3
+	dataA = 00002400, dataB = 39dff75f, dataC = 39dfd35f
+	dataA = 00000000, dataB = 1041335e, dataC = 1041335e
+	dataA = 00000000, dataB = ba5cfd07, dataC = ba5cfd07
+	dataA = 00000000, dataB = c084c653, dataC = c084c653
+	dataA = 00000000, dataB = 86d3c4bd, dataC = 86d3c4bd
+	dataA = 00001200, dataB = 0000138e, dataC = 0000018e
+ext_x:fffff95b result:fffff shift:c
+Recryptor: addrA = 0x3700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 4cf4b05c, dataB = 63f82ad9, dataC = 2f0c9a85
+	dataA = 2f7f873b, dataB = 743efdf3, dataC = 5b417ac8
+	dataA = c7bb2eef, dataB = 39dfd35f, dataC = fe64fdb0
+	dataA = c964638d, dataB = 1041335e, dataC = d92550d3
+	dataA = aa3570a8, dataB = ba5cfd07, dataC = 10698daf
+	dataA = b8a278f4, dataB = c084c653, dataC = 7826bea7
+	dataA = 9eae612a, dataB = 86d3c4bd, dataC = 187da597
+	dataA = 000000c4, dataB = 0000018e, dataC = 0000014a
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 2f0c9a85, dataB = 00008000, dataC = f0c9a850
+	dataA = 5b417ac8, dataB = 00000083, dataC = b417ac82
+	dataA = fe64fdb0, dataB = 00000000, dataC = e64fdb05
+	dataA = d92550d3, dataB = 00000000, dataC = 92550d3f
+	dataA = 10698daf, dataB = 00000080, dataC = 0698dafd
+	dataA = 7826bea7, dataB = 00000080, dataC = 826bea71
+	dataA = 187da597, dataB = 00000080, dataC = 87da5977
+	dataA = 0000014a, dataB = 00000080, dataC = 000014a1
+ext_x:14a1 result:a shift:9
+Recryptor: addrA = 0x4300, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000a, dataB = f0c9a850, dataC = f0c9a85a
+	dataA = 00000000, dataB = b417ac82, dataC = b417ac82
+	dataA = 00002800, dataB = e64fdb05, dataC = e64ff305
+	dataA = 00000000, dataB = 92550d3f, dataC = 92550d3f
+	dataA = 00000000, dataB = 0698dafd, dataC = 0698dafd
+	dataA = 00000000, dataB = 826bea71, dataC = 826bea71
+	dataA = 00000000, dataB = 87da5977, dataC = 87da5977
+	dataA = 00001400, dataB = 000014a1, dataC = 000000a1
+ext_x:ffffffdb result:ffffff shift:8
+Recryptor: addrA = 0x3700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 4cf4b05c, dataB = f0c9a85a, dataC = bc3d1806
+	dataA = 2f7f873b, dataB = b417ac82, dataC = 9b682bb9
+	dataA = c7bb2eef, dataB = e64ff305, dataC = 21f4ddea
+	dataA = c964638d, dataB = 92550d3f, dataC = 5b316eb2
+	dataA = aa3570a8, dataB = 0698dafd, dataC = acadaa55
+	dataA = b8a278f4, dataB = 826bea71, dataC = 3ac99285
+	dataA = 9eae612a, dataB = 87da5977, dataC = 1974385d
+	dataA = 000000c4, dataB = 000000a1, dataC = 00000065
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = bc3d1806, dataB = 00008000, dataC = c3d18060
+	dataA = 9b682bb9, dataB = 00000083, dataC = b682bb9b
+	dataA = 21f4ddea, dataB = 00000000, dataC = 1f4ddea9
+	dataA = 5b316eb2, dataB = 00000000, dataC = b316eb22
+	dataA = acadaa55, dataB = 00000080, dataC = cadaa555
+	dataA = 3ac99285, dataB = 00000080, dataC = ac99285a
+	dataA = 1974385d, dataB = 00000080, dataC = 974385d3
+	dataA = 00000065, dataB = 00000080, dataC = 00000651
+ext_x:651 result:3 shift:9
+Recryptor: addrA = 0x3c00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000003, dataB = c3d18060, dataC = c3d18063
+	dataA = 00000000, dataB = b682bb9b, dataC = b682bb9b
+	dataA = 00000c00, dataB = 1f4ddea9, dataC = 1f4dd2a9
+	dataA = 00000000, dataB = b316eb22, dataC = b316eb22
+	dataA = 00000000, dataB = cadaa555, dataC = cadaa555
+	dataA = 00000000, dataB = ac99285a, dataC = ac99285a
+	dataA = 00000000, dataB = 974385d3, dataC = 974385d3
+	dataA = 00000600, dataB = 00000651, dataC = 00000051
+ext_x:fffffffb result:fffffff shift:4
+Recryptor: addrA = 0x3700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 4cf4b05c, dataB = c3d18063, dataC = 8f25303f
+	dataA = 2f7f873b, dataB = b682bb9b, dataC = 99fd3ca0
+	dataA = c7bb2eef, dataB = 1f4dd2a9, dataC = d8f6fc46
+	dataA = c964638d, dataB = b316eb22, dataC = 7a7288af
+	dataA = aa3570a8, dataB = cadaa555, dataC = 60efd5fd
+	dataA = b8a278f4, dataB = ac99285a, dataC = 143b50ae
+	dataA = 9eae612a, dataB = 974385d3, dataC = 09ede4f9
+	dataA = 000000c4, dataB = 00000051, dataC = 00000095
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 8f25303f, dataB = 00008000, dataC = f25303f0
+	dataA = 99fd3ca0, dataB = 00000083, dataC = 9fd3ca08
+	dataA = d8f6fc46, dataB = 00000000, dataC = 8f6fc469
+	dataA = 7a7288af, dataB = 00000000, dataC = a7288afd
+	dataA = 60efd5fd, dataB = 00000080, dataC = 0efd5fd7
+	dataA = 143b50ae, dataB = 00000080, dataC = 43b50ae6
+	dataA = 09ede4f9, dataB = 00000080, dataC = 9ede4f91
+	dataA = 00000095, dataB = 00000080, dataC = 00000950
+ext_x:950 result:4 shift:9
+Recryptor: addrA = 0x3d00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000004, dataB = f25303f0, dataC = f25303f4
+	dataA = 00000000, dataB = 9fd3ca08, dataC = 9fd3ca08
+	dataA = 00001000, dataB = 8f6fc469, dataC = 8f6fd469
+	dataA = 00000000, dataB = a7288afd, dataC = a7288afd
+	dataA = 00000000, dataB = 0efd5fd7, dataC = 0efd5fd7
+	dataA = 00000000, dataB = 43b50ae6, dataC = 43b50ae6
+	dataA = 00000000, dataB = 9ede4f91, dataC = 9ede4f91
+	dataA = 00000800, dataB = 00000950, dataC = 00000150
+Recryptor: addrA = 0x3300, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 49e2a533, dataB = f25303f4, dataC = bbb1a6c7
+	dataA = 986eb67c, dataB = 9fd3ca08, dataC = 07bd7c74
+	dataA = 6f03fcc1, dataB = 8f6fd469, dataC = e06c28a8
+	dataA = 032bb7ee, dataB = a7288afd, dataC = a4033d13
+	dataA = 1eef30d1, dataB = 0efd5fd7, dataC = 10126f06
+	dataA = 0145a748, dataB = 43b50ae6, dataC = 42f0adae
+	dataA = 692a879e, dataB = 9ede4f91, dataC = f7f4c80f
+	dataA = 0000016d, dataB = 00000150, dataC = 0000003d
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = bbb1a6c7, dataB = 00008000, dataC = bb1a6c70
+	dataA = 07bd7c74, dataB = 00000083, dataC = 7bd7c74b
+	dataA = e06c28a8, dataB = 00000000, dataC = 06c28a80
+	dataA = a4033d13, dataB = 00000000, dataC = 4033d13e
+	dataA = 10126f06, dataB = 00000080, dataC = 0126f06a
+	dataA = 42f0adae, dataB = 00000080, dataC = 2f0adae1
+	dataA = f7f4c80f, dataB = 00000080, dataC = 7f4c80f4
+	dataA = 0000003d, dataB = 00000080, dataC = 000003df
+ext_x:3df result:1 shift:9
+Recryptor: addrA = 0x3a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000001, dataB = bb1a6c70, dataC = bb1a6c71
+	dataA = 00000000, dataB = 7bd7c74b, dataC = 7bd7c74b
+	dataA = 00000400, dataB = 06c28a80, dataC = 06c28e80
+	dataA = 00000000, dataB = 4033d13e, dataC = 4033d13e
+	dataA = 00000000, dataB = 0126f06a, dataC = 0126f06a
+	dataA = 00000000, dataB = 2f0adae1, dataC = 2f0adae1
+	dataA = 00000000, dataB = 7f4c80f4, dataC = 7f4c80f4
+	dataA = 00000200, dataB = 000003df, dataC = 000001df
+ext_x:2b02bc51 result:2 shift:1c
+Recryptor: addrA = 0x2a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 828b0ab7, dataB = bb1a6c71, dataC = 399166c6
+	dataA = 5b8898a3, dataB = 7bd7c74b, dataC = 205f5fe8
+	dataA = d45c6b17, dataB = 06c28e80, dataC = d29ee597
+	dataA = e527ea31, dataB = 4033d13e, dataC = a5143b0f
+	dataA = 5a6d203c, dataB = 0126f06a, dataC = 5b4bd056
+	dataA = 5cf3efde, dataB = 2f0adae1, dataC = 73f9353f
+	dataA = fbc2735a, dataB = 7f4c80f4, dataC = 848ef3ae
+	dataA = 000001d4, dataB = 000001df, dataC = 0000000b
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 399166c6, dataB = 00008000, dataC = 99166c60
+	dataA = 205f5fe8, dataB = 00000083, dataC = 05f5fe83
+	dataA = d29ee597, dataB = 00000000, dataC = 29ee5972
+	dataA = a5143b0f, dataB = 00000000, dataC = 5143b0fd
+	dataA = 5b4bd056, dataB = 00000080, dataC = b4bd056a
+	dataA = 73f9353f, dataB = 00000080, dataC = 3f9353f5
+	dataA = 848ef3ae, dataB = 00000080, dataC = 48ef3ae7
+	dataA = 0000000b, dataB = 00000080, dataC = 000000b8
+ext_x:b8 result:0 shift:9
+Recryptor: addrA = 0x3900, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 99166c60, dataC = 99166c60
+	dataA = 00000000, dataB = 05f5fe83, dataC = 05f5fe83
+	dataA = 00000000, dataB = 29ee5972, dataC = 29ee5972
+	dataA = 00000000, dataB = 5143b0fd, dataC = 5143b0fd
+	dataA = 00000000, dataB = b4bd056a, dataC = b4bd056a
+	dataA = 00000000, dataB = 3f9353f5, dataC = 3f9353f5
+	dataA = 00000000, dataB = 48ef3ae7, dataC = 48ef3ae7
+	dataA = 00000000, dataB = 000000b8, dataC = 000000b8
+ext_x:2b02bc51 result:2b shift:18
+Recryptor: addrA = 0x3300, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 49e2a533, dataB = 99166c60, dataC = d0f4c953
+	dataA = 986eb67c, dataB = 05f5fe83, dataC = 9d9b48ff
+	dataA = 6f03fcc1, dataB = 29ee5972, dataC = 46eda5b3
+	dataA = 032bb7ee, dataB = 5143b0fd, dataC = 52680713
+	dataA = 1eef30d1, dataB = b4bd056a, dataC = aa5235bb
+	dataA = 0145a748, dataB = 3f9353f5, dataC = 3ed6f4bd
+	dataA = 692a879e, dataB = 48ef3ae7, dataC = 21c5bd79
+	dataA = 0000016d, dataB = 000000b8, dataC = 000001d5
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = d0f4c953, dataB = 00008000, dataC = 0f4c9530
+	dataA = 9d9b48ff, dataB = 00000083, dataC = d9b48ffd
+	dataA = 46eda5b3, dataB = 00000000, dataC = 6eda5b39
+	dataA = 52680713, dataB = 00000000, dataC = 26807134
+	dataA = aa5235bb, dataB = 00000080, dataC = a5235bb5
+	dataA = 3ed6f4bd, dataB = 00000080, dataC = ed6f4bda
+	dataA = 21c5bd79, dataB = 00000080, dataC = 1c5bd793
+	dataA = 000001d5, dataB = 00000080, dataC = 00001d52
+ext_x:1d52 result:e shift:9
+Recryptor: addrA = 0x4700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000e, dataB = 0f4c9530, dataC = 0f4c953e
+	dataA = 00000000, dataB = d9b48ffd, dataC = d9b48ffd
+	dataA = 00003800, dataB = 6eda5b39, dataC = 6eda6339
+	dataA = 00000000, dataB = 26807134, dataC = 26807134
+	dataA = 00000000, dataB = a5235bb5, dataC = a5235bb5
+	dataA = 00000000, dataB = ed6f4bda, dataC = ed6f4bda
+	dataA = 00000000, dataB = 1c5bd793, dataC = 1c5bd793
+	dataA = 00001c00, dataB = 00001d52, dataC = 00000152
+ext_x:2b02bc51 result:2b0 shift:14
+Recryptor: addrA = 0x2800, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 0f4c953e, dataC = 0f4c953e
+	dataA = 00000000, dataB = d9b48ffd, dataC = d9b48ffd
+	dataA = 00000000, dataB = 6eda6339, dataC = 6eda6339
+	dataA = 00000000, dataB = 26807134, dataC = 26807134
+	dataA = 00000000, dataB = a5235bb5, dataC = a5235bb5
+	dataA = 00000000, dataB = ed6f4bda, dataC = ed6f4bda
+	dataA = 00000000, dataB = 1c5bd793, dataC = 1c5bd793
+	dataA = 00000000, dataB = 00000152, dataC = 00000152
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 0f4c953e, dataB = 00008000, dataC = f4c953e0
+	dataA = d9b48ffd, dataB = 00000083, dataC = 9b48ffd0
+	dataA = 6eda6339, dataB = 00000000, dataC = eda6339d
+	dataA = 26807134, dataB = 00000000, dataC = 68071346
+	dataA = a5235bb5, dataB = 00000080, dataC = 5235bb52
+	dataA = ed6f4bda, dataB = 00000080, dataC = d6f4bdaa
+	dataA = 1c5bd793, dataB = 00000080, dataC = c5bd793e
+	dataA = 00000152, dataB = 00000080, dataC = 00001521
+ext_x:1521 result:a shift:9
+Recryptor: addrA = 0x4300, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000a, dataB = f4c953e0, dataC = f4c953ea
+	dataA = 00000000, dataB = 9b48ffd0, dataC = 9b48ffd0
+	dataA = 00002800, dataB = eda6339d, dataC = eda61b9d
+	dataA = 00000000, dataB = 68071346, dataC = 68071346
+	dataA = 00000000, dataB = 5235bb52, dataC = 5235bb52
+	dataA = 00000000, dataB = d6f4bdaa, dataC = d6f4bdaa
+	dataA = 00000000, dataB = c5bd793e, dataC = c5bd793e
+	dataA = 00001400, dataB = 00001521, dataC = 00000121
+ext_x:2b02bc51 result:2b02 shift:10
+Recryptor: addrA = 0x2a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 828b0ab7, dataB = f4c953ea, dataC = 7642595d
+	dataA = 5b8898a3, dataB = 9b48ffd0, dataC = c0c06773
+	dataA = d45c6b17, dataB = eda61b9d, dataC = 39fa708a
+	dataA = e527ea31, dataB = 68071346, dataC = 8d20f977
+	dataA = 5a6d203c, dataB = 5235bb52, dataC = 08589b6e
+	dataA = 5cf3efde, dataB = d6f4bdaa, dataC = 8a075274
+	dataA = fbc2735a, dataB = c5bd793e, dataC = 3e7f0a64
+	dataA = 000001d4, dataB = 00000121, dataC = 000000f5
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 7642595d, dataB = 00008000, dataC = 642595d0
+	dataA = c0c06773, dataB = 00000083, dataC = 0c067737
+	dataA = 39fa708a, dataB = 00000000, dataC = 9fa708ac
+	dataA = 8d20f977, dataB = 00000000, dataC = d20f9773
+	dataA = 08589b6e, dataB = 00000080, dataC = 8589b6e8
+	dataA = 8a075274, dataB = 00000080, dataC = a0752740
+	dataA = 3e7f0a64, dataB = 00000080, dataC = e7f0a648
+	dataA = 000000f5, dataB = 00000080, dataC = 00000f53
+ext_x:f53 result:7 shift:9
+Recryptor: addrA = 0x4000, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000007, dataB = 642595d0, dataC = 642595d7
+	dataA = 00000000, dataB = 0c067737, dataC = 0c067737
+	dataA = 00001c00, dataB = 9fa708ac, dataC = 9fa714ac
+	dataA = 00000000, dataB = d20f9773, dataC = d20f9773
+	dataA = 00000000, dataB = 8589b6e8, dataC = 8589b6e8
+	dataA = 00000000, dataB = a0752740, dataC = a0752740
+	dataA = 00000000, dataB = e7f0a648, dataC = e7f0a648
+	dataA = 00000e00, dataB = 00000f53, dataC = 00000153
+ext_x:2b02bc51 result:2b02b shift:c
+Recryptor: addrA = 0x3300, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 49e2a533, dataB = 642595d7, dataC = 2dc730e4
+	dataA = 986eb67c, dataB = 0c067737, dataC = 9468c14b
+	dataA = 6f03fcc1, dataB = 9fa714ac, dataC = f0a4e86d
+	dataA = 032bb7ee, dataB = d20f9773, dataC = d124209d
+	dataA = 1eef30d1, dataB = 8589b6e8, dataC = 9b668639
+	dataA = 0145a748, dataB = a0752740, dataC = a1308008
+	dataA = 692a879e, dataB = e7f0a648, dataC = 8eda21d6
+	dataA = 0000016d, dataB = 00000153, dataC = 0000003e
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 2dc730e4, dataB = 00008000, dataC = dc730e40
+	dataA = 9468c14b, dataB = 00000083, dataC = 468c14b2
+	dataA = f0a4e86d, dataB = 00000000, dataC = 0a4e86d9
+	dataA = d124209d, dataB = 00000000, dataC = 124209df
+	dataA = 9b668639, dataB = 00000080, dataC = b668639d
+	dataA = a1308008, dataB = 00000080, dataC = 13080089
+	dataA = 8eda21d6, dataB = 00000080, dataC = eda21d6a
+	dataA = 0000003e, dataB = 00000080, dataC = 000003e8
+ext_x:3e8 result:1 shift:9
+Recryptor: addrA = 0x3a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000001, dataB = dc730e40, dataC = dc730e41
+	dataA = 00000000, dataB = 468c14b2, dataC = 468c14b2
+	dataA = 00000400, dataB = 0a4e86d9, dataC = 0a4e82d9
+	dataA = 00000000, dataB = 124209df, dataC = 124209df
+	dataA = 00000000, dataB = b668639d, dataC = b668639d
+	dataA = 00000000, dataB = 13080089, dataC = 13080089
+	dataA = 00000000, dataB = eda21d6a, dataC = eda21d6a
+	dataA = 00000200, dataB = 000003e8, dataC = 000001e8
+ext_x:2b02bc51 result:2b02bc shift:8
+Recryptor: addrA = 0x3400, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0f3a3fb0, dataB = dc730e41, dataC = d34931f1
+	dataA = d93353c9, dataB = 468c14b2, dataC = 9fbf477b
+	dataA = f9c97273, dataB = 0a4e82d9, dataC = f387f0aa
+	dataA = 5ed07ca4, dataB = 124209df, dataC = 4c92757b
+	dataA = dd6ec08a, dataB = b668639d, dataC = 6b06a317
+	dataA = ca2860c5, dataB = 13080089, dataC = d920604c
+	dataA = 188d2bdd, dataB = eda21d6a, dataC = f52f36b7
+	dataA = 000000fa, dataB = 000001e8, dataC = 00000112
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = d34931f1, dataB = 00008000, dataC = 34931f10
+	dataA = 9fbf477b, dataB = 00000083, dataC = fbf477bd
+	dataA = f387f0aa, dataB = 00000000, dataC = 387f0aa9
+	dataA = 4c92757b, dataB = 00000000, dataC = c92757bf
+	dataA = 6b06a317, dataB = 00000080, dataC = b06a3174
+	dataA = d920604c, dataB = 00000080, dataC = 920604c6
+	dataA = f52f36b7, dataB = 00000080, dataC = 52f36b7d
+	dataA = 00000112, dataB = 00000080, dataC = 0000112f
+ext_x:112f result:8 shift:9
+Recryptor: addrA = 0x4100, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000008, dataB = 34931f10, dataC = 34931f18
+	dataA = 00000000, dataB = fbf477bd, dataC = fbf477bd
+	dataA = 00002000, dataB = 387f0aa9, dataC = 387f2aa9
+	dataA = 00000000, dataB = c92757bf, dataC = c92757bf
+	dataA = 00000000, dataB = b06a3174, dataC = b06a3174
+	dataA = 00000000, dataB = 920604c6, dataC = 920604c6
+	dataA = 00000000, dataB = 52f36b7d, dataC = 52f36b7d
+	dataA = 00001000, dataB = 0000112f, dataC = 0000012f
+ext_x:2b02bc51 result:2b02bc5 shift:4
+Recryptor: addrA = 0x2d00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = c4539034, dataB = 34931f18, dataC = f0c08f2c
+	dataA = 1ad57d16, dataB = fbf477bd, dataC = e1210aab
+	dataA = 4296e5a5, dataB = 387f2aa9, dataC = 7ae9cf0c
+	dataA = b8dc217b, dataB = c92757bf, dataC = 71fb76c4
+	dataA = 99ecd067, dataB = b06a3174, dataC = 2986e113
+	dataA = 979e2853, dataB = 920604c6, dataC = 05982c95
+	dataA = 8a65df19, dataB = 52f36b7d, dataC = d896b464
+	dataA = 00000043, dataB = 0000012f, dataC = 0000016c
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = f0c08f2c, dataB = 00008000, dataC = 0c08f2c0
+	dataA = e1210aab, dataB = 00000083, dataC = 1210aabf
+	dataA = 7ae9cf0c, dataB = 00000000, dataC = ae9cf0ce
+	dataA = 71fb76c4, dataB = 00000000, dataC = 1fb76c47
+	dataA = 2986e113, dataB = 00000080, dataC = 986e1137
+	dataA = 05982c95, dataB = 00000080, dataC = 5982c952
+	dataA = d896b464, dataB = 00000080, dataC = 896b4640
+	dataA = 0000016c, dataB = 00000080, dataC = 000016cd
+ext_x:16cd result:b shift:9
+Recryptor: addrA = 0x4400, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000b, dataB = 0c08f2c0, dataC = 0c08f2cb
+	dataA = 00000000, dataB = 1210aabf, dataC = 1210aabf
+	dataA = 00002c00, dataB = ae9cf0ce, dataC = ae9cdcce
+	dataA = 00000000, dataB = 1fb76c47, dataC = 1fb76c47
+	dataA = 00000000, dataB = 986e1137, dataC = 986e1137
+	dataA = 00000000, dataB = 5982c952, dataC = 5982c952
+	dataA = 00000000, dataB = 896b4640, dataC = 896b4640
+	dataA = 00001600, dataB = 000016cd, dataC = 000000cd
+Recryptor: addrA = 0x2900, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = c145855b, dataB = 0c08f2cb, dataC = cd4d7790
+	dataA = adc44c51, dataB = 1210aabf, dataC = bfd4e6ee
+	dataA = ea2e378b, dataB = ae9cdcce, dataC = 44b2eb45
+	dataA = 7293f518, dataB = 1fb76c47, dataC = 6d24995f
+	dataA = 2d36901e, dataB = 986e1137, dataC = b5588129
+	dataA = 2e79f7ef, dataB = 5982c952, dataC = 77fb3ebd
+	dataA = 7de139ad, dataB = 896b4640, dataC = f48a7fed
+	dataA = 000001ea, dataB = 000000cd, dataC = 00000127
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = cd4d7790, dataB = 00008000, dataC = d4d77900
+	dataA = bfd4e6ee, dataB = 00000083, dataC = fd4e6eec
+	dataA = 44b2eb45, dataB = 00000000, dataC = 4b2eb45b
+	dataA = 6d24995f, dataB = 00000000, dataC = d24995f4
+	dataA = b5588129, dataB = 00000080, dataC = 55881296
+	dataA = 77fb3ebd, dataB = 00000080, dataC = 7fb3ebdb
+	dataA = f48a7fed, dataB = 00000080, dataC = 48a7fed7
+	dataA = 00000127, dataB = 00000080, dataC = 0000127f
+ext_x:127f result:9 shift:9
+Recryptor: addrA = 0x4200, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000009, dataB = d4d77900, dataC = d4d77909
+	dataA = 00000000, dataB = fd4e6eec, dataC = fd4e6eec
+	dataA = 00002400, dataB = 4b2eb45b, dataC = 4b2e905b
+	dataA = 00000000, dataB = d24995f4, dataC = d24995f4
+	dataA = 00000000, dataB = 55881296, dataC = 55881296
+	dataA = 00000000, dataB = 7fb3ebdb, dataC = 7fb3ebdb
+	dataA = 00000000, dataB = 48a7fed7, dataC = 48a7fed7
+	dataA = 00001200, dataB = 0000127f, dataC = 0000007f
+ext_x:5c19b015 result:5 shift:1c
+Recryptor: addrA = 0x2d00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = c4539034, dataB = d4d77909, dataC = 1084e93d
+	dataA = 1ad57d16, dataB = fd4e6eec, dataC = e79b13fa
+	dataA = 4296e5a5, dataB = 4b2e905b, dataC = 09b875fe
+	dataA = b8dc217b, dataB = d24995f4, dataC = 6a95b48f
+	dataA = 99ecd067, dataB = 55881296, dataC = cc64c2f1
+	dataA = 979e2853, dataB = 7fb3ebdb, dataC = e82dc388
+	dataA = 8a65df19, dataB = 48a7fed7, dataC = c2c221ce
+	dataA = 00000043, dataB = 0000007f, dataC = 0000003c
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 1084e93d, dataB = 00008000, dataC = 084e93d0
+	dataA = e79b13fa, dataB = 00000083, dataC = 79b13fa1
+	dataA = 09b875fe, dataB = 00000000, dataC = 9b875fee
+	dataA = 6a95b48f, dataB = 00000000, dataC = a95b48f0
+	dataA = cc64c2f1, dataB = 00000080, dataC = c64c2f16
+	dataA = e82dc388, dataB = 00000080, dataC = 82dc388c
+	dataA = c2c221ce, dataB = 00000080, dataC = 2c221cee
+	dataA = 0000003c, dataB = 00000080, dataC = 000003cc
+ext_x:3cc result:1 shift:9
+Recryptor: addrA = 0x3a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000001, dataB = 084e93d0, dataC = 084e93d1
+	dataA = 00000000, dataB = 79b13fa1, dataC = 79b13fa1
+	dataA = 00000400, dataB = 9b875fee, dataC = 9b875bee
+	dataA = 00000000, dataB = a95b48f0, dataC = a95b48f0
+	dataA = 00000000, dataB = c64c2f16, dataC = c64c2f16
+	dataA = 00000000, dataB = 82dc388c, dataC = 82dc388c
+	dataA = 00000000, dataB = 2c221cee, dataC = 2c221cee
+	dataA = 00000200, dataB = 000003cc, dataC = 000001cc
+ext_x:5c19b015 result:5c shift:18
+Recryptor: addrA = 0x3400, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0f3a3fb0, dataB = 084e93d1, dataC = 0774ac61
+	dataA = d93353c9, dataB = 79b13fa1, dataC = a0826c68
+	dataA = f9c97273, dataB = 9b875bee, dataC = 624e299d
+	dataA = 5ed07ca4, dataB = a95b48f0, dataC = f78b3454
+	dataA = dd6ec08a, dataB = c64c2f16, dataC = 1b22ef9c
+	dataA = ca2860c5, dataB = 82dc388c, dataC = 48f45849
+	dataA = 188d2bdd, dataB = 2c221cee, dataC = 34af3733
+	dataA = 000000fa, dataB = 000001cc, dataC = 00000136
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 0774ac61, dataB = 00008000, dataC = 774ac610
+	dataA = a0826c68, dataB = 00000083, dataC = 0826c680
+	dataA = 624e299d, dataB = 00000000, dataC = 24e299da
+	dataA = f78b3454, dataB = 00000000, dataC = 78b34546
+	dataA = 1b22ef9c, dataB = 00000080, dataC = b22ef9cf
+	dataA = 48f45849, dataB = 00000080, dataC = 8f458491
+	dataA = 34af3733, dataB = 00000080, dataC = 4af37334
+	dataA = 00000136, dataB = 00000080, dataC = 00001363
+ext_x:1363 result:9 shift:9
+Recryptor: addrA = 0x4200, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000009, dataB = 774ac610, dataC = 774ac619
+	dataA = 00000000, dataB = 0826c680, dataC = 0826c680
+	dataA = 00002400, dataB = 24e299da, dataC = 24e2bdda
+	dataA = 00000000, dataB = 78b34546, dataC = 78b34546
+	dataA = 00000000, dataB = b22ef9cf, dataC = b22ef9cf
+	dataA = 00000000, dataB = 8f458491, dataC = 8f458491
+	dataA = 00000000, dataB = 4af37334, dataC = 4af37334
+	dataA = 00001200, dataB = 00001363, dataC = 00000163
+ext_x:5c19b015 result:5c1 shift:14
+Recryptor: addrA = 0x2900, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = c145855b, dataB = 774ac619, dataC = b60f4342
+	dataA = adc44c51, dataB = 0826c680, dataC = a5e28ad1
+	dataA = ea2e378b, dataB = 24e2bdda, dataC = cecc8a51
+	dataA = 7293f518, dataB = 78b34546, dataC = 0a20b05e
+	dataA = 2d36901e, dataB = b22ef9cf, dataC = 9f1869d1
+	dataA = 2e79f7ef, dataB = 8f458491, dataC = a13c737e
+	dataA = 7de139ad, dataB = 4af37334, dataC = 37124a99
+	dataA = 000001ea, dataB = 00000163, dataC = 00000089
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = b60f4342, dataB = 00008000, dataC = 60f43420
+	dataA = a5e28ad1, dataB = 00000083, dataC = 5e28ad1b
+	dataA = cecc8a51, dataB = 00000000, dataC = ecc8a51a
+	dataA = 0a20b05e, dataB = 00000000, dataC = a20b05ec
+	dataA = 9f1869d1, dataB = 00000080, dataC = f1869d10
+	dataA = a13c737e, dataB = 00000080, dataC = 13c737e9
+	dataA = 37124a99, dataB = 00000080, dataC = 7124a99a
+	dataA = 00000089, dataB = 00000080, dataC = 00000893
+ext_x:893 result:4 shift:9
+Recryptor: addrA = 0x3d00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000004, dataB = 60f43420, dataC = 60f43424
+	dataA = 00000000, dataB = 5e28ad1b, dataC = 5e28ad1b
+	dataA = 00001000, dataB = ecc8a51a, dataC = ecc8b51a
+	dataA = 00000000, dataB = a20b05ec, dataC = a20b05ec
+	dataA = 00000000, dataB = f1869d10, dataC = f1869d10
+	dataA = 00000000, dataB = 13c737e9, dataC = 13c737e9
+	dataA = 00000000, dataB = 7124a99a, dataC = 7124a99a
+	dataA = 00000800, dataB = 00000893, dataC = 00000093
+ext_x:5c19b015 result:5c19 shift:10
+Recryptor: addrA = 0x3100, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = cb69af84, dataB = 60f43424, dataC = ab9d9ba0
+	dataA = c3e62edf, dataB = 5e28ad1b, dataC = 9dce83c4
+	dataA = bb5f97d6, dataB = ecc8b51a, dataC = 579722cc
+	dataA = e60c5ddf, dataB = a20b05ec, dataC = 44075833
+	dataA = 448210ed, dataB = f1869d10, dataC = b5048dfd
+	dataA = 5db64896, dataB = 13c737e9, dataC = 4e717f7f
+	dataA = 92e8f4c4, dataB = 7124a99a, dataC = e3cc5d5e
+	dataA = 000000b9, dataB = 00000093, dataC = 0000002a
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = ab9d9ba0, dataB = 00008000, dataC = b9d9ba00
+	dataA = 9dce83c4, dataB = 00000083, dataC = dce83c4a
+	dataA = 579722cc, dataB = 00000000, dataC = 79722cc9
+	dataA = 44075833, dataB = 00000000, dataC = 40758335
+	dataA = b5048dfd, dataB = 00000080, dataC = 5048dfd4
+	dataA = 4e717f7f, dataB = 00000080, dataC = e717f7fb
+	dataA = e3cc5d5e, dataB = 00000080, dataC = 3cc5d5e4
+	dataA = 0000002a, dataB = 00000080, dataC = 000002ae
+ext_x:2ae result:1 shift:9
+Recryptor: addrA = 0x3a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000001, dataB = b9d9ba00, dataC = b9d9ba01
+	dataA = 00000000, dataB = dce83c4a, dataC = dce83c4a
+	dataA = 00000400, dataB = 79722cc9, dataC = 797228c9
+	dataA = 00000000, dataB = 40758335, dataC = 40758335
+	dataA = 00000000, dataB = 5048dfd4, dataC = 5048dfd4
+	dataA = 00000000, dataB = e717f7fb, dataC = e717f7fb
+	dataA = 00000000, dataB = 3cc5d5e4, dataC = 3cc5d5e4
+	dataA = 00000200, dataB = 000002ae, dataC = 000000ae
+ext_x:5c19b015 result:5c19b shift:c
+Recryptor: addrA = 0x3300, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 49e2a533, dataB = b9d9ba01, dataC = f03b1f32
+	dataA = 986eb67c, dataB = dce83c4a, dataC = 44868a36
+	dataA = 6f03fcc1, dataB = 797228c9, dataC = 1671d408
+	dataA = 032bb7ee, dataB = 40758335, dataC = 435e34db
+	dataA = 1eef30d1, dataB = 5048dfd4, dataC = 4ea7ef05
+	dataA = 0145a748, dataB = e717f7fb, dataC = e65250b3
+	dataA = 692a879e, dataB = 3cc5d5e4, dataC = 55ef527a
+	dataA = 0000016d, dataB = 000000ae, dataC = 000001c3
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = f03b1f32, dataB = 00008000, dataC = 03b1f320
+	dataA = 44868a36, dataB = 00000083, dataC = 4868a36f
+	dataA = 1671d408, dataB = 00000000, dataC = 671d4084
+	dataA = 435e34db, dataB = 00000000, dataC = 35e34db1
+	dataA = 4ea7ef05, dataB = 00000080, dataC = ea7ef054
+	dataA = e65250b3, dataB = 00000080, dataC = 65250b34
+	dataA = 55ef527a, dataB = 00000080, dataC = 5ef527ae
+	dataA = 000001c3, dataB = 00000080, dataC = 00001c35
+ext_x:1c35 result:e shift:9
+Recryptor: addrA = 0x4700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000e, dataB = 03b1f320, dataC = 03b1f32e
+	dataA = 00000000, dataB = 4868a36f, dataC = 4868a36f
+	dataA = 00003800, dataB = 671d4084, dataC = 671d7884
+	dataA = 00000000, dataB = 35e34db1, dataC = 35e34db1
+	dataA = 00000000, dataB = ea7ef054, dataC = ea7ef054
+	dataA = 00000000, dataB = 65250b34, dataC = 65250b34
+	dataA = 00000000, dataB = 5ef527ae, dataC = 5ef527ae
+	dataA = 00001c00, dataB = 00001c35, dataC = 00000035
+ext_x:5c19b015 result:5c19b0 shift:8
+Recryptor: addrA = 0x2800, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 03b1f32e, dataC = 03b1f32e
+	dataA = 00000000, dataB = 4868a36f, dataC = 4868a36f
+	dataA = 00000000, dataB = 671d7884, dataC = 671d7884
+	dataA = 00000000, dataB = 35e34db1, dataC = 35e34db1
+	dataA = 00000000, dataB = ea7ef054, dataC = ea7ef054
+	dataA = 00000000, dataB = 65250b34, dataC = 65250b34
+	dataA = 00000000, dataB = 5ef527ae, dataC = 5ef527ae
+	dataA = 00000000, dataB = 00000035, dataC = 00000035
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 03b1f32e, dataB = 00008000, dataC = 3b1f32e0
+	dataA = 4868a36f, dataB = 00000083, dataC = 868a36f0
+	dataA = 671d7884, dataB = 00000000, dataC = 71d78844
+	dataA = 35e34db1, dataB = 00000000, dataC = 5e34db16
+	dataA = ea7ef054, dataB = 00000080, dataC = a7ef0543
+	dataA = 65250b34, dataB = 00000080, dataC = 5250b34e
+	dataA = 5ef527ae, dataB = 00000080, dataC = ef527ae6
+	dataA = 00000035, dataB = 00000080, dataC = 00000355
+ext_x:355 result:1 shift:9
+Recryptor: addrA = 0x3a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000001, dataB = 3b1f32e0, dataC = 3b1f32e1
+	dataA = 00000000, dataB = 868a36f0, dataC = 868a36f0
+	dataA = 00000400, dataB = 71d78844, dataC = 71d78c44
+	dataA = 00000000, dataB = 5e34db16, dataC = 5e34db16
+	dataA = 00000000, dataB = a7ef0543, dataC = a7ef0543
+	dataA = 00000000, dataB = 5250b34e, dataC = 5250b34e
+	dataA = 00000000, dataB = ef527ae6, dataC = ef527ae6
+	dataA = 00000200, dataB = 00000355, dataC = 00000155
+ext_x:5c19b015 result:5c19b01 shift:4
+Recryptor: addrA = 0x2900, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = c145855b, dataB = 3b1f32e1, dataC = fa5ab7ba
+	dataA = adc44c51, dataB = 868a36f0, dataC = 2b4e7aa1
+	dataA = ea2e378b, dataB = 71d78c44, dataC = 9bf9bbcf
+	dataA = 7293f518, dataB = 5e34db16, dataC = 2ca72e0e
+	dataA = 2d36901e, dataB = a7ef0543, dataC = 8ad9955d
+	dataA = 2e79f7ef, dataB = 5250b34e, dataC = 7c2944a1
+	dataA = 7de139ad, dataB = ef527ae6, dataC = 92b3434b
+	dataA = 000001ea, dataB = 00000155, dataC = 000000bf
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = fa5ab7ba, dataB = 00008000, dataC = a5ab7ba0
+	dataA = 2b4e7aa1, dataB = 00000083, dataC = b4e7aa1f
+	dataA = 9bf9bbcf, dataB = 00000000, dataC = bf9bbcf2
+	dataA = 2ca72e0e, dataB = 00000000, dataC = ca72e0e9
+	dataA = 8ad9955d, dataB = 00000080, dataC = ad9955d2
+	dataA = 7c2944a1, dataB = 00000080, dataC = c2944a18
+	dataA = 92b3434b, dataB = 00000080, dataC = 2b3434b7
+	dataA = 000000bf, dataB = 00000080, dataC = 00000bf9
+ext_x:bf9 result:5 shift:9
+Recryptor: addrA = 0x3e00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000005, dataB = a5ab7ba0, dataC = a5ab7ba5
+	dataA = 00000000, dataB = b4e7aa1f, dataC = b4e7aa1f
+	dataA = 00001400, dataB = bf9bbcf2, dataC = bf9ba8f2
+	dataA = 00000000, dataB = ca72e0e9, dataC = ca72e0e9
+	dataA = 00000000, dataB = ad9955d2, dataC = ad9955d2
+	dataA = 00000000, dataB = c2944a18, dataC = c2944a18
+	dataA = 00000000, dataB = 2b3434b7, dataC = 2b3434b7
+	dataA = 00000a00, dataB = 00000bf9, dataC = 000001f9
+Recryptor: addrA = 0x2d00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = c4539034, dataB = a5ab7ba5, dataC = 61f8eb91
+	dataA = 1ad57d16, dataB = b4e7aa1f, dataC = ae32d709
+	dataA = 4296e5a5, dataB = bf9ba8f2, dataC = fd0d4d57
+	dataA = b8dc217b, dataB = ca72e0e9, dataC = 72aec192
+	dataA = 99ecd067, dataB = ad9955d2, dataC = 347585b5
+	dataA = 979e2853, dataB = c2944a18, dataC = 550a624b
+	dataA = 8a65df19, dataB = 2b3434b7, dataC = a151ebae
+	dataA = 00000043, dataB = 000001f9, dataC = 000001ba
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 61f8eb91, dataB = 00008000, dataC = 1f8eb910
+	dataA = ae32d709, dataB = 00000083, dataC = e32d7096
+	dataA = fd0d4d57, dataB = 00000000, dataC = d0d4d57a
+	dataA = 72aec192, dataB = 00000000, dataC = 2aec192f
+	dataA = 347585b5, dataB = 00000080, dataC = 47585b57
+	dataA = 550a624b, dataB = 00000080, dataC = 50a624b3
+	dataA = a151ebae, dataB = 00000080, dataC = 151ebae5
+	dataA = 000001ba, dataB = 00000080, dataC = 00001baa
+ext_x:1baa result:d shift:9
+Recryptor: addrA = 0x4600, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000d, dataB = 1f8eb910, dataC = 1f8eb91d
+	dataA = 00000000, dataB = e32d7096, dataC = e32d7096
+	dataA = 00003400, dataB = d0d4d57a, dataC = d0d4e17a
+	dataA = 00000000, dataB = 2aec192f, dataC = 2aec192f
+	dataA = 00000000, dataB = 47585b57, dataC = 47585b57
+	dataA = 00000000, dataB = 50a624b3, dataC = 50a624b3
+	dataA = 00000000, dataB = 151ebae5, dataC = 151ebae5
+	dataA = 00001a00, dataB = 00001baa, dataC = 000001aa
+ext_x:3b99b6e2 result:3 shift:1c
+Recryptor: addrA = 0x2b00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 43ce8fec, dataB = 1f8eb91d, dataC = 5c4036f1
+	dataA = f64cd4f2, dataB = e32d7096, dataC = 1561a464
+	dataA = 3e725c9c, dataB = d0d4e17a, dataC = eea6bde6
+	dataA = 97b41f29, dataB = 2aec192f, dataC = bd580606
+	dataA = 775bb022, dataB = 47585b57, dataC = 3003eb75
+	dataA = 728a1831, dataB = 50a624b3, dataC = 222c3c82
+	dataA = 86234af7, dataB = 151ebae5, dataC = 933df012
+	dataA = 0000003e, dataB = 000001aa, dataC = 00000194
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 5c4036f1, dataB = 00008000, dataC = c4036f10
+	dataA = 1561a464, dataB = 00000083, dataC = 561a4645
+	dataA = eea6bde6, dataB = 00000000, dataC = ea6bde61
+	dataA = bd580606, dataB = 00000000, dataC = d580606e
+	dataA = 3003eb75, dataB = 00000080, dataC = 003eb75b
+	dataA = 222c3c82, dataB = 00000080, dataC = 22c3c823
+	dataA = 933df012, dataB = 00000080, dataC = 33df0122
+	dataA = 00000194, dataB = 00000080, dataC = 00001949
+ext_x:1949 result:c shift:9
+Recryptor: addrA = 0x4500, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000c, dataB = c4036f10, dataC = c4036f1c
+	dataA = 00000000, dataB = 561a4645, dataC = 561a4645
+	dataA = 00003000, dataB = ea6bde61, dataC = ea6bee61
+	dataA = 00000000, dataB = d580606e, dataC = d580606e
+	dataA = 00000000, dataB = 003eb75b, dataC = 003eb75b
+	dataA = 00000000, dataB = 22c3c823, dataC = 22c3c823
+	dataA = 00000000, dataB = 33df0122, dataC = 33df0122
+	dataA = 00001800, dataB = 00001949, dataC = 00000149
+ext_x:3b99b6e2 result:3b shift:18
+Recryptor: addrA = 0x3300, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 49e2a533, dataB = c4036f1c, dataC = 8de1ca2f
+	dataA = 986eb67c, dataB = 561a4645, dataC = ce74f039
+	dataA = 6f03fcc1, dataB = ea6bee61, dataC = 856812a0
+	dataA = 032bb7ee, dataB = d580606e, dataC = d6abd780
+	dataA = 1eef30d1, dataB = 003eb75b, dataC = 1ed1878a
+	dataA = 0145a748, dataB = 22c3c823, dataC = 23866f6b
+	dataA = 692a879e, dataB = 33df0122, dataC = 5af586bc
+	dataA = 0000016d, dataB = 00000149, dataC = 00000024
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 8de1ca2f, dataB = 00008000, dataC = de1ca2f0
+	dataA = ce74f039, dataB = 00000083, dataC = e74f0398
+	dataA = 856812a0, dataB = 00000000, dataC = 56812a0c
+	dataA = d6abd780, dataB = 00000000, dataC = 6abd7808
+	dataA = 1ed1878a, dataB = 00000080, dataC = ed1878ad
+	dataA = 23866f6b, dataB = 00000080, dataC = 3866f6b1
+	dataA = 5af586bc, dataB = 00000080, dataC = af586bc2
+	dataA = 00000024, dataB = 00000080, dataC = 00000245
+ext_x:245 result:1 shift:9
+Recryptor: addrA = 0x3a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000001, dataB = de1ca2f0, dataC = de1ca2f1
+	dataA = 00000000, dataB = e74f0398, dataC = e74f0398
+	dataA = 00000400, dataB = 56812a0c, dataC = 56812e0c
+	dataA = 00000000, dataB = 6abd7808, dataC = 6abd7808
+	dataA = 00000000, dataB = ed1878ad, dataC = ed1878ad
+	dataA = 00000000, dataB = 3866f6b1, dataC = 3866f6b1
+	dataA = 00000000, dataB = af586bc2, dataC = af586bc2
+	dataA = 00000200, dataB = 00000245, dataC = 00000045
+ext_x:3b99b6e2 result:3b9 shift:14
+Recryptor: addrA = 0x3100, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = cb69af84, dataB = de1ca2f1, dataC = 15750d75
+	dataA = c3e62edf, dataB = e74f0398, dataC = 24a92d47
+	dataA = bb5f97d6, dataB = 56812e0c, dataC = eddeb9da
+	dataA = e60c5ddf, dataB = 6abd7808, dataC = 8cb125d7
+	dataA = 448210ed, dataB = ed1878ad, dataC = a99a6840
+	dataA = 5db64896, dataB = 3866f6b1, dataC = 65d0be27
+	dataA = 92e8f4c4, dataB = af586bc2, dataC = 3db09f06
+	dataA = 000000b9, dataB = 00000045, dataC = 000000fc
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 15750d75, dataB = 00008000, dataC = 5750d750
+	dataA = 24a92d47, dataB = 00000083, dataC = 4a92d471
+	dataA = eddeb9da, dataB = 00000000, dataC = ddeb9da2
+	dataA = 8cb125d7, dataB = 00000000, dataC = cb125d7e
+	dataA = a99a6840, dataB = 00000080, dataC = 99a68408
+	dataA = 65d0be27, dataB = 00000080, dataC = 5d0be27a
+	dataA = 3db09f06, dataB = 00000080, dataC = db09f066
+	dataA = 000000fc, dataB = 00000080, dataC = 00000fc3
+ext_x:fc3 result:7 shift:9
+Recryptor: addrA = 0x4000, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000007, dataB = 5750d750, dataC = 5750d757
+	dataA = 00000000, dataB = 4a92d471, dataC = 4a92d471
+	dataA = 00001c00, dataB = ddeb9da2, dataC = ddeb81a2
+	dataA = 00000000, dataB = cb125d7e, dataC = cb125d7e
+	dataA = 00000000, dataB = 99a68408, dataC = 99a68408
+	dataA = 00000000, dataB = 5d0be27a, dataC = 5d0be27a
+	dataA = 00000000, dataB = db09f066, dataC = db09f066
+	dataA = 00000e00, dataB = 00000fc3, dataC = 000001c3
+ext_x:3b99b6e2 result:3b99 shift:10
+Recryptor: addrA = 0x3100, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = cb69af84, dataB = 5750d757, dataC = 9c3978d3
+	dataA = c3e62edf, dataB = 4a92d471, dataC = 8974faae
+	dataA = bb5f97d6, dataB = ddeb81a2, dataC = 66b41674
+	dataA = e60c5ddf, dataB = cb125d7e, dataC = 2d1e00a1
+	dataA = 448210ed, dataB = 99a68408, dataC = dd2494e5
+	dataA = 5db64896, dataB = 5d0be27a, dataC = 00bdaaec
+	dataA = 92e8f4c4, dataB = db09f066, dataC = 49e104a2
+	dataA = 000000b9, dataB = 000001c3, dataC = 0000017a
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 9c3978d3, dataB = 00008000, dataC = c3978d30
+	dataA = 8974faae, dataB = 00000083, dataC = 974faae9
+	dataA = 66b41674, dataB = 00000000, dataC = 6b416748
+	dataA = 2d1e00a1, dataB = 00000000, dataC = d1e00a16
+	dataA = dd2494e5, dataB = 00000080, dataC = d2494e52
+	dataA = 00bdaaec, dataB = 00000080, dataC = 0bdaaecd
+	dataA = 49e104a2, dataB = 00000080, dataC = 9e104a20
+	dataA = 0000017a, dataB = 00000080, dataC = 000017a4
+ext_x:17a4 result:b shift:9
+Recryptor: addrA = 0x4400, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000b, dataB = c3978d30, dataC = c3978d3b
+	dataA = 00000000, dataB = 974faae9, dataC = 974faae9
+	dataA = 00002c00, dataB = 6b416748, dataC = 6b414b48
+	dataA = 00000000, dataB = d1e00a16, dataC = d1e00a16
+	dataA = 00000000, dataB = d2494e52, dataC = d2494e52
+	dataA = 00000000, dataB = 0bdaaecd, dataC = 0bdaaecd
+	dataA = 00000000, dataB = 9e104a20, dataC = 9e104a20
+	dataA = 00001600, dataB = 000017a4, dataC = 000001a4
+ext_x:3b99b6e2 result:3b99b shift:c
+Recryptor: addrA = 0x3300, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 49e2a533, dataB = c3978d3b, dataC = 8a752808
+	dataA = 986eb67c, dataB = 974faae9, dataC = 0f211c95
+	dataA = 6f03fcc1, dataB = 6b414b48, dataC = 0442b789
+	dataA = 032bb7ee, dataB = d1e00a16, dataC = d2cbbdf8
+	dataA = 1eef30d1, dataB = d2494e52, dataC = cca67e83
+	dataA = 0145a748, dataB = 0bdaaecd, dataC = 0a9f0985
+	dataA = 692a879e, dataB = 9e104a20, dataC = f73acdbe
+	dataA = 0000016d, dataB = 000001a4, dataC = 000000c9
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 8a752808, dataB = 00008000, dataC = a7528080
+	dataA = 0f211c95, dataB = 00000083, dataC = f211c958
+	dataA = 0442b789, dataB = 00000000, dataC = 442b7890
+	dataA = d2cbbdf8, dataB = 00000000, dataC = 2cbbdf80
+	dataA = cca67e83, dataB = 00000080, dataC = ca67e83d
+	dataA = 0a9f0985, dataB = 00000080, dataC = a9f0985c
+	dataA = f73acdbe, dataB = 00000080, dataC = 73acdbe0
+	dataA = 000000c9, dataB = 00000080, dataC = 00000c9f
+ext_x:c9f result:6 shift:9
+Recryptor: addrA = 0x3f00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000006, dataB = a7528080, dataC = a7528086
+	dataA = 00000000, dataB = f211c958, dataC = f211c958
+	dataA = 00001800, dataB = 442b7890, dataC = 442b6090
+	dataA = 00000000, dataB = 2cbbdf80, dataC = 2cbbdf80
+	dataA = 00000000, dataB = ca67e83d, dataC = ca67e83d
+	dataA = 00000000, dataB = a9f0985c, dataC = a9f0985c
+	dataA = 00000000, dataB = 73acdbe0, dataC = 73acdbe0
+	dataA = 00000c00, dataB = 00000c9f, dataC = 0000009f
+ext_x:3b99b6e2 result:3b99b6 shift:8
+Recryptor: addrA = 0x2e00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 879d1fd8, dataB = a7528086, dataC = 20cf9f5e
+	dataA = ec99a9e4, dataB = f211c958, dataC = 1e8860bc
+	dataA = 7ce4b939, dataB = 442b6090, dataC = 38cfd9a9
+	dataA = 2f683e52, dataB = 2cbbdf80, dataC = 03d3e1d2
+	dataA = eeb76045, dataB = ca67e83d, dataC = 24d08878
+	dataA = e5143062, dataB = a9f0985c, dataC = 4ce4a83e
+	dataA = 0c4695ee, dataB = 73acdbe0, dataC = 7fea4e0e
+	dataA = 0000007d, dataB = 0000009f, dataC = 000000e2
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 20cf9f5e, dataB = 00008000, dataC = 0cf9f5e0
+	dataA = 1e8860bc, dataB = 00000083, dataC = e8860bc2
+	dataA = 38cfd9a9, dataB = 00000000, dataC = 8cfd9a91
+	dataA = 03d3e1d2, dataB = 00000000, dataC = 3d3e1d23
+	dataA = 24d08878, dataB = 00000080, dataC = 4d088780
+	dataA = 4ce4a83e, dataB = 00000080, dataC = ce4a83e2
+	dataA = 7fea4e0e, dataB = 00000080, dataC = fea4e0e4
+	dataA = 000000e2, dataB = 00000080, dataC = 00000e27
+ext_x:e27 result:7 shift:9
+Recryptor: addrA = 0x4000, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000007, dataB = 0cf9f5e0, dataC = 0cf9f5e7
+	dataA = 00000000, dataB = e8860bc2, dataC = e8860bc2
+	dataA = 00001c00, dataB = 8cfd9a91, dataC = 8cfd8691
+	dataA = 00000000, dataB = 3d3e1d23, dataC = 3d3e1d23
+	dataA = 00000000, dataB = 4d088780, dataC = 4d088780
+	dataA = 00000000, dataB = ce4a83e2, dataC = ce4a83e2
+	dataA = 00000000, dataB = fea4e0e4, dataC = fea4e0e4
+	dataA = 00000e00, dataB = 00000e27, dataC = 00000027
+ext_x:3b99b6e2 result:3b99b6e shift:4
+Recryptor: addrA = 0x3600, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 8db13507, dataB = 0cf9f5e7, dataC = 8148c0e0
+	dataA = 82bbcb6a, dataB = e8860bc2, dataC = 6a3dc0a8
+	dataA = 2d951964, dataB = 8cfd8691, dataC = a1689ff5
+	dataA = bbf79695, dataB = 3d3e1d23, dataC = 86c98bb6
+	dataA = 8703e0b6, dataB = 4d088780, dataC = ca0b6736
+	dataA = 96db8f1b, dataB = ce4a83e2, dataC = 58910cf9
+	dataA = e34f5887, dataB = fea4e0e4, dataC = 1debb863
+	dataA = 0000012e, dataB = 00000027, dataC = 00000109
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 8148c0e0, dataB = 00008000, dataC = 148c0e00
+	dataA = 6a3dc0a8, dataB = 00000083, dataC = a3dc0a88
+	dataA = a1689ff5, dataB = 00000000, dataC = 1689ff56
+	dataA = 86c98bb6, dataB = 00000000, dataC = 6c98bb6a
+	dataA = ca0b6736, dataB = 00000080, dataC = a0b67368
+	dataA = 58910cf9, dataB = 00000080, dataC = 8910cf9c
+	dataA = 1debb863, dataB = 00000080, dataC = debb8635
+	dataA = 00000109, dataB = 00000080, dataC = 00001091
+ext_x:1091 result:8 shift:9
+Recryptor: addrA = 0x4100, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000008, dataB = 148c0e00, dataC = 148c0e08
+	dataA = 00000000, dataB = a3dc0a88, dataC = a3dc0a88
+	dataA = 00002000, dataB = 1689ff56, dataC = 1689df56
+	dataA = 00000000, dataB = 6c98bb6a, dataC = 6c98bb6a
+	dataA = 00000000, dataB = a0b67368, dataC = a0b67368
+	dataA = 00000000, dataB = 8910cf9c, dataC = 8910cf9c
+	dataA = 00000000, dataB = debb8635, dataC = debb8635
+	dataA = 00001000, dataB = 00001091, dataC = 00000091
+Recryptor: addrA = 0x2a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 828b0ab7, dataB = 148c0e08, dataC = 960704bf
+	dataA = 5b8898a3, dataB = a3dc0a88, dataC = f854922b
+	dataA = d45c6b17, dataB = 1689df56, dataC = c2d5b441
+	dataA = e527ea31, dataB = 6c98bb6a, dataC = 89bf515b
+	dataA = 5a6d203c, dataB = a0b67368, dataC = fadb5354
+	dataA = 5cf3efde, dataB = 8910cf9c, dataC = d5e32042
+	dataA = fbc2735a, dataB = debb8635, dataC = 2579f56f
+	dataA = 000001d4, dataB = 00000091, dataC = 00000145
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 960704bf, dataB = 00008000, dataC = 60704bf0
+	dataA = f854922b, dataB = 00000083, dataC = 854922b9
+	dataA = c2d5b441, dataB = 00000000, dataC = 2d5b441f
+	dataA = 89bf515b, dataB = 00000000, dataC = 9bf515bc
+	dataA = fadb5354, dataB = 00000080, dataC = adb53548
+	dataA = d5e32042, dataB = 00000080, dataC = 5e32042f
+	dataA = 2579f56f, dataB = 00000080, dataC = 579f56fd
+	dataA = 00000145, dataB = 00000080, dataC = 00001452
+ext_x:1452 result:a shift:9
+Recryptor: addrA = 0x4300, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000a, dataB = 60704bf0, dataC = 60704bfa
+	dataA = 00000000, dataB = 854922b9, dataC = 854922b9
+	dataA = 00002800, dataB = 2d5b441f, dataC = 2d5b6c1f
+	dataA = 00000000, dataB = 9bf515bc, dataC = 9bf515bc
+	dataA = 00000000, dataB = adb53548, dataC = adb53548
+	dataA = 00000000, dataB = 5e32042f, dataC = 5e32042f
+	dataA = 00000000, dataB = 579f56fd, dataC = 579f56fd
+	dataA = 00001400, dataB = 00001452, dataC = 00000052
+ext_x:29dcdf51 result:2 shift:1c
+Recryptor: addrA = 0x2a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 828b0ab7, dataB = 60704bfa, dataC = e2fb414d
+	dataA = 5b8898a3, dataB = 854922b9, dataC = dec1ba1a
+	dataA = d45c6b17, dataB = 2d5b6c1f, dataC = f9070708
+	dataA = e527ea31, dataB = 9bf515bc, dataC = 7ed2ff8d
+	dataA = 5a6d203c, dataB = adb53548, dataC = f7d81574
+	dataA = 5cf3efde, dataB = 5e32042f, dataC = 02c1ebf1
+	dataA = fbc2735a, dataB = 579f56fd, dataC = ac5d25a7
+	dataA = 000001d4, dataB = 00000052, dataC = 00000186
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = e2fb414d, dataB = 00008000, dataC = 2fb414d0
+	dataA = dec1ba1a, dataB = 00000083, dataC = ec1ba1ae
+	dataA = f9070708, dataB = 00000000, dataC = 9070708d
+	dataA = 7ed2ff8d, dataB = 00000000, dataC = ed2ff8df
+	dataA = f7d81574, dataB = 00000080, dataC = 7d815747
+	dataA = 02c1ebf1, dataB = 00000080, dataC = 2c1ebf1f
+	dataA = ac5d25a7, dataB = 00000080, dataC = c5d25a70
+	dataA = 00000186, dataB = 00000080, dataC = 0000186a
+ext_x:186a result:c shift:9
+Recryptor: addrA = 0x4500, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000c, dataB = 2fb414d0, dataC = 2fb414dc
+	dataA = 00000000, dataB = ec1ba1ae, dataC = ec1ba1ae
+	dataA = 00003000, dataB = 9070708d, dataC = 9070408d
+	dataA = 00000000, dataB = ed2ff8df, dataC = ed2ff8df
+	dataA = 00000000, dataB = 7d815747, dataC = 7d815747
+	dataA = 00000000, dataB = 2c1ebf1f, dataC = 2c1ebf1f
+	dataA = 00000000, dataB = c5d25a70, dataC = c5d25a70
+	dataA = 00001800, dataB = 0000186a, dataC = 0000006a
+ext_x:29dcdf51 result:29 shift:18
+Recryptor: addrA = 0x3100, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = cb69af84, dataB = 2fb414dc, dataC = e4ddbb58
+	dataA = c3e62edf, dataB = ec1ba1ae, dataC = 2ffd8f71
+	dataA = bb5f97d6, dataB = 9070408d, dataC = 2b2fd75b
+	dataA = e60c5ddf, dataB = ed2ff8df, dataC = 0b23a500
+	dataA = 448210ed, dataB = 7d815747, dataC = 390347aa
+	dataA = 5db64896, dataB = 2c1ebf1f, dataC = 71a8f789
+	dataA = 92e8f4c4, dataB = c5d25a70, dataC = 573aaeb4
+	dataA = 000000b9, dataB = 0000006a, dataC = 000000d3
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = e4ddbb58, dataB = 00008000, dataC = 4ddbb580
+	dataA = 2ffd8f71, dataB = 00000083, dataC = ffd8f71e
+	dataA = 2b2fd75b, dataB = 00000000, dataC = b2fd75b2
+	dataA = 0b23a500, dataB = 00000000, dataC = b23a5002
+	dataA = 390347aa, dataB = 00000080, dataC = 90347aa0
+	dataA = 71a8f789, dataB = 00000080, dataC = 1a8f7893
+	dataA = 573aaeb4, dataB = 00000080, dataC = 73aaeb47
+	dataA = 000000d3, dataB = 00000080, dataC = 00000d35
+ext_x:d35 result:6 shift:9
+Recryptor: addrA = 0x3f00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000006, dataB = 4ddbb580, dataC = 4ddbb586
+	dataA = 00000000, dataB = ffd8f71e, dataC = ffd8f71e
+	dataA = 00001800, dataB = b2fd75b2, dataC = b2fd6db2
+	dataA = 00000000, dataB = b23a5002, dataC = b23a5002
+	dataA = 00000000, dataB = 90347aa0, dataC = 90347aa0
+	dataA = 00000000, dataB = 1a8f7893, dataC = 1a8f7893
+	dataA = 00000000, dataB = 73aaeb47, dataC = 73aaeb47
+	dataA = 00000c00, dataB = 00000d35, dataC = 00000135
+ext_x:29dcdf51 result:29d shift:14
+Recryptor: addrA = 0x3500, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = ce7fbaeb, dataB = 4ddbb586, dataC = 83a40f6d
+	dataA = 74f71f98, dataB = ffd8f71e, dataC = 8b2fe886
+	dataA = 13e745f8, dataB = b2fd6db2, dataC = a11a284a
+	dataA = 2c4389bc, dataB = b23a5002, dataC = 9e79d9be
+	dataA = f0585094, dataB = 90347aa0, dataC = 606c2a34
+	dataA = e451972a, dataB = 1a8f7893, dataC = fedeefb9
+	dataA = 656c1270, dataB = 73aaeb47, dataC = 16c6f937
+	dataA = 00000110, dataB = 00000135, dataC = 00000025
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 83a40f6d, dataB = 00008000, dataC = 3a40f6d0
+	dataA = 8b2fe886, dataB = 00000083, dataC = b2fe8868
+	dataA = a11a284a, dataB = 00000000, dataC = 11a284a8
+	dataA = 9e79d9be, dataB = 00000000, dataC = e79d9bea
+	dataA = 606c2a34, dataB = 00000080, dataC = 06c2a349
+	dataA = fedeefb9, dataB = 00000080, dataC = edeefb96
+	dataA = 16c6f937, dataB = 00000080, dataC = 6c6f937f
+	dataA = 00000025, dataB = 00000080, dataC = 00000251
+ext_x:251 result:1 shift:9
+Recryptor: addrA = 0x3a00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000001, dataB = 3a40f6d0, dataC = 3a40f6d1
+	dataA = 00000000, dataB = b2fe8868, dataC = b2fe8868
+	dataA = 00000400, dataB = 11a284a8, dataC = 11a280a8
+	dataA = 00000000, dataB = e79d9bea, dataC = e79d9bea
+	dataA = 00000000, dataB = 06c2a349, dataC = 06c2a349
+	dataA = 00000000, dataB = edeefb96, dataC = edeefb96
+	dataA = 00000000, dataB = 6c6f937f, dataC = 6c6f937f
+	dataA = 00000200, dataB = 00000251, dataC = 00000051
+ext_x:29dcdf51 result:29dc shift:10
+Recryptor: addrA = 0x3400, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0f3a3fb0, dataB = 3a40f6d1, dataC = 357ac961
+	dataA = d93353c9, dataB = b2fe8868, dataC = 6bcddba1
+	dataA = f9c97273, dataB = 11a280a8, dataC = e86bf2db
+	dataA = 5ed07ca4, dataB = e79d9bea, dataC = b94de74e
+	dataA = dd6ec08a, dataB = 06c2a349, dataC = dbac63c3
+	dataA = ca2860c5, dataB = edeefb96, dataC = 27c69b53
+	dataA = 188d2bdd, dataB = 6c6f937f, dataC = 74e2b8a2
+	dataA = 000000fa, dataB = 00000051, dataC = 000000ab
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 357ac961, dataB = 00008000, dataC = 57ac9610
+	dataA = 6bcddba1, dataB = 00000083, dataC = bcddba13
+	dataA = e86bf2db, dataB = 00000000, dataC = 86bf2db6
+	dataA = b94de74e, dataB = 00000000, dataC = 94de74ee
+	dataA = dbac63c3, dataB = 00000080, dataC = bac63c3b
+	dataA = 27c69b53, dataB = 00000080, dataC = 7c69b53d
+	dataA = 74e2b8a2, dataB = 00000080, dataC = 4e2b8a22
+	dataA = 000000ab, dataB = 00000080, dataC = 00000ab7
+ext_x:ab7 result:5 shift:9
+Recryptor: addrA = 0x3e00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000005, dataB = 57ac9610, dataC = 57ac9615
+	dataA = 00000000, dataB = bcddba13, dataC = bcddba13
+	dataA = 00001400, dataB = 86bf2db6, dataC = 86bf39b6
+	dataA = 00000000, dataB = 94de74ee, dataC = 94de74ee
+	dataA = 00000000, dataB = bac63c3b, dataC = bac63c3b
+	dataA = 00000000, dataB = 7c69b53d, dataC = 7c69b53d
+	dataA = 00000000, dataB = 4e2b8a22, dataC = 4e2b8a22
+	dataA = 00000a00, dataB = 00000ab7, dataC = 000000b7
+ext_x:29dcdf51 result:29dcd shift:c
+Recryptor: addrA = 0x3500, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = ce7fbaeb, dataB = 57ac9615, dataC = 99d32cfe
+	dataA = 74f71f98, dataB = bcddba13, dataC = c82aa58b
+	dataA = 13e745f8, dataB = 86bf39b6, dataC = 95587c4e
+	dataA = 2c4389bc, dataB = 94de74ee, dataC = b89dfd52
+	dataA = f0585094, dataB = bac63c3b, dataC = 4a9e6caf
+	dataA = e451972a, dataB = 7c69b53d, dataC = 98382217
+	dataA = 656c1270, dataB = 4e2b8a22, dataC = 2b479852
+	dataA = 00000110, dataB = 000000b7, dataC = 000001a7
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = 99d32cfe, dataB = 00008000, dataC = 9d32cfe0
+	dataA = c82aa58b, dataB = 00000083, dataC = 82aa58b9
+	dataA = 95587c4e, dataB = 00000000, dataC = 5587c4ec
+	dataA = b89dfd52, dataB = 00000000, dataC = 89dfd529
+	dataA = 4a9e6caf, dataB = 00000080, dataC = a9e6cafb
+	dataA = 98382217, dataB = 00000080, dataC = 83822174
+	dataA = 2b479852, dataB = 00000080, dataC = b4798529
+	dataA = 000001a7, dataB = 00000080, dataC = 00001a72
+ext_x:1a72 result:d shift:9
+Recryptor: addrA = 0x4600, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 0000000d, dataB = 9d32cfe0, dataC = 9d32cfed
+	dataA = 00000000, dataB = 82aa58b9, dataC = 82aa58b9
+	dataA = 00003400, dataB = 5587c4ec, dataC = 5587f0ec
+	dataA = 00000000, dataB = 89dfd529, dataC = 89dfd529
+	dataA = 00000000, dataB = a9e6cafb, dataC = a9e6cafb
+	dataA = 00000000, dataB = 83822174, dataC = 83822174
+	dataA = 00000000, dataB = b4798529, dataC = b4798529
+	dataA = 00001a00, dataB = 00001a72, dataC = 00000072
+ext_x:29dcdf51 result:29dcdf shift:8
+Recryptor: addrA = 0x3700, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 4cf4b05c, dataB = 9d32cfed, dataC = d1c67fb1
+	dataA = 2f7f873b, dataB = 82aa58b9, dataC = add5df82
+	dataA = c7bb2eef, dataB = 5587f0ec, dataC = 923cde03
+	dataA = c964638d, dataB = 89dfd529, dataC = 40bbb6a4
+	dataA = aa3570a8, dataB = a9e6cafb, dataC = 03d3ba53
+	dataA = b8a278f4, dataB = 83822174, dataC = 3b205980
+	dataA = 9eae612a, dataB = b4798529, dataC = 2ad7e403
+	dataA = 000000c4, dataB = 00000072, dataC = 000000b6
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = d1c67fb1, dataB = 00008000, dataC = 1c67fb10
+	dataA = add5df82, dataB = 00000083, dataC = dd5df82d
+	dataA = 923cde03, dataB = 00000000, dataC = 23cde03a
+	dataA = 40bbb6a4, dataB = 00000000, dataC = 0bbb6a49
+	dataA = 03d3ba53, dataB = 00000080, dataC = 3d3ba534
+	dataA = 3b205980, dataB = 00000080, dataC = b2059800
+	dataA = 2ad7e403, dataB = 00000080, dataC = ad7e4033
+	dataA = 000000b6, dataB = 00000080, dataC = 00000b62
+ext_x:b62 result:5 shift:9
+Recryptor: addrA = 0x3e00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000005, dataB = 1c67fb10, dataC = 1c67fb15
+	dataA = 00000000, dataB = dd5df82d, dataC = dd5df82d
+	dataA = 00001400, dataB = 23cde03a, dataC = 23cdf43a
+	dataA = 00000000, dataB = 0bbb6a49, dataC = 0bbb6a49
+	dataA = 00000000, dataB = 3d3ba534, dataC = 3d3ba534
+	dataA = 00000000, dataB = b2059800, dataC = b2059800
+	dataA = 00000000, dataB = ad7e4033, dataC = ad7e4033
+	dataA = 00000a00, dataB = 00000b62, dataC = 00000162
+ext_x:29dcdf51 result:29dcdf5 shift:4
+Recryptor: addrA = 0x2d00, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = c4539034, dataB = 1c67fb15, dataC = d8346b21
+	dataA = 1ad57d16, dataB = dd5df82d, dataC = c788853b
+	dataA = 4296e5a5, dataB = 23cdf43a, dataC = 615b119f
+	dataA = b8dc217b, dataB = 0bbb6a49, dataC = b3674b32
+	dataA = 99ecd067, dataB = 3d3ba534, dataC = a4d77553
+	dataA = 979e2853, dataB = b2059800, dataC = 259bb053
+	dataA = 8a65df19, dataB = ad7e4033, dataC = 271b9f2a
+	dataA = 00000043, dataB = 00000162, dataC = 00000121
+Recryptor: addrA = 0x2700, addrB = 0, addrC = 0x2700, Bank = 1, Op = SF4
+	dataA = d8346b21, dataB = 00008000, dataC = 8346b210
+	dataA = c788853b, dataB = 00000083, dataC = 788853bd
+	dataA = 615b119f, dataB = 00000000, dataC = 15b119fc
+	dataA = b3674b32, dataB = 00000000, dataC = 3674b326
+	dataA = a4d77553, dataB = 00000080, dataC = 4d77553b
+	dataA = 259bb053, dataB = 00000080, dataC = 59bb053a
+	dataA = 271b9f2a, dataB = 00000080, dataC = 71b9f2a2
+	dataA = 00000121, dataB = 00000080, dataC = 00001212
+ext_x:1212 result:9 shift:9
+Recryptor: addrA = 0x4200, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = 00000009, dataB = 8346b210, dataC = 8346b219
+	dataA = 00000000, dataB = 788853bd, dataC = 788853bd
+	dataA = 00002400, dataB = 15b119fc, dataC = 15b13dfc
+	dataA = 00000000, dataB = 3674b326, dataC = 3674b326
+	dataA = 00000000, dataB = 4d77553b, dataC = 4d77553b
+	dataA = 00000000, dataB = 59bb053a, dataC = 59bb053a
+	dataA = 00000000, dataB = 71b9f2a2, dataC = 71b9f2a2
+	dataA = 00001200, dataB = 00001212, dataC = 00000012
+Recryptor: addrA = 0x2900, addrB = 0x2700, addrC = 0x2700, Bank = 1, Op = XOR
+	dataA = c145855b, dataB = 8346b219, dataC = 42033742
+	dataA = adc44c51, dataB = 788853bd, dataC = d54c1fec
+	dataA = ea2e378b, dataB = 15b13dfc, dataC = ff9f0a77
+	dataA = 7293f518, dataB = 3674b326, dataC = 44e7463e
+	dataA = 2d36901e, dataB = 4d77553b, dataC = 6041c525
+	dataA = 2e79f7ef, dataB = 59bb053a, dataC = 77c2f2d5
+	dataA = 7de139ad, dataB = 71b9f2a2, dataC = 0c58cb0f
+	dataA = 000001ea, dataB = 00000012, dataC = 000001f8
+--- I: Simulator determined PC 0x00000882 is branch to self, terminating.
+--- I: Approximate average frequency: 797752.808989 hz
+--- I: Simulator executed 1846 cycles
+--- I: Simulator shutdown successfully.

@@ -1,0 +1,40 @@
+Probable cause of error: 
+   Stack overflow in user code.
+
+NOTE: there is a new trace file called sam.out
+
+The function called is: 
+   void fb_addd_low(dig_t *c, const dig_t *a, const dig_t *b, int size)
+
+ARM calling convention puts the arguments into r0-r3, so:
+   c = r0
+   a = r1
+   b = r2
+   size = r3
+
+In the decompiled trace sam.out at line 399693, you can see r3 = 0xa.
+   DECOM: MOV      R12(=0000000a),R03(=0000000a)
+
+So size = 10. dig_t looks like it is a 32-bit value, so each digit takes up 4
+bytes. Therefore, a, b, and c must have at least 40 bytes of memory. In fact, a
+== c (compare the value of r1 and r0 in the trace).
+
+The problem is that the program has only reserved 20 bytes of storage for the
+storage of the three arrays. You can tell that this is true by comparing the value
+of the stack pointer AFTER the push with the value of a:
+   SP = 0x7cdc (see sam.out at 399768)
+   r0 = r1 = 0x7cc8 (see sam.out at 399709, or any line that does ldr XX, [r0, r4])
+
+The distance here is 0x7cdc - 0x7cc8 = 0x14 = 20. So only five digits can be computed.
+Once you get to digit 6, you start overwriting the data on the stack! See line
+399741 onwards.
+   DECOM: LDR      R03(=00000000),[R02(=00007cf0),R06(=00000014)]
+   DECOM: LDR      R07(=1aa194b9),[R01(=00007cc8),R06(=00000014)]
+   DECOM: EORS     R07(=00007cc8),R03(=00000000)
+   DECOM: STR      R07(=00007cc8),[R00(=00007cc8),R06(=00000014)]
+		       ^ this is same value as the value in r04, which you
+			 pushed to the stack at the beginning of the function
+                         (see line 399686),
+                         because it was loaded by the ldr instruction. 
+ 			 All the values you see in the decompiled trace are the values
+                         from BEFORE the instruction was executed, not after.

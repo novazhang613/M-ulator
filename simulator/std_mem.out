@@ -1,0 +1,20 @@
+CLI I: Simulator will use m3_tests/testing_unit_ecc/1_ecc_LIM_int/1_ecc_LIM_int.bin as flash
+COR I: Flashed 1308 bytes to RAM
+LDR I: Succesfully loaded image: m3_tests/testing_unit_ecc/1_ecc_LIM_int/1_ecc_LIM_int.bin
+--- I: Registered 79 opcode masks
+--- I: Powering on processor...
+--- I: Asserting reset pin
+================================================================================
+PRCv9 Conf: C 00000000 M 00001000 G 00202903 P 8f770049 W 00000000 T 00000000
+--------------------------------------------------------------------------------
+[Cycle 0]			  T: 0	  N: 0  Z: 0  C: 0  V: 0  | ITSTATE: 00  
+	r00:        0	r01:        0	r02:        0	r03:        0
+	r04:        0	r05:        0	r06:        0	r07:        0
+	r08:        0	r09:        0	r10:        0	r11:        0
+	r12:        0	 SP:        0	 LR:        0	 PC:        0
+--------------------------------------------------------------------------------
+Wrote    32768 bytes to /tmp/ram.yiqun                (Use 'hexdump -C' to view)
+================================================================================
+--- I: Recryptor Count: 0
+--- I: Simulator executed 0 cycles
+--- I: Simulator shutdown successfully.

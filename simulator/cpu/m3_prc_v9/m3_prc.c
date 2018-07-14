@@ -296,6 +296,9 @@ void register_periph_m3_prc(void) {
 
 	mem_fn.W_fn32 = recryptor_decoder_wr;
 	register_memmap("RECRYPTOR DECODER", true, 4, mem_fn, RECRYPTOR_DECODER_ADDR, RECRYPTOR_DECODER_ADDR+1);
+
+	mem_fn.W_fn32 = recryptor_decoder_eccirt;
+	register_memmap("RECRYPTOR DECODER ECCIRT", true, 4, mem_fn, RECRYPTOR_DECODER_ECCIRT, RECRYPTOR_DECODER_ECCIRT+1);
 	//register_memmap("RECRYPTOR DECODER", true, 4, mem_fn, DECODER_ADDR, DECODER_ADDR+4);
 
 	/*

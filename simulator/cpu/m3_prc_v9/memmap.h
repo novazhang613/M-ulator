@@ -36,6 +36,7 @@
 #define INT_MSG_REG3_RD	0xA000101c
 
 #define RECRYPTOR_DECODER_ADDR    0xA0000140
+#define RECRYPTOR_DECODER_ECCIRT  0xA0000144
 
 // CHIP ID (used for selective GOC programming)
 #define CHIP_ID_REG_NBITS	16

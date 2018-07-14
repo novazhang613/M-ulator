@@ -5,11 +5,13 @@
 #include "cpu/recryptor/recryptor.h"
 #include "cpu/m3_prc_v9/memmap.h"
 
+#include "core/simulator.h"
+
 const uint8_t NUM_SUBBANK[] = {8,2,4,2};
 const uint8_t NUM_PREVTOT_SUBBANK[] = {0,8,10,14};
 const char    *OpNames[] = {"AND","OR","XOR","COPY","NOT","SF1","SF4","LS64","RS64","ROTL64","XROTX","KEY","SS","MC","InvalidOp"};
 
-const int LIM_ADDR_OFFSET = 0x2000; 
+const int LIM_ADDR_OFFSET = 0x2000;  
 
 int recryptor_cnt = 0;
 
@@ -76,7 +78,7 @@ void recryptor_decoder_wr(uint32_t addr, uint32_t val,
 	recryptor_op op = (recryptor_op)((val>>24) & 0xF);
 	int bank = ((val>>28) & 0xF);
 	// Debug
-	if(1) printf("Recryptor: addrA = %#x, addrB = %#x, addrC = %#x, Bank = %x, Op = %s\n", addrA, addrB, addrC, bank,OpNames[op-1]);
+	if(1) printf("Cycle: %" PRId64 " - Recryptor: addrA = %#x, addrB = %#x, addrC = %#x, Bank = %x, Op = %s\n", cycle, addrA, addrB, addrC, bank,OpNames[op-1]);
 
 	uint8_t b;
 	bool sh1 = 0;
@@ -152,8 +154,8 @@ void recryptor_tick() {
      }
 }
 
-void recryptor_decoder_ecc_irTable(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ) {
-	assert((addr == (RECRYPTOR_DECODER_ADDR+1)));
+void recryptor_decoder_eccirt(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ) {
+	assert((addr == (RECRYPTOR_DECODER_ECCIRT)));
 
     	//printf("HERE I AM! addr = %#x, val = %#x\n", addr, val);
 
