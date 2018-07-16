@@ -1,0 +1,2433 @@
+CLI I: Simulator will use m3_tests/testing_unit_ecc/1_ecc_LIM_int/1_ecc_LIM_int.bin as flash
+COR I: Flashed 1332 bytes to RAM
+LDR I: Succesfully loaded image: m3_tests/testing_unit_ecc/1_ecc_LIM_int/1_ecc_LIM_int.bin
+--- I: Registered 79 opcode masks
+--- I: Powering on processor...
+--- I: Asserting reset pin
+--- I: De-asserting reset pin
+--- I: Entering main loop...
+Cycle: 211 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7800, Bank = 3, Op = COPY
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 1
+Cycle: 219 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x8900, Bank = 3, Op = COPY
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 2
+HERE: ECCRDT
+Cycle: 237 - Recryptor: addrA = 0x7600, addrB = 0x2000, addrC = 0x7900, Bank = 3, Op = COPY
+	dataA = c145855b, dataB = 00000000, dataC = c145855b
+	dataA = adc44c51, dataB = 00000000, dataC = adc44c51
+	dataA = ea2e378b, dataB = 00000000, dataC = ea2e378b
+	dataA = 7293f518, dataB = 00000000, dataC = 7293f518
+	dataA = 2d36901e, dataB = 00000000, dataC = 2d36901e
+	dataA = 2e79f7ef, dataB = 00000000, dataC = 2e79f7ef
+	dataA = 7de139ad, dataB = 00000000, dataC = 7de139ad
+	dataA = 000001ea, dataB = 00000000, dataC = 000001ea
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 3
+Cycle: 239 - Recryptor: addrA = 0x7600, addrB = 0x2000, addrC = 0x7a00, Bank = 3, Op = SF1
+	dataA = c145855b, dataB = 00000000, dataC = 828b0ab6
+	dataA = adc44c51, dataB = 00000000, dataC = 5b8898a3
+	dataA = ea2e378b, dataB = 00000000, dataC = d45c6f17
+	dataA = 7293f518, dataB = 00000000, dataC = e527ea31
+	dataA = 2d36901e, dataB = 00000000, dataC = 5a6d203c
+	dataA = 2e79f7ef, dataB = 00000000, dataC = 5cf3efde
+	dataA = 7de139ad, dataB = 00000000, dataC = fbc2735a
+	dataA = 000001ea, dataB = 00000000, dataC = 000003d4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 4
+Cycle: 241 - Recryptor: addrA = 0x7a00, addrB = 0x8800, addrC = 0x7a00, Bank = 3, Op = XOR
+	dataA = 828b0ab6, dataB = 00000001, dataC = 828b0ab7
+	dataA = 5b8898a3, dataB = 00000000, dataC = 5b8898a3
+	dataA = d45c6f17, dataB = 00000400, dataC = d45c6b17
+	dataA = e527ea31, dataB = 00000000, dataC = e527ea31
+	dataA = 5a6d203c, dataB = 00000000, dataC = 5a6d203c
+	dataA = 5cf3efde, dataB = 00000000, dataC = 5cf3efde
+	dataA = fbc2735a, dataB = 00000000, dataC = fbc2735a
+	dataA = 000003d4, dataB = 00000200, dataC = 000001d4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 5
+Cycle: 242 - Recryptor: addrA = 0x7a00, addrB = 0x7900, addrC = 0x7b00, Bank = 3, Op = XOR
+	dataA = 828b0ab7, dataB = c145855b, dataC = 43ce8fec
+	dataA = 5b8898a3, dataB = adc44c51, dataC = f64cd4f2
+	dataA = d45c6b17, dataB = ea2e378b, dataC = 3e725c9c
+	dataA = e527ea31, dataB = 7293f518, dataC = 97b41f29
+	dataA = 5a6d203c, dataB = 2d36901e, dataC = 775bb022
+	dataA = 5cf3efde, dataB = 2e79f7ef, dataC = 728a1831
+	dataA = fbc2735a, dataB = 7de139ad, dataC = 86234af7
+	dataA = 000001d4, dataB = 000001ea, dataC = 0000003e
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 6
+Cycle: 245 - Recryptor: addrA = 0x7a00, addrB = 0x2000, addrC = 0x7c00, Bank = 3, Op = SF1
+	dataA = 828b0ab7, dataB = 00000000, dataC = 0516156e
+	dataA = 5b8898a3, dataB = 00000000, dataC = b7113147
+	dataA = d45c6b17, dataB = 00000000, dataC = a8b8d62e
+	dataA = e527ea31, dataB = 00000000, dataC = ca4fd463
+	dataA = 5a6d203c, dataB = 00000000, dataC = b4da4079
+	dataA = 5cf3efde, dataB = 00000000, dataC = b9e7dfbc
+	dataA = fbc2735a, dataB = 00000000, dataC = f784e6b4
+	dataA = 000001d4, dataB = 00000000, dataC = 000003a9
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 7
+Cycle: 247 - Recryptor: addrA = 0x7c00, addrB = 0x8800, addrC = 0x7c00, Bank = 3, Op = XOR
+	dataA = 0516156e, dataB = 00000001, dataC = 0516156f
+	dataA = b7113147, dataB = 00000000, dataC = b7113147
+	dataA = a8b8d62e, dataB = 00000400, dataC = a8b8d22e
+	dataA = ca4fd463, dataB = 00000000, dataC = ca4fd463
+	dataA = b4da4079, dataB = 00000000, dataC = b4da4079
+	dataA = b9e7dfbc, dataB = 00000000, dataC = b9e7dfbc
+	dataA = f784e6b4, dataB = 00000000, dataC = f784e6b4
+	dataA = 000003a9, dataB = 00000200, dataC = 000001a9
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 8
+Cycle: 248 - Recryptor: addrA = 0x7c00, addrB = 0x7900, addrC = 0x7d00, Bank = 3, Op = XOR
+	dataA = 0516156f, dataB = c145855b, dataC = c4539034
+	dataA = b7113147, dataB = adc44c51, dataC = 1ad57d16
+	dataA = a8b8d22e, dataB = ea2e378b, dataC = 4296e5a5
+	dataA = ca4fd463, dataB = 7293f518, dataC = b8dc217b
+	dataA = b4da4079, dataB = 2d36901e, dataC = 99ecd067
+	dataA = b9e7dfbc, dataB = 2e79f7ef, dataC = 979e2853
+	dataA = f784e6b4, dataB = 7de139ad, dataC = 8a65df19
+	dataA = 000001a9, dataB = 000001ea, dataC = 00000043
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 9
+Cycle: 251 - Recryptor: addrA = 0x7c00, addrB = 0x7a00, addrC = 0x7e00, Bank = 3, Op = XOR
+	dataA = 0516156f, dataB = 828b0ab7, dataC = 879d1fd8
+	dataA = b7113147, dataB = 5b8898a3, dataC = ec99a9e4
+	dataA = a8b8d22e, dataB = d45c6b17, dataC = 7ce4b939
+	dataA = ca4fd463, dataB = e527ea31, dataC = 2f683e52
+	dataA = b4da4079, dataB = 5a6d203c, dataC = eeb76045
+	dataA = b9e7dfbc, dataB = 5cf3efde, dataC = e5143062
+	dataA = f784e6b4, dataB = fbc2735a, dataC = 0c4695ee
+	dataA = 000001a9, dataB = 000001d4, dataC = 0000007d
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 10
+Cycle: 253 - Recryptor: addrA = 0x7e00, addrB = 0x7900, addrC = 0x7f00, Bank = 3, Op = XOR
+	dataA = 879d1fd8, dataB = c145855b, dataC = 46d89a83
+	dataA = ec99a9e4, dataB = adc44c51, dataC = 415de5b5
+	dataA = 7ce4b939, dataB = ea2e378b, dataC = 96ca8eb2
+	dataA = 2f683e52, dataB = 7293f518, dataC = 5dfbcb4a
+	dataA = eeb76045, dataB = 2d36901e, dataC = c381f05b
+	dataA = e5143062, dataB = 2e79f7ef, dataC = cb6dc78d
+	dataA = 0c4695ee, dataB = 7de139ad, dataC = 71a7ac43
+	dataA = 0000007d, dataB = 000001ea, dataC = 00000197
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 11
+Cycle: 254 - Recryptor: addrA = 0x7c00, addrB = 0x2000, addrC = 0x8000, Bank = 3, Op = SF1
+	dataA = 0516156f, dataB = 00000000, dataC = 0a2c2ade
+	dataA = b7113147, dataB = 00000000, dataC = 6e22628e
+	dataA = a8b8d22e, dataB = 00000000, dataC = 5171a45d
+	dataA = ca4fd463, dataB = 00000000, dataC = 949fa8c7
+	dataA = b4da4079, dataB = 00000000, dataC = 69b480f3
+	dataA = b9e7dfbc, dataB = 00000000, dataC = 73cfbf79
+	dataA = f784e6b4, dataB = 00000000, dataC = ef09cd69
+	dataA = 000001a9, dataB = 00000000, dataC = 00000353
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 12
+Cycle: 257 - Recryptor: addrA = 0x8000, addrB = 0x8800, addrC = 0x8000, Bank = 3, Op = XOR
+	dataA = 0a2c2ade, dataB = 00000001, dataC = 0a2c2adf
+	dataA = 6e22628e, dataB = 00000000, dataC = 6e22628e
+	dataA = 5171a45d, dataB = 00000400, dataC = 5171a05d
+	dataA = 949fa8c7, dataB = 00000000, dataC = 949fa8c7
+	dataA = 69b480f3, dataB = 00000000, dataC = 69b480f3
+	dataA = 73cfbf79, dataB = 00000000, dataC = 73cfbf79
+	dataA = ef09cd69, dataB = 00000000, dataC = ef09cd69
+	dataA = 00000353, dataB = 00000200, dataC = 00000153
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 13
+Cycle: 259 - Recryptor: addrA = 0x8000, addrB = 0x7900, addrC = 0x8100, Bank = 3, Op = XOR
+	dataA = 0a2c2adf, dataB = c145855b, dataC = cb69af84
+	dataA = 6e22628e, dataB = adc44c51, dataC = c3e62edf
+	dataA = 5171a05d, dataB = ea2e378b, dataC = bb5f97d6
+	dataA = 949fa8c7, dataB = 7293f518, dataC = e60c5ddf
+	dataA = 69b480f3, dataB = 2d36901e, dataC = 448210ed
+	dataA = 73cfbf79, dataB = 2e79f7ef, dataC = 5db64896
+	dataA = ef09cd69, dataB = 7de139ad, dataC = 92e8f4c4
+	dataA = 00000153, dataB = 000001ea, dataC = 000000b9
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 14
+Cycle: 260 - Recryptor: addrA = 0x8000, addrB = 0x7a00, addrC = 0x8200, Bank = 3, Op = XOR
+	dataA = 0a2c2adf, dataB = 828b0ab7, dataC = 88a72068
+	dataA = 6e22628e, dataB = 5b8898a3, dataC = 35aafa2d
+	dataA = 5171a05d, dataB = d45c6b17, dataC = 852dcb4a
+	dataA = 949fa8c7, dataB = e527ea31, dataC = 71b842f6
+	dataA = 69b480f3, dataB = 5a6d203c, dataC = 33d9a0cf
+	dataA = 73cfbf79, dataB = 5cf3efde, dataC = 2f3c50a7
+	dataA = ef09cd69, dataB = fbc2735a, dataC = 14cbbe33
+	dataA = 00000153, dataB = 000001d4, dataC = 00000087
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 15
+Cycle: 263 - Recryptor: addrA = 0x8200, addrB = 0x7900, addrC = 0x8300, Bank = 3, Op = XOR
+	dataA = 88a72068, dataB = c145855b, dataC = 49e2a533
+	dataA = 35aafa2d, dataB = adc44c51, dataC = 986eb67c
+	dataA = 852dcb4a, dataB = ea2e378b, dataC = 6f03fcc1
+	dataA = 71b842f6, dataB = 7293f518, dataC = 032bb7ee
+	dataA = 33d9a0cf, dataB = 2d36901e, dataC = 1eef30d1
+	dataA = 2f3c50a7, dataB = 2e79f7ef, dataC = 0145a748
+	dataA = 14cbbe33, dataB = 7de139ad, dataC = 692a879e
+	dataA = 00000087, dataB = 000001ea, dataC = 0000016d
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 16
+Cycle: 265 - Recryptor: addrA = 0x8000, addrB = 0x7c00, addrC = 0x8400, Bank = 3, Op = XOR
+	dataA = 0a2c2adf, dataB = 0516156f, dataC = 0f3a3fb0
+	dataA = 6e22628e, dataB = b7113147, dataC = d93353c9
+	dataA = 5171a05d, dataB = a8b8d22e, dataC = f9c97273
+	dataA = 949fa8c7, dataB = ca4fd463, dataC = 5ed07ca4
+	dataA = 69b480f3, dataB = b4da4079, dataC = dd6ec08a
+	dataA = 73cfbf79, dataB = b9e7dfbc, dataC = ca2860c5
+	dataA = ef09cd69, dataB = f784e6b4, dataC = 188d2bdd
+	dataA = 00000153, dataB = 000001a9, dataC = 000000fa
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 17
+Cycle: 266 - Recryptor: addrA = 0x8400, addrB = 0x7900, addrC = 0x8500, Bank = 3, Op = XOR
+	dataA = 0f3a3fb0, dataB = c145855b, dataC = ce7fbaeb
+	dataA = d93353c9, dataB = adc44c51, dataC = 74f71f98
+	dataA = f9c97273, dataB = ea2e378b, dataC = 13e745f8
+	dataA = 5ed07ca4, dataB = 7293f518, dataC = 2c4389bc
+	dataA = dd6ec08a, dataB = 2d36901e, dataC = f0585094
+	dataA = ca2860c5, dataB = 2e79f7ef, dataC = e451972a
+	dataA = 188d2bdd, dataB = 7de139ad, dataC = 656c1270
+	dataA = 000000fa, dataB = 000001ea, dataC = 00000110
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 18
+Cycle: 269 - Recryptor: addrA = 0x8400, addrB = 0x7a00, addrC = 0x8600, Bank = 3, Op = XOR
+	dataA = 0f3a3fb0, dataB = 828b0ab7, dataC = 8db13507
+	dataA = d93353c9, dataB = 5b8898a3, dataC = 82bbcb6a
+	dataA = f9c97273, dataB = d45c6b17, dataC = 2d951964
+	dataA = 5ed07ca4, dataB = e527ea31, dataC = bbf79695
+	dataA = dd6ec08a, dataB = 5a6d203c, dataC = 8703e0b6
+	dataA = ca2860c5, dataB = 5cf3efde, dataC = 96db8f1b
+	dataA = 188d2bdd, dataB = fbc2735a, dataC = e34f5887
+	dataA = 000000fa, dataB = 000001d4, dataC = 0000012e
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 19
+Cycle: 271 - Recryptor: addrA = 0x8600, addrB = 0x7900, addrC = 0x8700, Bank = 3, Op = XOR
+	dataA = 8db13507, dataB = c145855b, dataC = 4cf4b05c
+	dataA = 82bbcb6a, dataB = adc44c51, dataC = 2f7f873b
+	dataA = 2d951964, dataB = ea2e378b, dataC = c7bb2eef
+	dataA = bbf79695, dataB = 7293f518, dataC = c964638d
+	dataA = 8703e0b6, dataB = 2d36901e, dataC = aa3570a8
+	dataA = 96db8f1b, dataB = 2e79f7ef, dataC = b8a278f4
+	dataA = e34f5887, dataB = 7de139ad, dataC = 9eae612a
+	dataA = 0000012e, dataB = 000001ea, dataC = 000000c4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 20
+HERE: ECCIRT
+Cycle: 297 - Recryptor: addrA = 0x8800, addrB = 0x2000, addrC = 0x8a00, Bank = 1, Op = COPY
+	dataA = 00000001, dataB = 00000000, dataC = 00000001
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000400, dataB = 00000000, dataC = 00000400
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000200, dataB = 00000000, dataC = 00000200
+Recryptor Count: 21
+Cycle: 298 - Recryptor: addrA = 0x8800, addrB = 0x2000, addrC = 0x8b00, Bank = 1, Op = SF1
+	dataA = 00000001, dataB = 00000000, dataC = 00000002
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000400, dataB = 00000000, dataC = 00000800
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000200, dataB = 00000000, dataC = 00000400
+Recryptor Count: 22
+Cycle: 300 - Recryptor: addrA = 0x8b00, addrB = 0x8a00, addrC = 0x8c00, Bank = 1, Op = XOR
+	dataA = 00000002, dataB = 00000001, dataC = 00000003
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000800, dataB = 00000400, dataC = 00000c00
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000400, dataB = 00000200, dataC = 00000600
+Recryptor Count: 23
+Cycle: 301 - Recryptor: addrA = 0x8b00, addrB = 0x2000, addrC = 0x8d00, Bank = 1, Op = SF1
+	dataA = 00000002, dataB = 00000000, dataC = 00000004
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000800, dataB = 00000000, dataC = 00001000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000400, dataB = 00000000, dataC = 00000800
+Recryptor Count: 24
+Cycle: 304 - Recryptor: addrA = 0x8d00, addrB = 0x8a00, addrC = 0x8e00, Bank = 1, Op = XOR
+	dataA = 00000004, dataB = 00000001, dataC = 00000005
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001000, dataB = 00000400, dataC = 00001400
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000800, dataB = 00000200, dataC = 00000a00
+Recryptor Count: 25
+Cycle: 306 - Recryptor: addrA = 0x8d00, addrB = 0x8b00, addrC = 0x8f00, Bank = 1, Op = XOR
+	dataA = 00000004, dataB = 00000002, dataC = 00000006
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001000, dataB = 00000800, dataC = 00001800
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000800, dataB = 00000400, dataC = 00000c00
+Recryptor Count: 26
+Cycle: 307 - Recryptor: addrA = 0x8f00, addrB = 0x8a00, addrC = 0x9000, Bank = 1, Op = XOR
+	dataA = 00000006, dataB = 00000001, dataC = 00000007
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001800, dataB = 00000400, dataC = 00001c00
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000c00, dataB = 00000200, dataC = 00000e00
+Recryptor Count: 27
+Cycle: 310 - Recryptor: addrA = 0x8d00, addrB = 0x2000, addrC = 0x9100, Bank = 1, Op = SF1
+	dataA = 00000004, dataB = 00000000, dataC = 00000008
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001000, dataB = 00000000, dataC = 00002000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000800, dataB = 00000000, dataC = 00001000
+Recryptor Count: 28
+Cycle: 312 - Recryptor: addrA = 0x9100, addrB = 0x8a00, addrC = 0x9200, Bank = 1, Op = XOR
+	dataA = 00000008, dataB = 00000001, dataC = 00000009
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00002000, dataB = 00000400, dataC = 00002400
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001000, dataB = 00000200, dataC = 00001200
+Recryptor Count: 29
+Cycle: 313 - Recryptor: addrA = 0x9100, addrB = 0x8b00, addrC = 0x9300, Bank = 1, Op = XOR
+	dataA = 00000008, dataB = 00000002, dataC = 0000000a
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00002000, dataB = 00000800, dataC = 00002800
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001000, dataB = 00000400, dataC = 00001400
+Recryptor Count: 30
+Cycle: 316 - Recryptor: addrA = 0x9300, addrB = 0x8a00, addrC = 0x9400, Bank = 1, Op = XOR
+	dataA = 0000000a, dataB = 00000001, dataC = 0000000b
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00002800, dataB = 00000400, dataC = 00002c00
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001400, dataB = 00000200, dataC = 00001600
+Recryptor Count: 31
+Cycle: 318 - Recryptor: addrA = 0x9100, addrB = 0x8d00, addrC = 0x9500, Bank = 1, Op = XOR
+	dataA = 00000008, dataB = 00000004, dataC = 0000000c
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00002000, dataB = 00001000, dataC = 00003000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001000, dataB = 00000800, dataC = 00001800
+Recryptor Count: 32
+Cycle: 319 - Recryptor: addrA = 0x9500, addrB = 0x8a00, addrC = 0x9600, Bank = 1, Op = XOR
+	dataA = 0000000c, dataB = 00000001, dataC = 0000000d
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00003000, dataB = 00000400, dataC = 00003400
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001800, dataB = 00000200, dataC = 00001a00
+Recryptor Count: 33
+Cycle: 322 - Recryptor: addrA = 0x9500, addrB = 0x8b00, addrC = 0x9700, Bank = 1, Op = XOR
+	dataA = 0000000c, dataB = 00000002, dataC = 0000000e
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00003000, dataB = 00000800, dataC = 00003800
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001800, dataB = 00000400, dataC = 00001c00
+Recryptor Count: 34
+Cycle: 324 - Recryptor: addrA = 0x9700, addrB = 0x8a00, addrC = 0x9800, Bank = 1, Op = XOR
+	dataA = 0000000e, dataB = 00000001, dataC = 0000000f
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00003800, dataB = 00000400, dataC = 00003c00
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00001c00, dataB = 00000200, dataC = 00001e00
+Recryptor Count: 35
+HERE: ECCEXE
+Recyrptor Mem Rd (0x1c)! addr = 0x751c, val = 1a7, recryptor_u = 0
+Cycle: 348 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 36
+Cycle: 350 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 37
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 354 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 38
+Recyrptor Mem Rd (0x18)! addr = 0x751c, val = 1a7, recryptor_u = 0
+Cycle: 357 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 39
+Cycle: 360 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 40
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 363 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 41
+Recyrptor Mem Rd (0x14)! addr = 0x751c, val = 1a7, recryptor_u = 0
+Cycle: 368 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 42
+Cycle: 369 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 43
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 374 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 44
+Recyrptor Mem Rd (0x10)! addr = 0x751c, val = 1a7, recryptor_u = 0
+Cycle: 378 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 45
+Cycle: 380 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 46
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 384 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 47
+Recyrptor Mem Rd (0xc)! addr = 0x751c, val = 1a7, recryptor_u = 0
+Cycle: 387 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 48
+Cycle: 390 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 49
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 393 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 50
+Recyrptor Mem Rd (0x8)! addr = 0x751c, val = 1a7, recryptor_u = 1
+Cycle: 398 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 51
+Cycle: 399 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 52
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 404 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 53
+Recyrptor Mem Rd (0x4)! addr = 0x751c, val = 1a7, recryptor_u = a
+Cycle: 408 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 54
+Cycle: 410 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 55
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 414 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 56
+Recyrptor Mem Rd (0)! addr = 0x751c, val = 1a7, recryptor_u = 7
+Cycle: 417 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 57
+Cycle: 420 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 58
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 423 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 59
+Recyrptor Mem Rd (0x1c)! addr = 0x7518, val = 7bb93d20, recryptor_u = 7
+Cycle: 428 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 60
+Cycle: 429 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 61
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 434 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 62
+Recyrptor Mem Rd (0x18)! addr = 0x7518, val = 7bb93d20, recryptor_u = b
+Cycle: 438 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 63
+Cycle: 440 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 64
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 444 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 65
+Recyrptor Mem Rd (0x14)! addr = 0x7518, val = 7bb93d20, recryptor_u = b
+Cycle: 447 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 66
+Cycle: 450 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 67
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 453 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 68
+Recyrptor Mem Rd (0x10)! addr = 0x7518, val = 7bb93d20, recryptor_u = 9
+Cycle: 458 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 69
+Cycle: 459 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 70
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 464 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 71
+Recyrptor Mem Rd (0xc)! addr = 0x7518, val = 7bb93d20, recryptor_u = 3
+Cycle: 468 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 72
+Cycle: 470 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 73
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 474 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 74
+Recyrptor Mem Rd (0x8)! addr = 0x7518, val = 7bb93d20, recryptor_u = d
+Cycle: 477 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 75
+Cycle: 480 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 76
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 483 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 77
+Recyrptor Mem Rd (0x4)! addr = 0x7518, val = 7bb93d20, recryptor_u = 2
+Cycle: 488 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 78
+Cycle: 489 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 79
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 494 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 80
+Recyrptor Mem Rd (0)! addr = 0x7518, val = 7bb93d20, recryptor_u = 0
+Cycle: 498 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 81
+Cycle: 500 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 82
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 504 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 83
+Recyrptor Mem Rd (0x1c)! addr = 0x7514, val = 1f5f4dbd, recryptor_u = 1
+Cycle: 507 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 84
+Cycle: 510 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 85
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 513 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 86
+Recyrptor Mem Rd (0x18)! addr = 0x7514, val = 1f5f4dbd, recryptor_u = f
+Cycle: 518 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 87
+Cycle: 519 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 88
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 524 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 89
+Recyrptor Mem Rd (0x14)! addr = 0x7514, val = 1f5f4dbd, recryptor_u = 5
+Cycle: 528 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 90
+Cycle: 530 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 91
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 534 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 92
+Recyrptor Mem Rd (0x10)! addr = 0x7514, val = 1f5f4dbd, recryptor_u = f
+Cycle: 537 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 93
+Cycle: 540 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 94
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 543 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 95
+Recyrptor Mem Rd (0xc)! addr = 0x7514, val = 1f5f4dbd, recryptor_u = 4
+Cycle: 548 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 96
+Cycle: 549 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 97
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 554 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 98
+Recyrptor Mem Rd (0x8)! addr = 0x7514, val = 1f5f4dbd, recryptor_u = d
+Cycle: 558 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 99
+Cycle: 560 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 100
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 564 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 101
+Recyrptor Mem Rd (0x4)! addr = 0x7514, val = 1f5f4dbd, recryptor_u = b
+Cycle: 567 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 102
+Cycle: 570 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 103
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 573 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 104
+Recyrptor Mem Rd (0)! addr = 0x7514, val = 1f5f4dbd, recryptor_u = d
+Cycle: 578 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 105
+Cycle: 579 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 106
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 584 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 107
+Recyrptor Mem Rd (0x1c)! addr = 0x7510, val = f477315b, recryptor_u = f
+Cycle: 588 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 108
+Cycle: 590 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 109
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 594 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 110
+Recyrptor Mem Rd (0x18)! addr = 0x7510, val = f477315b, recryptor_u = 4
+Cycle: 597 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 111
+Cycle: 600 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 112
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 603 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 113
+Recyrptor Mem Rd (0x14)! addr = 0x7510, val = f477315b, recryptor_u = 7
+Cycle: 608 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 114
+Cycle: 609 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 115
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 614 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 116
+Recyrptor Mem Rd (0x10)! addr = 0x7510, val = f477315b, recryptor_u = 7
+Cycle: 618 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 117
+Cycle: 620 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 118
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 624 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 119
+Recyrptor Mem Rd (0xc)! addr = 0x7510, val = f477315b, recryptor_u = 3
+Cycle: 627 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 120
+Cycle: 630 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 121
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 633 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 122
+Recyrptor Mem Rd (0x8)! addr = 0x7510, val = f477315b, recryptor_u = 1
+Cycle: 638 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 123
+Cycle: 639 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 124
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 644 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 125
+Recyrptor Mem Rd (0x4)! addr = 0x7510, val = f477315b, recryptor_u = 5
+Cycle: 648 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 126
+Cycle: 650 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 127
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 654 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 128
+Recyrptor Mem Rd (0)! addr = 0x7510, val = f477315b, recryptor_u = b
+Cycle: 657 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 129
+Cycle: 660 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 130
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 663 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 131
+Recyrptor Mem Rd (0x1c)! addr = 0x750c, val = 2b02bc51, recryptor_u = 2
+Cycle: 668 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 132
+Cycle: 669 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 133
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 674 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 134
+Recyrptor Mem Rd (0x18)! addr = 0x750c, val = 2b02bc51, recryptor_u = b
+Cycle: 678 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 135
+Cycle: 680 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 136
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 684 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 137
+Recyrptor Mem Rd (0x14)! addr = 0x750c, val = 2b02bc51, recryptor_u = 0
+Cycle: 687 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 138
+Cycle: 690 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 139
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 693 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 140
+Recyrptor Mem Rd (0x10)! addr = 0x750c, val = 2b02bc51, recryptor_u = 2
+Cycle: 698 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 141
+Cycle: 699 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 142
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 704 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 143
+Recyrptor Mem Rd (0xc)! addr = 0x750c, val = 2b02bc51, recryptor_u = b
+Cycle: 708 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 144
+Cycle: 710 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 145
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 714 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 146
+Recyrptor Mem Rd (0x8)! addr = 0x750c, val = 2b02bc51, recryptor_u = c
+Cycle: 717 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 147
+Cycle: 720 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 148
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 723 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 149
+Recyrptor Mem Rd (0x4)! addr = 0x750c, val = 2b02bc51, recryptor_u = 5
+Cycle: 728 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 150
+Cycle: 729 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 151
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 734 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 152
+Recyrptor Mem Rd (0)! addr = 0x750c, val = 2b02bc51, recryptor_u = 1
+Cycle: 738 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 153
+Cycle: 740 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 154
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 744 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 155
+Recyrptor Mem Rd (0x1c)! addr = 0x7508, val = 5c19b015, recryptor_u = 5
+Cycle: 747 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 156
+Cycle: 750 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 157
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 753 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 158
+Recyrptor Mem Rd (0x18)! addr = 0x7508, val = 5c19b015, recryptor_u = c
+Cycle: 758 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 159
+Cycle: 759 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 160
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 764 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 161
+Recyrptor Mem Rd (0x14)! addr = 0x7508, val = 5c19b015, recryptor_u = 1
+Cycle: 768 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 162
+Cycle: 770 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 163
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 774 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 164
+Recyrptor Mem Rd (0x10)! addr = 0x7508, val = 5c19b015, recryptor_u = 9
+Cycle: 777 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 165
+Cycle: 780 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 166
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 783 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 167
+Recyrptor Mem Rd (0xc)! addr = 0x7508, val = 5c19b015, recryptor_u = b
+Cycle: 788 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 168
+Cycle: 789 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 169
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 794 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 170
+Recyrptor Mem Rd (0x8)! addr = 0x7508, val = 5c19b015, recryptor_u = 0
+Cycle: 798 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 171
+Cycle: 800 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 172
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 804 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 173
+Recyrptor Mem Rd (0x4)! addr = 0x7508, val = 5c19b015, recryptor_u = 1
+Cycle: 807 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 174
+Cycle: 810 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 175
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 813 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 176
+Recyrptor Mem Rd (0)! addr = 0x7508, val = 5c19b015, recryptor_u = 5
+Cycle: 818 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 177
+Cycle: 819 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 178
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 824 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 179
+Recyrptor Mem Rd (0x1c)! addr = 0x7504, val = 3b99b6e2, recryptor_u = 3
+Cycle: 828 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 180
+Cycle: 830 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 181
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 834 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 182
+Recyrptor Mem Rd (0x18)! addr = 0x7504, val = 3b99b6e2, recryptor_u = b
+Cycle: 837 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 183
+Cycle: 840 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 184
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 843 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 185
+Recyrptor Mem Rd (0x14)! addr = 0x7504, val = 3b99b6e2, recryptor_u = 9
+Cycle: 848 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 186
+Cycle: 849 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 187
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 854 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 188
+Recyrptor Mem Rd (0x10)! addr = 0x7504, val = 3b99b6e2, recryptor_u = 9
+Cycle: 858 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 189
+Cycle: 860 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 190
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 864 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 191
+Recyrptor Mem Rd (0xc)! addr = 0x7504, val = 3b99b6e2, recryptor_u = b
+Cycle: 867 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 192
+Cycle: 870 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 193
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 873 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 194
+Recyrptor Mem Rd (0x8)! addr = 0x7504, val = 3b99b6e2, recryptor_u = 6
+Cycle: 878 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 195
+Cycle: 879 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 196
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 884 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 197
+Recyrptor Mem Rd (0x4)! addr = 0x7504, val = 3b99b6e2, recryptor_u = e
+Cycle: 888 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 198
+Cycle: 890 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 199
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 894 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 200
+Recyrptor Mem Rd (0)! addr = 0x7504, val = 3b99b6e2, recryptor_u = 2
+Cycle: 897 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 201
+Cycle: 900 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 202
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 903 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 203
+Recyrptor Mem Rd (0x1c)! addr = 0x7500, val = 29dcdf51, recryptor_u = 2
+Cycle: 908 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 204
+Cycle: 909 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 205
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 914 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 206
+Recyrptor Mem Rd (0x18)! addr = 0x7500, val = 29dcdf51, recryptor_u = 9
+Cycle: 918 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 207
+Cycle: 920 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 208
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 924 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 209
+Recyrptor Mem Rd (0x14)! addr = 0x7500, val = 29dcdf51, recryptor_u = d
+Cycle: 927 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 210
+Cycle: 930 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 211
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 933 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 212
+Recyrptor Mem Rd (0x10)! addr = 0x7500, val = 29dcdf51, recryptor_u = c
+Cycle: 938 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 213
+Cycle: 939 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 214
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 944 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 215
+Recyrptor Mem Rd (0xc)! addr = 0x7500, val = 29dcdf51, recryptor_u = d
+Cycle: 948 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 216
+Cycle: 950 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 217
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 954 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 218
+Recyrptor Mem Rd (0x8)! addr = 0x7500, val = 29dcdf51, recryptor_u = f
+Cycle: 957 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 219
+Cycle: 960 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 220
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 963 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 221
+Recyrptor Mem Rd (0x4)! addr = 0x7500, val = 29dcdf51, recryptor_u = 5
+Cycle: 968 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 222
+Cycle: 969 - Recryptor: addrA = 0x7700, addrB = 0x2000, addrC = 0x7700, Bank = 1, Op = SF4
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 223
+Recyrptor Mem Rd (0x9)! addr = 0x771c, val = 0, recryptor_u = 0
+Cycle: 974 - Recryptor: addrA = 0x8900, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 224
+Recyrptor Mem Rd (0)! addr = 0x7500, val = 29dcdf51, recryptor_u = 1
+Cycle: 978 - Recryptor: addrA = 0x7800, addrB = 0x7700, addrC = 0x7700, Bank = 1, Op = XOR
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+	dataA = 00000000, dataB = 00000000, dataC = 00000000
+Recryptor Count: 225
+--- I: Simulator determined PC 0x000004a0 is branch to self, terminating.
+--- I: Approximate average frequency: 868948.247078 hz
+--- I: Recryptor Count: 225
+--- I: Simulator executed 1041 cycles
+--- I: Simulator shutdown successfully.
