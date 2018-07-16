@@ -24,7 +24,8 @@ void recryptor_decoder_wr(uint32_t addr, uint32_t val, bool debugger __attribute
 
 /* In-memory Multiple-cycle executions */
 void recryptor_decoder_eccirt(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ); 
-
+void recryptor_decoder_eccrdt(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ); 
+void recryptor_decoder_eccexe(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ); 
 
 /* In-memory memory offset for intermediate data */
 extern const int LIM_ADDR_OFFSET;    

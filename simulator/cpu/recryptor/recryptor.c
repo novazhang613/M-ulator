@@ -176,10 +176,9 @@ void recryptor_decoder_eccirt(uint32_t addr, uint32_t val, bool debugger __attri
 	//int addr_irt = ((val>> 8) & 0x7F) << 8;
 	//int FB_POLYN = ((val>>16) & 0x7FF);
 	//int NUM_PLN_Minus1 = ((val>>27) & 0x1);
-	int bank     = ((val>>28) & 0xF);
-
 	int Idrir  = ((val)     & 0x7F);
 	int Idrirt = ((val>> 8) & 0x7F);
+	int bank   = ((val>>28) & 0xF);
 
 	int value;
 	// precompute table t[1] = b
@@ -255,25 +254,117 @@ void recryptor_decoder_eccirt(uint32_t addr, uint32_t val, bool debugger __attri
         addRecryptorAction(&recryptor_decoder_wr, value);
 
 }
-/*
-    uint32_t start = 0xa0000140;
-    uint32_t function = 0xa0000144;
-    uint32_t bitwidth = 0xa0000148;
-    if (addr == start) {
-        start_recryotr();
-    } else if (addr == function) {
-   set_function();
-    }
-*/
 
-#if 0
-	int block = 0;
-	switch (bank) {
-	  case(0x1) : block = 8;break;
-	  case(0x3) : block = 8+2;break;
-	  case(0x7) : block = 8+2+4;break;
-	  case(0x15): block = 16;break;  
-	  default:  block = 0;
+
+void recryptor_decoder_eccrdt(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ) {
+	assert((addr == (RECRYPTOR_DECODER_ECCIRT)));
+
+	recryptor_FSM = 1;
+
+	int Idrb   = ((val)     & 0x7F);
+	int Idrt   = ((val>> 8) & 0x7F);
+	uint8_t dataB_MSB = ((val>>16) & 0x7);
+	//printf("\n\nMSB: %x\n\n",dataB_MSB);
+	//int NUM_PLN= ((val>>27) & 0x1);
+	int bank   = ((val>>28) & 0xF);
+
+	// hack FIXED addr_IR = 0x 6900 !!!! 
+	//int Idrir  = ((val>>16) & 0x7F);
+	int Idrir  = ((0x6800>>8) & 0x7F); 
+
+	int value;
+	// precompute table t[1] = b
+	value = Idrb + ((Idrt+1)<<16) + (1<<23) + (4<<24) + (bank<<28); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[2] = t[1] << 1
+	value = Idrb + ((Idrt+2)<<16) + (1<<23) + (6<<24) + (bank<<28); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// t[2] = t[2] ^ ir_t[u]
+	//u = ( *(addr_b + 28) >> 8) & 0x1; //grab the first bit // Another option is to use addr_t
+	//u = (addr_b[FB_DIGS-1] >> (FB_MOD-1)) & 0x1;  
+	if (( dataB_MSB >> 2) & 0x1) {
+		value =(Idrt+2) + (Idrir<<8) + ((Idrt+2)<<16) + (1<<23) + (3<<24) + (bank<<28); 
+        	addRecryptorAction(&recryptor_decoder_wr, value);
 	}
-	printf("Recryptor: block = %d\n",block);
-#endif
+	// else if u ==0, no need for xor 
+
+
+	// precompute table t[3] = t[1] ^ t[2]
+	value = (Idrt+2) + ((Idrt+1)<<8) + ((Idrt+3)<<16) + (1<<23) + (3<<24) + (bank<<28); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[4] = t[2] << 1
+	value = (Idrt+2) + ((Idrt+4)<<16) + (1<<23) + (6<<24) + (bank<<28); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// t[4] = t[4] ^ ir_t[u]
+	//u = (addr_b[FB_DIGS-1] >> (FB_MOD-2)) & 0x1; // grab the 2nd bit  
+	if (( dataB_MSB >> 1) & 0x1) {
+		value = (Idrt+4) + ((Idrir)<<8) + ((Idrt+4)<<16) + (1<<23) + (3<<24) + (bank<<28); 
+       		addRecryptorAction(&recryptor_decoder_wr, value);
+	}
+	// else if u ==0, no need for xor 
+
+	// precompute table t[5] = t[1] ^ t[4]
+	value = (Idrt+4) + ((Idrt+1)<<8) + ((Idrt+5)<<16) + (1<<23) + (3<<24) + (bank<<28); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// use this xor instead of shift, to avoid increased 1 bit !!!
+	// precompute table t[6] = t[2] ^ t[4] 
+	value = (Idrt+4) + ((Idrt+2)<<8) + ((Idrt+6)<<16) + (1<<23) + (3<<24) + (bank<<28); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[7] = t[1] ^ t[6]
+	value = (Idrt+6) + ((Idrt+1)<<8) + ((Idrt+7)<<16) + (1<<23) + (3<<24) + (bank<<28); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[8] = t[4] << 1
+	value = (Idrt+4) + ((Idrt+8)<<16) + (1<<23) + (6<<24) + (bank<<28); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// t[8] = t[8] ^ ir_t[u]
+	//u = (addr_b[FB_DIGS-1] >> (FB_MOD-3)) & 0x1; // grab the 3rd bit  
+	if (dataB_MSB & 0x1) {
+		value = (Idrt+8) + ((Idrir)<<8) + ((Idrt+8)<<16) + (1<<23) + (3<<24) + (bank<<28);
+	        addRecryptorAction(&recryptor_decoder_wr, value);
+	}
+			// else if u ==0, no need for xor 
+
+	// precompute table t[9] = t[1] ^ t[8]
+	value = (Idrt+8) + ((Idrt+1)<<8) + ((Idrt+9)<<16) + (1<<23) + (3<<24) + (bank<<28); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[10] = t[2] ^ t[8]
+	value = (Idrt+8) + ((Idrt+2)<<8) + ((Idrt+10)<<16) + (1<<23) + (3<<24) + (bank<<28);  
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[11] = t[1] ^ t[10]
+	value = (Idrt+10) + ((Idrt+1)<<8) + ((Idrt+11)<<16) + (1<<23) + (3<<24) + (bank<<28);  
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[12] = t[4] ^ t[8]
+	value = (Idrt+8) + ((Idrt+4)<<8) + ((Idrt+12)<<16) + (1<<23) + (3<<24) + (bank<<28); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[13] = t[1] ^ t[12]
+	value = (Idrt+12) + ((Idrt+1)<<8) + ((Idrt+13)<<16) + (1<<23) + (3<<24) + (bank<<28); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// use this xor instead of shift, to avoid increased 1 bit !!!
+	// why this is wrong !!! precompute table t[14] = t[1] ^ t[13] 
+	// precompute table t[14] = t[2] ^ t[12] 
+	value = (Idrt+12) + ((Idrt+2)<<8) + ((Idrt+14)<<16) + (1<<23) + (3<<24) + (bank<<28);
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+	// precompute table t[15] = t[1] ^ t[14]
+	value = (Idrt+14) + ((Idrt+1)<<8) + ((Idrt+15)<<16) + (1<<23) + (3<<24) + (bank<<28); 
+        addRecryptorAction(&recryptor_decoder_wr, value);
+
+}
+
+void recryptor_decoder_eccexe(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ) {
+	assert((addr == (RECRYPTOR_DECODER_ECCEXE)));
+    	printf("HERE I AM! addr = %#x, val = %#x\n", addr, val);
+}
