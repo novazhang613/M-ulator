@@ -79,6 +79,9 @@ EXPORT int dumpallcycles = 0;
 EXPORT int returnr0 = 0;
 EXPORT int usetestflash = 0;
 
+/*terminate */
+int64_t cycle_terminate = 0;
+#define TERMINATE_CNT 5
 
 /* State */
 
@@ -612,11 +615,15 @@ static int sim_execute(void) {
 				INFO("Simulator determined PC 0x%08x is branch to self, breaking for gdb.\n", cur_pc);
 				shell();
 			} else {
-				INFO("Simulator determined PC 0x%08x is branch to self, terminating.\n", cur_pc);
-				sim_terminate(true);
+				cycle_terminate++;
+				if(cycle_terminate == TERMINATE_CNT) {
+					INFO("Simulator determined PC 0x%08x is branch to self, terminating.\n", cur_pc);
+					sim_terminate(true);
+				}
 			}
 		}
 	} else {
+		cycle_terminate = 0;
 		SW(&prev_pc, cur_pc);
 	}
 
