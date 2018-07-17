@@ -297,14 +297,19 @@ void register_periph_m3_prc(void) {
 	mem_fn.W_fn32 = recryptor_decoder_wr;
 	register_memmap("RECRYPTOR DECODER", true, 4, mem_fn, RECRYPTOR_DECODER_ADDR, RECRYPTOR_DECODER_ADDR+1);
 
-	mem_fn.W_fn32 = recryptor_decoder_eccirt;
-	register_memmap("RECRYPTOR DECODER ECCIRT", true, 4, mem_fn, RECRYPTOR_DECODER_ECCIRT, RECRYPTOR_DECODER_ECCIRT+1);
+	mem_fn.W_fn32 = recryptor_decoder_eccfsm;
+	register_memmap("recryptor decoder eccfsm", true, 4, mem_fn, RECRYPTOR_DECODER_ECCFSM, RECRYPTOR_DECODER_ECCFSM+1);
+
+/*
+	mem_fn.w_fn32 = recryptor_decoder_eccirt;
+	register_memmap("recryptor decoder eccirt", true, 4, mem_fn, RECRYPTOR_DECODER_ECCIRT, RECRYPTOR_DECODER_ECCIRT+1);
 
 	mem_fn.W_fn32 = recryptor_decoder_eccrdt;
 	register_memmap("RECRYPTOR DECODER ECCRDT", true, 4, mem_fn, RECRYPTOR_DECODER_ECCRDT, RECRYPTOR_DECODER_ECCRDT+1);
 
 	mem_fn.W_fn32 = recryptor_decoder_eccexe;
 	register_memmap("RECRYPTOR DECODER ECCEXE", true, 4, mem_fn, RECRYPTOR_DECODER_ECCEXE, RECRYPTOR_DECODER_ECCEXE+1);
+*/
 
 	/*
 	mem_fn.R_fn32 = gpio_read;

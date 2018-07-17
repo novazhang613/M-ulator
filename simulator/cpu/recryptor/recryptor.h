@@ -1,7 +1,7 @@
 
 #include <core/common.h>
 
-#define REC_DEBUG 0
+#define REC_DEBUG 1
 
 typedef enum _recryptor_op {
     AN = 1,
@@ -25,11 +25,15 @@ typedef enum _recryptor_op {
 void recryptor_decoder_wr(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ); 
 
 /* In-memory Multiple-cycle executions */
+void recryptor_decoder_eccfsm(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ); 
 void recryptor_decoder_eccirt(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ); 
 void recryptor_decoder_eccrdt(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ); 
 void recryptor_decoder_eccexe(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ); 
 
+
 void recryptor_mem_rd(uint32_t Rshift, uint32_t addr, bool debugger __attribute__ ((unused)) );
+void recryptor_mem_wr(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) );
+
 /* In-memory memory offset for intermediate data */
 extern const int LIM_ADDR_OFFSET;    
  

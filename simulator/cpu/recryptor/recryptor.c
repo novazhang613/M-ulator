@@ -13,15 +13,12 @@ const char    *OpNames[] = {"AND","OR","XOR","COPY","NOT","SF1","SF4","LS64","RS
 
 const int LIM_ADDR_OFFSET = 0x2000; // change to 0 for 1_singleEcc_LIM  
 
-int recryptor_cnt = 0;
-
-bool recryptor_FSM = 0; // 1 if running recryptor continuous functions
-bool recryptor_FSM3 = 0; // 1 if running recryptor_decoder_eccexe 
 int  recryptor_FSM_fin_addr = 0x10000;
 int  recryptor_FSM_fin_data = 0xabcd;
 
 uint32_t recryptor_mem_rd_data = 0;
-int recryptor_u = 0;
+int 	 recryptor_u = 0;
+int 	 recryptor_cnt = 0;
 
 struct recryptor_action {
     void (*fn)(uint32_t,uint32_t,bool);
@@ -30,8 +27,6 @@ struct recryptor_action {
     bool     addr_add;
     struct recryptor_action* next;
 };
-
-    //void * fn(void);
 
 struct recryptor_action_list {
     struct recryptor_action* head;
@@ -67,7 +62,6 @@ void popRecryptorAction(void) {
   }
 }
 
-//void addRecryptorAction((void*) fn(uint32_t,uint32_t,bool), uint32_t value) {
 void addRecryptorAction( void (*fn)(uint32_t,uint32_t,bool), uint32_t value, uint32_t Rshift, bool addr_add) {
 	// Create a new struct
 	struct recryptor_action* action = (struct recryptor_action*) malloc(sizeof(struct recryptor_action));
@@ -75,25 +69,22 @@ void addRecryptorAction( void (*fn)(uint32_t,uint32_t,bool), uint32_t value, uin
 	action->value    = value;
 	action->Rshift   = Rshift;
 	action->addr_add = addr_add;
-	action->next= NULL;
+	action->next     = NULL;
 
 	pushRecryptorAction(action);
-
 }
 
 /* In-memory Single-cycle execution */
-void recryptor_decoder_wr(uint32_t addr, uint32_t val,
-		bool addr_add ) {
-		//bool debugger __attribute__ ((unused)) ) {
+void recryptor_decoder_wr(uint32_t addr, uint32_t val, bool addr_add ) {
 	assert((addr == RECRYPTOR_DECODER_ADDR));
 
     	//printf("HERE I AM! addr = %#x, val = %#x\n", addr, val);
 
 	// Decode base address
 	int addrA_int = (val& 0x7F) + (addr_add ? recryptor_u : 0);
-	int addrA = ( addrA_int << 8) + LIM_ADDR_OFFSET;
-	int addrB = (((val>> 8) & 0x7F) << 8) + LIM_ADDR_OFFSET;
-	int addrC = (((val>>16) & 0x7F) << 8) + LIM_ADDR_OFFSET;
+	int addrA     = ( addrA_int << 8) + LIM_ADDR_OFFSET;
+	int addrB     = (((val>> 8) & 0x7F) << 8) + LIM_ADDR_OFFSET;
+	int addrC     = (((val>>16) & 0x7F) << 8) + LIM_ADDR_OFFSET;
 
 	recryptor_op op = (recryptor_op)((val>>24) & 0xF);
 	int bank = ((val>>28) & 0xF);
@@ -170,53 +161,26 @@ void recryptor_mem_rd(uint32_t addr, uint32_t Rshift,
     	if(REC_DEBUG) printf("Recyrptor Mem Rd (%#x)! addr = %#x, val = %#x, recryptor_u = %#x\n", Rshift, addr, recryptor_mem_rd_data, recryptor_u);
 }
 
-void recryptor_tick() {
+void recryptor_mem_wr(uint32_t addr, uint32_t val, 
+		bool debugger __attribute__ ((unused)) ) {
 
-     if (recryptor_state != NULL) { 
-	if (recryptor_state->head != NULL) {
-          struct recryptor_action *nextAction = recryptor_state->head;
+	if(REC_DEBUG) printf("Cycle:%" PRId64 ", Write_word, addr:%#x, val:%#x\n", cycle, addr, val);
+	write_word(addr,val);
 
-	  if(nextAction->fn == &recryptor_decoder_wr)
-          	nextAction->fn(RECRYPTOR_DECODER_ADDR, nextAction->value, nextAction->addr_add);
-	  else if (nextAction->fn == &recryptor_mem_rd)
-          	nextAction->fn(nextAction->value, nextAction->Rshift, false);
-
-          popRecryptorAction();
-/* DEBUG SEG-FAULT
-*/
-	} else {
-		if(recryptor_FSM) {
-			recryptor_FSM = 0;
-			//printf("Cycle: %" PRId64 " release recryptor_FSM\n",cycle);
-	 		write_word(recryptor_FSM_fin_addr,recryptor_FSM_fin_data);
-		}
-		else if(recryptor_FSM3) {
-			recryptor_FSM3 = 0;
-			//printf("Cycle: %" PRId64 " release recryptor_FSM\n",cycle);
-	 		write_word(recryptor_FSM_fin_addr,recryptor_FSM_fin_data);
-		}
-	}
-     }
 }
 
 void recryptor_decoder_eccirt(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ) {
-	assert((addr == (RECRYPTOR_DECODER_ECCIRT)));
+	//assert((addr == (RECRYPTOR_DECODER_ECCIRT)));
 
-	recryptor_FSM = 1;
-
-	if(REC_DEBUG) printf("HERE: ECCIRT\n");
+	if(REC_DEBUG) printf("HERE: ECCIRT - addr: %#x\n",addr);
     	//printf("HERE I AM! addr = %#x, val = %#x\n", addr, val);
 
 	// Decode base address
-	//int addr_ir  = ((val)     & 0x7F) << 8;
-	//int addr_irt = ((val>> 8) & 0x7F) << 8;
-	//int FB_POLYN = ((val>>16) & 0x7FF);
-	//int NUM_PLN_Minus1 = ((val>>27) & 0x1);
-	int Idrir  = ((val)     & 0x7F);
-	int Idrirt = ((val>> 8) & 0x7F);
-	int bank   = ((val>>28) & 0xF);
+	int Idrir  = IDRIR; //((val)     & 0x7F);
+	int Idrirt = IDRIRT; //((val>> 8) & 0x7F);
+	int bank   = BANK; //((val>>28) & 0xF);
 
-	int value;
+	int value = val;
 	// precompute table t[1] = b
 	value = (Idrir + ((Idrirt+1)<<16) + (1<<23) + (4<<24) + (bank<<28));
         addRecryptorAction(&recryptor_decoder_wr, value, 0, false);
@@ -293,21 +257,15 @@ void recryptor_decoder_eccirt(uint32_t addr, uint32_t val, bool debugger __attri
 
 
 void recryptor_decoder_eccrdt(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ) {
-	assert((addr == (RECRYPTOR_DECODER_ECCIRT)));
+	//assert((addr == (RECRYPTOR_DECODER_ECCIRT)));
 
-	if(REC_DEBUG) printf("HERE: ECCRDT\n");
-	recryptor_FSM = 1;
+	if(REC_DEBUG) printf("HERE: ECCRDT - addr: %#x\n",addr);
 
-	int Idrb   = ((val)     & 0x7F);
-	int Idrt   = ((val>> 8) & 0x7F);
-	uint8_t dataB_MSB = ((val>>16) & 0x7);
-	//printf("\n\nMSB: %x\n\n",dataB_MSB);
-	//int NUM_PLN= ((val>>27) & 0x1);
-	int bank   = ((val>>28) & 0xF);
-
-	// hack FIXED addr_IR = 0x 6900 !!!! 
-	//int Idrir  = ((val>>16) & 0x7F);
-	int Idrir  = (( ADDR_IR >>8) & 0x7F); 
+	uint8_t dataB_MSB = (val & 0xFF);
+	int Idrb  = IDRB;
+	int Idrt  = IDRT;
+	int bank  = BANK;
+	int Idrir = (( ADDR_IR >>8) & 0x7F); 
 
 	int value;
 	// precompute table t[1] = b
@@ -367,7 +325,6 @@ void recryptor_decoder_eccrdt(uint32_t addr, uint32_t val, bool debugger __attri
 		value = (Idrt+8) + ((Idrir)<<8) + ((Idrt+8)<<16) + (1<<23) + (3<<24) + (bank<<28);
 	        addRecryptorAction(&recryptor_decoder_wr, value, 0, false);
 	}
-			// else if u ==0, no need for xor 
 
 	// precompute table t[9] = t[1] ^ t[8]
 	value = (Idrt+8) + ((Idrt+1)<<8) + ((Idrt+9)<<16) + (1<<23) + (3<<24) + (bank<<28); 
@@ -402,17 +359,12 @@ void recryptor_decoder_eccrdt(uint32_t addr, uint32_t val, bool debugger __attri
 }
 
 void recryptor_decoder_eccexe(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ) {
-	assert((addr == (RECRYPTOR_DECODER_ECCEXE)));
+	//assert((addr == (RECRYPTOR_DECODER_ECCEXE)));
 	
-	if(REC_DEBUG) printf("HERE: ECCEXE\n");
+	if(REC_DEBUG) printf("HERE: ECCEXE - addr: %#x\n",addr);
     	//printf("HERE I AM! addr = %#x, val = %#x\n", addr, val);
 
-	recryptor_FSM3 = 1; 
-
 	int value = val;
-
-	//for (int i = 0; i < 100; i++)
-        //addRecryptorAction(&recryptor_mem_rd, value);
 
 	for (int i= FB_DIGS ; i > 0; i -= 1) {
 		for (int j= FB_DIGIT -4; j >= 0 ; j-=4) {
@@ -445,3 +397,34 @@ void recryptor_decoder_eccexe(uint32_t addr, uint32_t val, bool debugger __attri
 		}
 	}
 }
+
+void recryptor_decoder_eccfsm(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ) {
+	assert((addr == (RECRYPTOR_DECODER_ECCFSM)));
+
+	printf("addr: %#x, val: %#x\n",addr,val);
+
+	recryptor_decoder_eccirt(addr, val, false);
+	recryptor_decoder_eccrdt(addr, val, false);
+	recryptor_decoder_eccexe(addr, val, false);
+
+        addRecryptorAction(&recryptor_mem_wr, 0xffff, 0, false); //0xffff just random
+}
+
+void recryptor_tick() {
+
+     if (recryptor_state != NULL) { 
+	if (recryptor_state->head != NULL) {
+          struct recryptor_action *nextAction = recryptor_state->head;
+
+	  if(nextAction->fn == &recryptor_decoder_wr)
+          	nextAction->fn(RECRYPTOR_DECODER_ADDR, nextAction->value, nextAction->addr_add);
+	  else if (nextAction->fn == &recryptor_mem_rd)
+          	nextAction->fn(nextAction->value, nextAction->Rshift, false);
+	  else if (nextAction->fn == &recryptor_mem_wr)
+          	nextAction->fn(recryptor_FSM_fin_addr,recryptor_FSM_fin_data, false);
+
+          popRecryptorAction();
+	} 
+     }
+}
+

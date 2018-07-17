@@ -81,7 +81,7 @@ EXPORT int usetestflash = 0;
 
 /*terminate */
 int64_t cycle_terminate = 0;
-#define TERMINATE_CNT 5
+#define TERMINATE_CNT 1
 
 /* State */
 
