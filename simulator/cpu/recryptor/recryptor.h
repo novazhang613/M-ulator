@@ -1,7 +1,7 @@
 
 #include <core/common.h>
 
-#define REC_DEBUG 1
+#define REC_DEBUG 0
 
 typedef enum _recryptor_op {
     AN = 1,

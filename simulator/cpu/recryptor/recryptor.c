@@ -401,7 +401,7 @@ void recryptor_decoder_eccexe(uint32_t addr, uint32_t val, bool debugger __attri
 void recryptor_decoder_eccfsm(uint32_t addr, uint32_t val, bool debugger __attribute__ ((unused)) ) {
 	assert((addr == (RECRYPTOR_DECODER_ECCFSM)));
 
-	printf("addr: %#x, val: %#x\n",addr,val);
+	if(REC_DEBUG) printf("addr: %#x, val: %#x\n",addr,val);
 
 	recryptor_decoder_eccirt(addr, val, false);
 	recryptor_decoder_eccrdt(addr, val, false);
